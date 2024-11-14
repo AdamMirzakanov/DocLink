@@ -25,6 +25,11 @@ struct ContentView: View {
           Image(systemName: "message")
           Text("Чат")
         }
+      ProfileTabView()
+        .tabItem {
+          Image(systemName: "person.fill")
+          Text("Профиль")
+      }
     }
   }
 }
