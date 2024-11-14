@@ -7,15 +7,9 @@
 
 import Foundation
 
-func decode<T: Decodable>(
-  from fileName: String,
-  as type: T.Type
-) -> T? {
+func decode<T: Decodable>(from fileName: String, as type: T.Type) -> T? {
   guard
-    let url = Bundle.main.url(
-      forResource: fileName,
-      withExtension: "json"
-    )
+    let url = Bundle.main.url(forResource: fileName, withExtension: "json")
   else {
     return nil
   }

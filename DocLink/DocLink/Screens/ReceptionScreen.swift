@@ -1,5 +1,5 @@
 //
-//  ProfileTabView.swift
+//  ReceptionScreen.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 14.11.2024.
@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct ProfileTabView: View {
+struct ReceptionScreen: View {
+  // MARK: Internal Properties
   var body: some View {
-    Text("Профиль")
+    Text("Приёмы")
       .font(.largeTitle)
       .padding()
   }

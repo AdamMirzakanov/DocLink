@@ -1,5 +1,5 @@
 //
-//  HomeTabView.swift
+//  HomeScreen.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 14.11.2024.
@@ -7,12 +7,8 @@
 
 import SwiftUI
 
-struct HomeTabView: View {
-  
-  @State private var searchText = ""
-  @State private var selectedItem: DoctorSortCriterion = .price
-  @State private var users: [User] = []
-  
+struct HomeScreen: View {
+  // MARK: Internal Properties
   var body: some View {
     NavigationStack {
       Picker("", selection: $selectedItem) {
@@ -37,6 +33,11 @@ struct HomeTabView: View {
     }
   }
   
+  // MARK: Private Properties
+  @State private var searchText = ""
+  @State private var selectedItem: DoctorSortCriterion = .price
+  @State private var users: [User] = []
+  
   private var filteredUsers: [User] {
     if searchText.isEmpty {
       return users
@@ -47,13 +48,13 @@ struct HomeTabView: View {
     }
   }
   
+  // MARK: Private Methods
   private func loadUsers() {
     if let response: APIResponse = decode(from: "UsersData", as: APIResponse.self) {
       users = response.record.data.users
     }
   }
 }
-
 
 // MARK: - DoctorSortCriterion
 private enum DoctorSortCriterion: String, CaseIterable, Identifiable {
