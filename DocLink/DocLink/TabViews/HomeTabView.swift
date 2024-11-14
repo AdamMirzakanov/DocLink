@@ -23,15 +23,26 @@ struct HomeTabView: View {
       .pickerStyle(.segmented)
       .padding([.leading, .trailing])
       
-      List(users) { user in
+      List(filteredUsers) { user in
         VStack(alignment: .leading) {
           Text("\(user.firstName) \(user.lastName)")
+
         }
       }
       .searchable(text: $searchText, prompt: "Поиск")
       .navigationTitle("Главная")
       .onAppear {
         loadUsers()
+      }
+    }
+  }
+  
+  private var filteredUsers: [User] {
+    if searchText.isEmpty {
+      return users
+    } else {
+      return users.filter {
+        $0.firstName.contains(searchText) || $0.lastName.contains(searchText)
       }
     }
   }
