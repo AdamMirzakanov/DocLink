@@ -21,7 +21,21 @@ struct HomeScreen: View {
       
       List(filteredUsers) { user in
         VStack(alignment: .leading) {
-          Text("\(user.firstName) \(user.lastName)")
+          VStack(alignment: .leading) {
+            Text("\(user.lastName)")
+            Text("\(user.firstName) \(user.patronymic)")
+            
+          }
+          .font(.system(size: 17, weight: .medium))
+          
+          VStack(alignment: .leading) {
+            
+            if let specializationName = user.specialization.first??.name {
+              Text("\(specializationName)∙стаж \(user.seniority) лет")
+                .foregroundColor(.secondary)
+            }
+          }
+          .font(.system(size: 16, weight: .regular))
         }
       }
       .searchable(text: $searchText, prompt: "Поиск")

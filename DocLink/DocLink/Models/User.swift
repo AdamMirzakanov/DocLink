@@ -10,4 +10,6 @@ struct User: Decodable, Identifiable {
   let firstName: String
   let patronymic: String
   let lastName: String
+  let specialization: [Specialization?]
+  let seniority: Int
 }

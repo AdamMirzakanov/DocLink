@@ -14,7 +14,13 @@
           "last_name": "Синявин",
           "gender": "0",
           "gender_label": "Мужчина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 1,
+              "name": "Стоматолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -43,7 +49,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 3,
+          "seniority": 5,
           "text_chat_price": 0,
           "video_chat_price": 6,
           "home_price": 0,
@@ -82,7 +88,13 @@
           "last_name": "Иванова",
           "gender": "0",
           "gender_label": "Женщина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 111111,
+              "name": "Стоматолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -111,7 +123,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 7,
           "text_chat_price": 0,
           "video_chat_price": 100,
           "home_price": 1,
@@ -142,7 +154,7 @@
           "specialization": [
             {
               "id": 1,
-              "name": "Акушер",
+              "name": "Кардиолог",
               "is_moderated": true
             },
             {
@@ -189,7 +201,7 @@
             }
           ],
           "ratings_rating": 2.5,
-          "seniority": 0,
+          "seniority": 8,
           "text_chat_price": 0,
           "video_chat_price": 11111,
           "home_price": 10,
@@ -258,7 +270,13 @@
           "last_name": "Цедрик",
           "gender": "0",
           "gender_label": "Мужчина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 1234,
+              "name": "Уролог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -287,7 +305,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 10,
           "text_chat_price": 0,
           "video_chat_price": 10000,
           "home_price": 1,
@@ -311,11 +329,17 @@
           "id": "f6b588c4-b60e-4b65-84e0-8d54f383c754",
           "slug": "_3c754",
           "first_name": "Лана",
-          "patronymic": "",
+          "patronymic": "Антоновна",
           "last_name": "Махно",
           "gender": "1",
           "gender_label": "Женщина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 5431,
+              "name": "Педиатор",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -344,7 +368,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 12,
           "text_chat_price": 0,
           "video_chat_price": 0,
           "home_price": 0,
@@ -372,7 +396,13 @@
           "last_name": "Евграфова",
           "gender": "1",
           "gender_label": "Женщина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 981,
+              "name": "Пульмонолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -401,7 +431,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 9,
           "text_chat_price": 0,
           "video_chat_price": 10,
           "home_price": 10,
@@ -429,7 +459,13 @@
           "last_name": "Морозов",
           "gender": "0",
           "gender_label": "Мужчина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 9561,
+              "name": "Эндокринолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -458,7 +494,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 14,
           "text_chat_price": 0,
           "video_chat_price": 0,
           "home_price": 0,
@@ -486,7 +522,13 @@
           "last_name": "Иванова",
           "gender": "1",
           "gender_label": "Женщина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 95461,
+              "name": "Кардиолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -515,7 +557,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 16,
           "text_chat_price": 0,
           "video_chat_price": 0,
           "home_price": 0,
@@ -578,7 +620,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 3,
+          "seniority": 13,
           "text_chat_price": 5000,
           "video_chat_price": 20000,
           "home_price": 0,
@@ -613,9 +655,9 @@
         {
           "id": "7bc7fd9e-7b91-45bf-9bd6-e26d1141e95f",
           "slug": "_1e95f",
-          "first_name": "Иванов",
-          "patronymic": "Иван",
-          "last_name": "Иванович",
+          "first_name": "Иван",
+          "patronymic": "Иванович",
+          "last_name": "Иванов",
           "gender": "0",
           "gender_label": "Мужчина",
           "specialization": [
@@ -653,7 +695,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 7,
           "text_chat_price": 0,
           "video_chat_price": 1,
           "home_price": 0,
@@ -681,7 +723,13 @@
           "last_name": "Гопоненко",
           "gender": "0",
           "gender_label": "Мужчина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 954461,
+              "name": "Стоматолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -757,7 +805,13 @@
           "last_name": "Один",
           "gender": "1",
           "gender_label": "Женщина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 95444631,
+              "name": "Диетолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -786,7 +840,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 20,
           "text_chat_price": 0,
           "video_chat_price": 1000,
           "home_price": 0,
@@ -814,178 +868,13 @@
           "last_name": "Пикулин",
           "gender": "0",
           "gender_label": "Мужчина",
-          "specialization": [],
-          "ratings": [
+          "specialization": [
             {
-              "id": 1,
-              "name": "Рейтинг",
-              "value": 0
-            },
-            {
-              "id": 2,
-              "name": "Пунктуальность",
-              "value": 0
-            },
-            {
-              "id": 3,
-              "name": "Внимательность",
-              "value": 0
-            },
-            {
-              "id": 4,
-              "name": "Профессионализм",
-              "value": 0
-            },
-            {
-              "id": 5,
-              "name": "Ответственность",
-              "value": 0
+              "id": 9542544631,
+              "name": "Нефролог",
+              "is_moderated": true
             }
           ],
-          "ratings_rating": 0,
-          "seniority": 0,
-          "text_chat_price": 0,
-          "video_chat_price": 1234,
-          "home_price": 0,
-          "hospital_price": 0,
-          "avatar": "https://media.istockphoto.com/id/668598078/photo/cheerful-doctor-posing.jpg?s=1024x1024&w=is&k=20&c=ecnjlrr16IzM5Fa06KJo0N4Gak9Eod_92_MLhlHm7Vg=",
-          "nearest_reception_time": null,
-          "free_reception_time": [],
-          "education_type_label": null,
-          "higher_education": [],
-          "work_expirience": [],
-          "advanced_training": [],
-          "rank": 4,
-          "rank_label": "4",
-          "scientific_degree": 0,
-          "scientific_degree_label": "нет",
-          "category": 1,
-          "category_label": "вторая",
-          "is_favorite": false
-        },
-        {
-          "id": "417abd5c-a4e5-4037-bdb0-d3374d6d67c5",
-          "slug": "Bondar'_Anna_Vladimirovna_d67c5",
-          "first_name": "Анна",
-          "patronymic": "Владимировна",
-          "last_name": "Бондарь",
-          "gender": "1",
-          "gender_label": "Женщина",
-          "specialization": [],
-          "ratings": [
-            {
-              "id": 1,
-              "name": "Рейтинг",
-              "value": 4
-            },
-            {
-              "id": 2,
-              "name": "Пунктуальность",
-              "value": 5
-            },
-            {
-              "id": 3,
-              "name": "Внимательность",
-              "value": 5
-            },
-            {
-              "id": 4,
-              "name": "Профессионализм",
-              "value": 5
-            },
-            {
-              "id": 5,
-              "name": "Ответственность",
-              "value": 5
-            }
-          ],
-          "ratings_rating": 4,
-          "seniority": 0,
-          "text_chat_price": 0,
-          "video_chat_price": 1000,
-          "home_price": 0,
-          "hospital_price": 0,
-          "avatar": "https://media.istockphoto.com/id/1323303738/photo/medical-doctor-indoors-portraits.jpg?s=1024x1024&w=is&k=20&c=Geuc9vlwj-eHaOiyv6a5xaptQ9jM58ADjYwapPziFUI=",
-          "nearest_reception_time": null,
-          "free_reception_time": [],
-          "education_type_label": null,
-          "higher_education": [],
-          "work_expirience": [],
-          "advanced_training": [],
-          "rank": 4,
-          "rank_label": "4",
-          "scientific_degree": 0,
-          "scientific_degree_label": "нет",
-          "category": 3,
-          "category_label": "высшая",
-          "is_favorite": false
-        },
-        {
-          "id": "9428b2ca-8ea4-45a7-b1ff-c780a5a8aedf",
-          "slug": "Val'chik_Tat'jana_Pavlovna_8aedf",
-          "first_name": "Татьяна",
-          "patronymic": "Павловна",
-          "last_name": "Вальчик",
-          "gender": "1",
-          "gender_label": "Женщина",
-          "specialization": [],
-          "ratings": [
-            {
-              "id": 1,
-              "name": "Рейтинг",
-              "value": 0
-            },
-            {
-              "id": 2,
-              "name": "Пунктуальность",
-              "value": 0
-            },
-            {
-              "id": 3,
-              "name": "Внимательность",
-              "value": 0
-            },
-            {
-              "id": 4,
-              "name": "Профессионализм",
-              "value": 0
-            },
-            {
-              "id": 5,
-              "name": "Ответственность",
-              "value": 0
-            }
-          ],
-          "ratings_rating": 0,
-          "seniority": 0,
-          "text_chat_price": 0,
-          "video_chat_price": 1500,
-          "home_price": 0,
-          "hospital_price": 0,
-          "avatar": "https://media.istockphoto.com/id/1305333546/photo/smiling-professional-female-doctor-taking-notes-looking-at-laptop-screen.jpg?s=1024x1024&w=is&k=20&c=q7XTKaHlpXVC7N6RWIM8GH1SfN4EgojOcsf1bPX0TNc=",
-          "nearest_reception_time": null,
-          "free_reception_time": [],
-          "education_type_label": null,
-          "higher_education": [],
-          "work_expirience": [],
-          "advanced_training": [],
-          "rank": 4,
-          "rank_label": "4",
-          "scientific_degree": 0,
-          "scientific_degree_label": "нет",
-          "category": 3,
-          "category_label": "высшая",
-          "is_favorite": false
-        },
-        {
-          "id": "55ddef68-3433-40c5-ad7c-25c5cc083c67",
-          "slug": "Kuchuk_Irina_Dmitrievna_83c67",
-          "first_name": "Ирина",
-          "patronymic": "Дмитриевна",
-          "last_name": "Кучук",
-          "gender": "1",
-          "gender_label": "Женщина",
-          "specialization": [],
           "ratings": [
             {
               "id": 1,
@@ -1015,6 +904,195 @@
           ],
           "ratings_rating": 0,
           "seniority": 10,
+          "text_chat_price": 0,
+          "video_chat_price": 1234,
+          "home_price": 0,
+          "hospital_price": 0,
+          "avatar": "https://media.istockphoto.com/id/668598078/photo/cheerful-doctor-posing.jpg?s=1024x1024&w=is&k=20&c=ecnjlrr16IzM5Fa06KJo0N4Gak9Eod_92_MLhlHm7Vg=",
+          "nearest_reception_time": null,
+          "free_reception_time": [],
+          "education_type_label": null,
+          "higher_education": [],
+          "work_expirience": [],
+          "advanced_training": [],
+          "rank": 4,
+          "rank_label": "4",
+          "scientific_degree": 0,
+          "scientific_degree_label": "нет",
+          "category": 1,
+          "category_label": "вторая",
+          "is_favorite": false
+        },
+        {
+          "id": "417abd5c-a4e5-4037-bdb0-d3374d6d67c5",
+          "slug": "Bondar'_Anna_Vladimirovna_d67c5",
+          "first_name": "Анна",
+          "patronymic": "Владимировна",
+          "last_name": "Бондарь",
+          "gender": "1",
+          "gender_label": "Женщина",
+          "specialization": [
+            {
+              "id": 95444631,
+              "name": "Офтальмолог",
+              "is_moderated": true
+            }
+          ],
+          "ratings": [
+            {
+              "id": 1,
+              "name": "Рейтинг",
+              "value": 4
+            },
+            {
+              "id": 2,
+              "name": "Пунктуальность",
+              "value": 5
+            },
+            {
+              "id": 3,
+              "name": "Внимательность",
+              "value": 5
+            },
+            {
+              "id": 4,
+              "name": "Профессионализм",
+              "value": 5
+            },
+            {
+              "id": 5,
+              "name": "Ответственность",
+              "value": 5
+            }
+          ],
+          "ratings_rating": 4,
+          "seniority": 8,
+          "text_chat_price": 0,
+          "video_chat_price": 1000,
+          "home_price": 0,
+          "hospital_price": 0,
+          "avatar": "https://media.istockphoto.com/id/1323303738/photo/medical-doctor-indoors-portraits.jpg?s=1024x1024&w=is&k=20&c=Geuc9vlwj-eHaOiyv6a5xaptQ9jM58ADjYwapPziFUI=",
+          "nearest_reception_time": null,
+          "free_reception_time": [],
+          "education_type_label": null,
+          "higher_education": [],
+          "work_expirience": [],
+          "advanced_training": [],
+          "rank": 4,
+          "rank_label": "4",
+          "scientific_degree": 0,
+          "scientific_degree_label": "нет",
+          "category": 3,
+          "category_label": "высшая",
+          "is_favorite": false
+        },
+        {
+          "id": "9428b2ca-8ea4-45a7-b1ff-c780a5a8aedf",
+          "slug": "Val'chik_Tat'jana_Pavlovna_8aedf",
+          "first_name": "Татьяна",
+          "patronymic": "Павловна",
+          "last_name": "Вальчик",
+          "gender": "1",
+          "gender_label": "Женщина",
+          "specialization": [
+            {
+              "id": 954244631,
+              "name": "Офтальмолог",
+              "is_moderated": true
+            }
+          ],
+          "ratings": [
+            {
+              "id": 1,
+              "name": "Рейтинг",
+              "value": 0
+            },
+            {
+              "id": 2,
+              "name": "Пунктуальность",
+              "value": 0
+            },
+            {
+              "id": 3,
+              "name": "Внимательность",
+              "value": 0
+            },
+            {
+              "id": 4,
+              "name": "Профессионализм",
+              "value": 0
+            },
+            {
+              "id": 5,
+              "name": "Ответственность",
+              "value": 0
+            }
+          ],
+          "ratings_rating": 0,
+          "seniority": 11,
+          "text_chat_price": 0,
+          "video_chat_price": 1500,
+          "home_price": 0,
+          "hospital_price": 0,
+          "avatar": "https://media.istockphoto.com/id/1305333546/photo/smiling-professional-female-doctor-taking-notes-looking-at-laptop-screen.jpg?s=1024x1024&w=is&k=20&c=q7XTKaHlpXVC7N6RWIM8GH1SfN4EgojOcsf1bPX0TNc=",
+          "nearest_reception_time": null,
+          "free_reception_time": [],
+          "education_type_label": null,
+          "higher_education": [],
+          "work_expirience": [],
+          "advanced_training": [],
+          "rank": 4,
+          "rank_label": "4",
+          "scientific_degree": 0,
+          "scientific_degree_label": "нет",
+          "category": 3,
+          "category_label": "высшая",
+          "is_favorite": false
+        },
+        {
+          "id": "55ddef68-3433-40c5-ad7c-25c5cc083c67",
+          "slug": "Kuchuk_Irina_Dmitrievna_83c67",
+          "first_name": "Ирина",
+          "patronymic": "Дмитриевна",
+          "last_name": "Кучук",
+          "gender": "1",
+          "gender_label": "Женщина",
+          "specialization": [
+            {
+              "id": 954446319,
+              "name": "Гениколог",
+              "is_moderated": true
+            }
+          ],
+          "ratings": [
+            {
+              "id": 1,
+              "name": "Рейтинг",
+              "value": 0
+            },
+            {
+              "id": 2,
+              "name": "Пунктуальность",
+              "value": 0
+            },
+            {
+              "id": 3,
+              "name": "Внимательность",
+              "value": 0
+            },
+            {
+              "id": 4,
+              "name": "Профессионализм",
+              "value": 0
+            },
+            {
+              "id": 5,
+              "name": "Ответственность",
+              "value": 0
+            }
+          ],
+          "ratings_rating": 0,
+          "seniority": 12,
           "text_chat_price": 0,
           "video_chat_price": 2000,
           "home_price": 1,
@@ -1105,7 +1183,13 @@
           "last_name": "Логопедович",
           "gender": "0",
           "gender_label": "Мужчина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 954443631,
+              "name": "Уролог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -1134,7 +1218,7 @@
             }
           ],
           "ratings_rating": 5.1,
-          "seniority": 0,
+          "seniority": 6,
           "text_chat_price": 0,
           "video_chat_price": 6667,
           "home_price": 1,
@@ -1197,7 +1281,7 @@
             }
           ],
           "ratings_rating": 4.3,
-          "seniority": 0,
+          "seniority": 5,
           "text_chat_price": 666,
           "video_chat_price": 666,
           "home_price": 0,
@@ -1362,7 +1446,13 @@
           "last_name": "Дорофеев",
           "gender": "1",
           "gender_label": "Женщина",
-          "specialization": [],
+          "specialization": [
+            {
+              "id": 951444631,
+              "name": "Стоматолог",
+              "is_moderated": true
+            }
+          ],
           "ratings": [
             {
               "id": 1,
@@ -1391,7 +1481,7 @@
             }
           ],
           "ratings_rating": 0,
-          "seniority": 0,
+          "seniority": 5,
           "text_chat_price": 0,
           "video_chat_price": 897,
           "home_price": 0,
