@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct HomeTabView: View {
+  
+  @State private var searchText = ""
+  
   var body: some View {
-    Text("Главная")
-      .font(.largeTitle)
-      .padding()
+    NavigationView {
+      List {
+        Text("1")
+        Text("2")
+        Text("3")
+      }
+      .searchable(text: $searchText, prompt: "Поиск")
+      .navigationTitle("Главная")
+    }
   }
 }
+
