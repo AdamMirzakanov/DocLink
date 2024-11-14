@@ -11,6 +11,7 @@ struct HomeTabView: View {
   
   @State private var searchText = ""
   @State private var selectedItem: DoctorSortCriterion = .price
+  @State private var users: [User] = []
   
   var body: some View {
     NavigationStack {
@@ -22,16 +23,26 @@ struct HomeTabView: View {
       .pickerStyle(.segmented)
       .padding([.leading, .trailing])
       
-      List {
-        Text("1")
-        Text("2")
-        Text("3")
+      List(users) { user in
+        VStack(alignment: .leading) {
+          Text("\(user.firstName) \(user.lastName)")
+        }
       }
       .searchable(text: $searchText, prompt: "Поиск")
       .navigationTitle("Главная")
+      .onAppear {
+        loadUsers()
+      }
+    }
+  }
+  
+  private func loadUsers() {
+    if let response: APIResponse = decode(from: "UsersData", as: APIResponse.self) {
+      users = response.record.data.users
     }
   }
 }
+
 
 // MARK: - DoctorSortCriterion
 private enum DoctorSortCriterion: String, CaseIterable, Identifiable {

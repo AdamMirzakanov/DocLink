@@ -613,9 +613,9 @@
         {
           "id": "7bc7fd9e-7b91-45bf-9bd6-e26d1141e95f",
           "slug": "_1e95f",
-          "first_name": "TestSVN",
-          "patronymic": "TestSVO",
-          "last_name": "TestSVF",
+          "first_name": "Иванов",
+          "patronymic": "Иван",
+          "last_name": "Иванович",
           "gender": "0",
           "gender_label": "Мужчина",
           "specialization": [
@@ -923,9 +923,9 @@
         {
           "id": "9428b2ca-8ea4-45a7-b1ff-c780a5a8aedf",
           "slug": "Val'chik_Tat'jana_Pavlovna_8aedf",
-          "first_name": "ТатьянаВальчикВальчикВальчикВа",
-          "patronymic": "ПавловнаВальчикВальчикВальчикВ",
-          "last_name": "ВальчикВальчикВальчикВальчикмВ",
+          "first_name": "Татьяна",
+          "patronymic": "Павловна",
+          "last_name": "Вальчик",
           "gender": "1",
           "gender_label": "Женщина",
           "specialization": [],
