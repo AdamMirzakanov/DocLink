@@ -20,22 +20,25 @@ struct HomeScreen: View {
       .padding([.leading, .trailing], 20)
       
       List(filteredUsers) { user in
-        VStack(alignment: .leading) {
-          VStack(alignment: .leading) {
-            Text("\(user.lastName)")
-            Text("\(user.firstName) \(user.patronymic)")
-            
-          }
-          .font(.system(size: 17, weight: .medium))
+        HStack(alignment: .top) {
           
-          VStack(alignment: .leading) {
+          VStack(alignment: .leading, spacing: 6) {
             
-            if let specializationName = user.specialization.first??.name {
-              Text("\(specializationName)∙стаж \(user.seniority) лет")
-                .foregroundColor(.secondary)
+            VStack(alignment: .leading, spacing: 6) {
+              Text("\(user.lastName)")
+              Text("\(user.firstName) \(user.patronymic)")
             }
+            .font(.system(size: 17, weight: .medium))
+            
+            VStack(alignment: .leading, spacing: 6) {
+              if let specializationName = user.specialization.first??.name {
+                Text("\(specializationName)∙стаж \(user.seniority) лет")
+                  .foregroundColor(.secondary)
+              }
+              Text("от \(user.textChatPrice) ₽")
+            }
+            .font(.system(size: 15, weight: .regular))
           }
-          .font(.system(size: 16, weight: .regular))
         }
       }
       .searchable(text: $searchText, prompt: "Поиск")

@@ -12,4 +12,8 @@ struct User: Decodable, Identifiable {
   let lastName: String
   let specialization: [Specialization?]
   let seniority: Int
+  let textChatPrice: Int
+  let videoChatPrice: Int
+  let homePrice: Int
+  let hospitalPrice: Int
 }
