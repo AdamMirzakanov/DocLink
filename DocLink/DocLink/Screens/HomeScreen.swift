@@ -22,7 +22,6 @@ struct HomeScreen: View {
       List(filteredUsers) { user in
         VStack(alignment: .leading) {
           Text("\(user.firstName) \(user.lastName)")
-
         }
       }
       .searchable(text: $searchText, prompt: "Поиск")
@@ -63,7 +62,8 @@ struct HomeScreen: View {
   private func configurePickerAppearance() {
     let white: UIColor = .white
     let darkGray: UIColor = .secondaryLabel
-    let pink: UIColor = .systemPink
+    let pink: UIColor = UIColor(r: 255.0, g: 83.0, b: 124.0, a: 1.0)
+    
     let pickerAppearance: UISegmentedControl = .appearance()
     
     pickerAppearance.selectedSegmentTintColor = pink
@@ -97,5 +97,39 @@ private enum DoctorSortCriterion: String, CaseIterable, Identifiable {
     case .rating:
       return "По рейтингу"
     }
+  }
+}
+
+// MARK: - Color
+extension Color {
+  init(
+    r: CGFloat,
+    g: CGFloat,
+    b: CGFloat,
+    a: CGFloat
+  ) {
+    self.init(
+      red: r / 255.0,
+      green: g / 255.0,
+      blue: b / 255.0,
+      opacity: a
+    )
+  }
+}
+
+// MARK: - UIColor
+extension UIColor {
+  convenience init(
+    r: CGFloat,
+    g: CGFloat,
+    b: CGFloat,
+    a: CGFloat
+  ) {
+    self.init(
+      red: r / 255.0,
+      green: g / 255.0,
+      blue: b / 255.0,
+      alpha: a
+    )
   }
 }

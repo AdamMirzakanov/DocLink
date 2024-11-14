@@ -31,7 +31,7 @@ struct ContentView: View {
           Text("Профиль")
       }
     }
-    .accentColor(.pink)
+    .accentColor(Color(r: 255, g: 83, b: 124, a: 1))
   }
 }
 
