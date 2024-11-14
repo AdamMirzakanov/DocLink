@@ -15,6 +15,10 @@ struct ContentView: View {
           Image(systemName: "house.fill")
           Text("Главная")
         }
+      ReceptionTabView()
+        .tabItem {
+          Image(systemName: "list.clipboard")
+        }
     }
   }
 }
