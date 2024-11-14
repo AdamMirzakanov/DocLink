@@ -18,6 +18,12 @@ struct ContentView: View {
       ReceptionTabView()
         .tabItem {
           Image(systemName: "list.clipboard")
+          Text("Приемы")
+        }
+      ChatTabView()
+        .tabItem {
+          Image(systemName: "message")
+          Text("Чат")
         }
     }
   }
