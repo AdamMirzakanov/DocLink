@@ -17,7 +17,7 @@ struct HomeScreen: View {
         }
       }
       .pickerStyle(.segmented)
-      .padding([.leading, .trailing])
+      .padding([.leading, .trailing], 20)
       
       List(filteredUsers) { user in
         VStack(alignment: .leading) {
@@ -48,11 +48,33 @@ struct HomeScreen: View {
     }
   }
   
+  // MARK: Initializers
+  init() {
+    configurePickerAppearance()
+  }
+  
   // MARK: Private Methods
   private func loadUsers() {
     if let response: APIResponse = decode(from: "UsersData", as: APIResponse.self) {
       users = response.record.data.users
     }
+  }
+  
+  private func configurePickerAppearance() {
+    let white: UIColor = .white
+    let darkGray: UIColor = .secondaryLabel
+    let pink: UIColor = .systemPink
+    let pickerAppearance: UISegmentedControl = .appearance()
+    
+    pickerAppearance.selectedSegmentTintColor = pink
+    pickerAppearance.setTitleTextAttributes(
+      [.foregroundColor: white],
+      for: .selected
+    )
+    pickerAppearance.setTitleTextAttributes(
+      [.foregroundColor: darkGray],
+      for: .normal
+    )
   }
 }
 
