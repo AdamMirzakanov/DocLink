@@ -1,5 +1,5 @@
 //
-//  UserCellHeader.swift
+//  UserCellHeaderView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 16.11.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserCellHeader: View {
+struct UserCellHeaderView: View {
   var user: User
   
   var body: some View {

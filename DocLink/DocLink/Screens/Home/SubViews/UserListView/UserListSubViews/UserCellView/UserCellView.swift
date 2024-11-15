@@ -20,7 +20,7 @@ struct UserCellView: View {
       .buttonStyle(PlainButtonStyle())
       
       VStack {
-        UserCellHeader(user: user)
+        UserCellHeaderView(user: user)
         DoctorAppointmentButtonView()
       }
     }
