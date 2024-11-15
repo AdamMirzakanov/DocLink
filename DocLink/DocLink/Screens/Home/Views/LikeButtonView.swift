@@ -14,7 +14,7 @@ struct LikeButtonView: View {
     }) {
       Icon.likeIcon
         .foregroundColor(.gray)
-        .font(HomeScreenConst.likeButtonFont)
+        .font(HomeScreenConst.likeButtonIconFont)
     }
     .buttonStyle(PlainButtonStyle())
   }

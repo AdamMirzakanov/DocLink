@@ -10,13 +10,15 @@ import SwiftUI
 enum HomeScreenConst {
   static let headerFont: Font = .system(size: 17.0, weight: .medium)
   static let bodyFont: Font = .system(size: 15.0, weight: .regular)
-  static let likeButtonFont: Font = .system(size: 24.0)
+  static let likeButtonIconFont: Font = .system(size: 24.0)
   
   static let white: UIColor = .white
   static let darkGray: UIColor = .secondaryLabel
   
   static let marginsOnSides: CGFloat = 20.0
   static let verticalStackSpacing: CGFloat = 6.0
+  static let doctorAppointmentButtonHeight: CGFloat = 44.0
+  static let doctorAppointmentCornerRadius: CGFloat = 8.0
   
   static let usersDataFile: String = "UsersData"
   
@@ -29,6 +31,7 @@ enum HomeScreenConst {
   static let yearsLabel = HomeScreenLocalizableKey.yearsLabel.localizeString()
   static let ru = HomeScreenLocalizableKey.ru.localizeString()
   static let from = HomeScreenLocalizableKey.from.localizeString()
+  static let doctorAppointment = HomeScreenLocalizableKey.doctorAppointment.localizeString()
 }
 
 // MARK: - Localizable Keys
@@ -42,6 +45,7 @@ enum HomeScreenLocalizableKey: String, CaseIterable {
   case yearsLabel = "YearsLocalKey"
   case ru = "NumberFormatterLocalKey"
   case from = "FromKey"
+  case doctorAppointment = "DoctorAppointmentKey"
   
   func localizeString() -> String {
     NSLocalizedString(self.rawValue, comment: .empty )

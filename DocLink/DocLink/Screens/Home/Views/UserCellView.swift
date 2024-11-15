@@ -17,12 +17,16 @@ struct UserCellView: View {
       .opacity(.zero)
       .buttonStyle(PlainButtonStyle())
       
-      HStack(alignment: .top) {
-        UserInfoView(user: user)
-        Spacer()
-        LikeButtonView()
+      VStack {
+        HStack(alignment: .top) {
+          UserInfoView(user: user)
+          Spacer()
+          LikeButtonView()
+        }
+        .padding()
+        
+        DoctorAppointmentButtonView()
       }
-      .padding()
     }
   }
   

@@ -22,4 +22,6 @@
 
 "FromKey" = "from ";
 
+"DoctorAppointmentKey" = "Doctor appointment";
+
 "NumberFormatterLocalKey" = "en_US";

@@ -22,4 +22,6 @@
 
 "FromKey" = "от ";
 
+"DoctorAppointmentKey" = "Записаться";
+
 "NumberFormatterLocalKey" = "ru_RU";
