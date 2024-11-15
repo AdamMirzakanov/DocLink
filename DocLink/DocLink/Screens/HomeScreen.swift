@@ -7,37 +7,43 @@
 
 import SwiftUI
 
+fileprivate typealias Const = HomeScreenConst
+
 struct HomeScreen: View {
   // MARK: Internal Properties
   var body: some View {
     NavigationStack {
-      Picker("", selection: $selectedItem) {
+      Picker(String.empty, selection: $selectedItem) {
         ForEach(DoctorSortCriterion.allCases) { category in
           Text(category.title).tag(category)
         }
       }
       .pickerStyle(.segmented)
-      .padding([.leading, .trailing], 20)
+      .padding([.leading, .trailing], Const.horizontalPadding)
       
       List(filteredUsers) { user in
         HStack(alignment: .top) {
           
-          VStack(alignment: .leading, spacing: 6) {
+          VStack(alignment: .leading, spacing: Const.verticalSpacing) {
             
-            VStack(alignment: .leading, spacing: 6) {
-              Text("\(user.lastName)")
+            VStack(alignment: .leading, spacing: Const.verticalSpacing) {
+              Text(user.lastName)
               Text("\(user.firstName) \(user.patronymic)")
             }
-            .font(.system(size: 17, weight: .medium))
+            .font(Const.headerFont)
             
-            VStack(alignment: .leading, spacing: 6) {
-              if let specializationName = user.specialization.first??.name {
-                Text("\(specializationName)∙стаж \(user.seniority) лет")
+            VStack(alignment: .leading, spacing: Const.verticalSpacing) {
+              if let specializationName = user.specialization?.first?.name {
+                Text("\(specializationName)" + "∙стаж " + "\(user.seniority)" + " лет")
                   .foregroundColor(.secondary)
               }
-              Text("от \(user.textChatPrice) ₽")
+              
+              let price = NSNumber(value: user.textChatPrice)
+              let formattedPrice = numberFormatter.string(from: price)
+              let displayPrice = formattedPrice ?? .empty
+              Text("от \(displayPrice)")
             }
-            .font(.system(size: 15, weight: .regular))
+            .font(Const.bodyFont)
           }
         }
       }
@@ -50,7 +56,7 @@ struct HomeScreen: View {
   }
   
   // MARK: Private Properties
-  @State private var searchText = ""
+  @State private var searchText: String = .empty
   @State private var selectedItem: DoctorSortCriterion = .price
   @State private var users: [User] = []
   
@@ -63,6 +69,12 @@ struct HomeScreen: View {
       }
     }
   }
+  
+  private let numberFormatter: NumberFormatter = {
+    $0.numberStyle = .currency
+    $0.locale = Locale(identifier: "ru_RU")
+    return $0
+  }(NumberFormatter())
   
   // MARK: Initializers
   init() {
@@ -77,19 +89,14 @@ struct HomeScreen: View {
   }
   
   private func configurePickerAppearance() {
-    let white: UIColor = .white
-    let darkGray: UIColor = .secondaryLabel
-    let pink: UIColor = UIColor(r: 255.0, g: 83.0, b: 124.0, a: 1.0)
-    
     let pickerAppearance: UISegmentedControl = .appearance()
-    
-    pickerAppearance.selectedSegmentTintColor = pink
+    pickerAppearance.selectedSegmentTintColor = Const.pink
     pickerAppearance.setTitleTextAttributes(
-      [.foregroundColor: white],
+      [.foregroundColor: Const.white],
       for: .selected
     )
     pickerAppearance.setTitleTextAttributes(
-      [.foregroundColor: darkGray],
+      [.foregroundColor: Const.darkGray],
       for: .normal
     )
   }
@@ -114,39 +121,5 @@ private enum DoctorSortCriterion: String, CaseIterable, Identifiable {
     case .rating:
       return "По рейтингу"
     }
-  }
-}
-
-// MARK: - Color
-extension Color {
-  init(
-    r: CGFloat,
-    g: CGFloat,
-    b: CGFloat,
-    a: CGFloat
-  ) {
-    self.init(
-      red: r / 255.0,
-      green: g / 255.0,
-      blue: b / 255.0,
-      opacity: a
-    )
-  }
-}
-
-// MARK: - UIColor
-extension UIColor {
-  convenience init(
-    r: CGFloat,
-    g: CGFloat,
-    b: CGFloat,
-    a: CGFloat
-  ) {
-    self.init(
-      red: r / 255.0,
-      green: g / 255.0,
-      blue: b / 255.0,
-      alpha: a
-    )
   }
 }
