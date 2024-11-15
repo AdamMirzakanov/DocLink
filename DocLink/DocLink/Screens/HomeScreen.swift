@@ -34,21 +34,36 @@ struct HomeScreen: View {
             
             VStack(alignment: .leading, spacing: Const.verticalSpacing) {
               if let specializationName = user.specialization?.first?.name {
-                Text("\(specializationName)" + "∙стаж " + "\(user.seniority)" + " лет")
-                  .foregroundColor(.secondary)
+                
+                let specializatioText =
+                specializationName +
+                Const.experienceLabel +
+                String(user.seniority) +
+                Const.yearsLabel
+                
+                Text(
+                  specializatioText
+                )
+                .foregroundColor(.secondary)
               }
               
               let price = NSNumber(value: user.textChatPrice)
               let formattedPrice = numberFormatter.string(from: price)
               let displayPrice = formattedPrice ?? .empty
-              Text("от \(displayPrice)")
+              let priceText = Const.from + displayPrice
+              Text(priceText)
             }
             .font(Const.bodyFont)
           }
         }
       }
-      .searchable(text: $searchText, prompt: "Поиск")
-      .navigationTitle("Главная")
+      .searchable(
+        text: $searchText,
+        prompt: Const.searchBarPlaceholder
+      )
+      .navigationTitle(
+        Const.screenTitle
+      )
       .onAppear {
         configurePickerAppearance()
         loadUsers()
@@ -73,20 +88,22 @@ struct HomeScreen: View {
   
   private let numberFormatter: NumberFormatter = {
     $0.numberStyle = .currency
-    $0.locale = Locale(identifier: "ru_RU")
+    $0.locale = Locale(
+      identifier: Const.ru
+    )
     return $0
   }(NumberFormatter())
   
   // MARK: Private Methods
   private func loadUsers() {
-    if let response = decode(from: "UsersData", as: APIResponse.self) {
+    if let response = decode(from: Const.usersDataFile, as: APIResponse.self) {
       users = response.record.data.users
     }
   }
   
   private func configurePickerAppearance() {
     let pickerAppearance: UISegmentedControl = .appearance()
-    pickerAppearance.selectedSegmentTintColor = Const.pink
+    pickerAppearance.selectedSegmentTintColor = ColorConst.pickerPink
     pickerAppearance.setTitleTextAttributes(
       [.foregroundColor: Const.white],
       for: .selected
@@ -111,11 +128,11 @@ private enum DoctorSortCriterion: String, CaseIterable, Identifiable {
   var title: String {
     switch self {
     case .price:
-      return "По цене"
+      return Const.pickerPriceSegmentTitle
     case .experience:
-      return "По стажу"
+      return Const.pickerExperienceSegmentTitle
     case .rating:
-      return "По рейтингу"
+      return Const.pickerRatingSegmentTitle
     }
   }
 }

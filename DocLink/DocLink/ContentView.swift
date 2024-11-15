@@ -12,29 +12,37 @@ struct ContentView: View {
     TabView {
       HomeScreen()
         .tabItem {
-          Image(systemName: "house.fill")
-          Text("Главная")
+          Icon.homeIcon
+          Text(LocalKey.homeTabItemTitle)
         }
       ReceptionScreen()
         .tabItem {
-          Image(systemName: "list.clipboard")
-          Text("Приемы")
+          Icon.receptionIcon
+          Text(LocalKey.receptionTabItemTitle)
         }
       ChatScreen()
         .tabItem {
-          Image(systemName: "message")
-          Text("Чат")
+          Icon.chatIcon
+          Text(LocalKey.chatTabItemTitle)
         }
       ProfileScreen()
         .tabItem {
-          Image(systemName: "person.fill")
-          Text("Профиль")
+          Icon.profileIcon
+          Text(LocalKey.profileTabItemTitle)
       }
     }
-    .accentColor(Color(r: 255, g: 83, b: 124, a: 1))
+    .accentColor(ColorConst.tabItemPink)
   }
 }
 
 #Preview {
   ContentView()
+}
+
+// MARK: - Localizable Keys
+private enum LocalKey {
+  static let homeTabItemTitle = HomeScreenLocalizableKey.screenTitle.localizeString()
+  static let receptionTabItemTitle = ReceptionScreenLocalizableKey.screenTitle.localizeString()
+  static let chatTabItemTitle = ChatScreenLocalizableKey.screenTitle.localizeString()
+  static let profileTabItemTitle = ProfileScreenLocalizableKey.screenTitle.localizeString()
 }

@@ -7,10 +7,13 @@
 
 import SwiftUI
 
+fileprivate typealias LocalKey = ReceptionScreenLocalizableKey
+
 struct ReceptionScreen: View {
   // MARK: Internal Properties
   var body: some View {
-    Text("Приёмы")
+    let screenTitle = LocalKey.screenTitle.localizeString()
+    Text(screenTitle)
       .font(.largeTitle)
       .padding()
   }

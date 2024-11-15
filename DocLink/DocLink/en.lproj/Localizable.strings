@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  DocLink
+
+  Created by Адам Мирзаканов on 15.11.2024.
+  
+*/
+
+"HomeScreenTitleLocalKey" = "Home";
+"ReceptionScreenTitleLocalKey" = "Reception";
+"ChatScreenTitleLocalKey" = "Chat";
+"ProfileScreenTitleLocalKey" = "Profile";
+
+"SearchLocalKey" = "Search";
+
+"ByPriceLocalKey" = "Price";
+"ByExperienceLocalKey" = "Experience";
+"ByRatingLocalKey" = "Rating";
+
+"ExperienceLocalKey" = "∙experience ";
+"YearsLocalKey" = " years";
+
+"FromKey" = "from ";
+
+"NumberFormatterLocalKey" = "en_US";
