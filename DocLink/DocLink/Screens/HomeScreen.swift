@@ -50,6 +50,7 @@ struct HomeScreen: View {
       .searchable(text: $searchText, prompt: "Поиск")
       .navigationTitle("Главная")
       .onAppear {
+        configurePickerAppearance()
         loadUsers()
       }
     }
@@ -76,14 +77,9 @@ struct HomeScreen: View {
     return $0
   }(NumberFormatter())
   
-  // MARK: Initializers
-  init() {
-    configurePickerAppearance()
-  }
-  
   // MARK: Private Methods
   private func loadUsers() {
-    if let response: APIResponse = decode(from: "UsersData", as: APIResponse.self) {
+    if let response = decode(from: "UsersData", as: APIResponse.self) {
       users = response.record.data.users
     }
   }
