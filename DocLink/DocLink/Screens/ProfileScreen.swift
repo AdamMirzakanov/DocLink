@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-fileprivate typealias LocalKey = ProfileScreenLocalizableKey
+fileprivate typealias Const = ProfileScreenConst
 
 struct ProfileScreen: View {
   // MARK: Internal Properties
   var body: some View {
-    let screenTitle = LocalKey.screenTitle.localizeString()
+    let screenTitle = Const.screenTitle
     Text(screenTitle)
       .font(.largeTitle)
       .padding()

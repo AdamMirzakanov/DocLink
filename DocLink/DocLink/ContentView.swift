@@ -41,8 +41,8 @@ struct ContentView: View {
 
 // MARK: - Localizable Keys
 private enum LocalKey {
-  static let homeTabItemTitle = HomeScreenLocalizableKey.screenTitle.localizeString()
-  static let receptionTabItemTitle = ReceptionScreenLocalizableKey.screenTitle.localizeString()
-  static let chatTabItemTitle = ChatScreenLocalizableKey.screenTitle.localizeString()
-  static let profileTabItemTitle = ProfileScreenLocalizableKey.screenTitle.localizeString()
+  static let homeTabItemTitle = HomeScreenConst.screenTitle
+  static let receptionTabItemTitle = ReceptionScreenConst.screenTitle
+  static let chatTabItemTitle = ChatScreenConst.screenTitle 
+  static let profileTabItemTitle = ProfileScreenConst.screenTitle
 }

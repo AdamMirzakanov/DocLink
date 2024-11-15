@@ -8,8 +8,12 @@
 import Foundation
 
 // MARK: - Localizable Keys
-enum ChatScreenLocalizableKey: String, CaseIterable {
-  case screenTitle = "ChatScreenTitleLocalKey"
+enum ChatScreenConst: String, CaseIterable {
+  case screenTitleKey = "ChatScreenTitleLocalKey"
+  
+  static var screenTitle: String {
+    screenTitleKey.localizeString()
+  }
   
   func localizeString() -> String {
     NSLocalizedString(self.rawValue, comment: .empty )

@@ -7,9 +7,12 @@
 
 import Foundation
 
-// MARK: - Localizable Keys
-enum ProfileScreenLocalizableKey: String, CaseIterable {
-  case screenTitle = "ProfileScreenTitleLocalKey"
+enum ProfileScreenConst: String, CaseIterable {
+  case screenTitleKey = "ProfileScreenTitleLocalKey"
+  
+  static var screenTitle: String {
+    screenTitleKey.localizeString()
+  }
   
   func localizeString() -> String {
     NSLocalizedString(self.rawValue, comment: .empty )

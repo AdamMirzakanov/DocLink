@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-fileprivate typealias LocalKey = ChatScreenLocalizableKey
+fileprivate typealias Const = ChatScreenConst
 
 struct ChatScreen: View {
   // MARK: Internal Properties
   var body: some View {
-    let screenTitle = LocalKey.screenTitle.localizeString()
+    let screenTitle = Const.screenTitle
     Text(screenTitle)
       .font(.largeTitle)
       .padding()
