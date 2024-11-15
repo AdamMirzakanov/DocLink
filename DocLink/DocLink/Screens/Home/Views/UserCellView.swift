@@ -19,11 +19,12 @@ struct UserCellView: View {
       
       VStack {
         HStack(alignment: .top) {
+          Image(systemName: "person.crop.circle.fill")
+            .font(.system(size: 42.0))
           UserInfoView(user: user)
           Spacer()
           LikeButtonView()
         }
-        .padding()
         
         DoctorAppointmentButtonView()
       }

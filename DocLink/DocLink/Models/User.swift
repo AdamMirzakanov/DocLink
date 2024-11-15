@@ -16,4 +16,5 @@ struct User: Decodable, Identifiable {
   let videoChatPrice: Int
   let homePrice: Int
   let hospitalPrice: Int
+  let avatar: String?
 }
