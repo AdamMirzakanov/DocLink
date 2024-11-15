@@ -10,28 +10,45 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     TabView {
-      HomeScreen()
-        .tabItem {
-          Icon.homeIcon
-          Text(LocalKey.homeTabItemTitle)
-        }
-      ReceptionScreen()
-        .tabItem {
-          Icon.receptionIcon
-          Text(LocalKey.receptionTabItemTitle)
-        }
-      ChatScreen()
-        .tabItem {
-          Icon.chatIcon
-          Text(LocalKey.chatTabItemTitle)
-        }
-      ProfileScreen()
-        .tabItem {
-          Icon.profileIcon
-          Text(LocalKey.profileTabItemTitle)
-      }
+      homeTab
+      receptionTab
+      chatTab
+      profileTab
     }
     .accentColor(ColorConst.tabItemPink)
+  }
+  
+  // MARK: Private Properties
+  private var homeTab: some View {
+    HomeScreen()
+      .tabItem {
+        Icon.homeIcon
+        Text(LocalKey.homeTabItemTitle)
+      }
+  }
+  
+  private var receptionTab: some View {
+    ReceptionScreen()
+      .tabItem {
+        Icon.receptionIcon
+        Text(LocalKey.receptionTabItemTitle)
+      }
+  }
+  
+  private var chatTab: some View {
+    ChatScreen()
+      .tabItem {
+        Icon.chatIcon
+        Text(LocalKey.chatTabItemTitle)
+      }
+  }
+  
+  private var profileTab: some View {
+    ProfileScreen()
+      .tabItem {
+        Icon.profileIcon
+        Text(LocalKey.profileTabItemTitle)
+      }
   }
 }
 
@@ -43,6 +60,6 @@ struct ContentView: View {
 private enum LocalKey {
   static let homeTabItemTitle = HomeScreenConst.screenTitle
   static let receptionTabItemTitle = ReceptionScreenConst.screenTitle
-  static let chatTabItemTitle = ChatScreenConst.screenTitle 
+  static let chatTabItemTitle = ChatScreenConst.screenTitle
   static let profileTabItemTitle = ProfileScreenConst.screenTitle
 }
