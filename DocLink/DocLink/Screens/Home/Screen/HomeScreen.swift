@@ -52,11 +52,11 @@ struct HomeScreen: View {
     let pickerAppearance: UISegmentedControl = .appearance()
     pickerAppearance.selectedSegmentTintColor = ColorConst.pickerPink
     pickerAppearance.setTitleTextAttributes(
-      [.foregroundColor: HomeScreenConst.white],
+      [.foregroundColor: HomeScreenConst.selectedSegmentTextColor],
       for: .selected
     )
     pickerAppearance.setTitleTextAttributes(
-      [.foregroundColor: HomeScreenConst.darkGray],
+      [.foregroundColor: HomeScreenConst.unselectedSegmentTextColor],
       for: .normal
     )
   }

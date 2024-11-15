@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct UserCellView: View {
+  var user: User
+  
   var body: some View {
     let userDetailScreen = UserDetailScreen(user: user)
     ZStack {
@@ -18,19 +20,9 @@ struct UserCellView: View {
       .buttonStyle(PlainButtonStyle())
       
       VStack {
-        HStack(alignment: .top) {
-          Image(systemName: "person.crop.circle.fill")
-            .font(.system(size: 42.0))
-          UserInfoView(user: user)
-          Spacer()
-          LikeButtonView()
-        }
-        
+        UserCellHeader(user: user)
         DoctorAppointmentButtonView()
       }
     }
   }
-  
-  var user: User
 }
-

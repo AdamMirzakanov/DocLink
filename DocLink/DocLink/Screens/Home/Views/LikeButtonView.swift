@@ -13,7 +13,7 @@ struct LikeButtonView: View {
       print("Heart button tapped")
     }) {
       Icon.likeIcon
-        .foregroundColor(.gray)
+        .foregroundColor(HomeScreenConst.avatarPlaceholderColor)
         .font(HomeScreenConst.likeButtonIconFont)
     }
     .buttonStyle(PlainButtonStyle())
