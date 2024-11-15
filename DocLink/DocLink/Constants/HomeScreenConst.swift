@@ -8,14 +8,15 @@
 import SwiftUI
 
 enum HomeScreenConst {
-  static let headerFont: Font = .system(size: 17, weight: .medium)
-  static let bodyFont: Font = .system(size: 15, weight: .regular)
+  static let headerFont: Font = .system(size: 17.0, weight: .medium)
+  static let bodyFont: Font = .system(size: 15.0, weight: .regular)
+  static let likeButtonFont: Font = .system(size: 24.0)
   
   static let white: UIColor = .white
   static let darkGray: UIColor = .secondaryLabel
   
-  static let horizontalPadding: CGFloat = 20
-  static let verticalSpacing: CGFloat = 6
+  static let marginsOnSides: CGFloat = 20.0
+  static let verticalStackSpacing: CGFloat = 6.0
   
   static let usersDataFile: String = "UsersData"
   

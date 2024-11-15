@@ -12,4 +12,5 @@ enum Icon {
   static let receptionIcon = Image(systemName: "list.clipboard")
   static let chatIcon = Image(systemName: "message")
   static let profileIcon = Image(systemName: "person.fill")
+  static let likeIcon = Image(systemName: "heart")
 }
