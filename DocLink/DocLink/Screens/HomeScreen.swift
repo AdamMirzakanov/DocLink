@@ -91,6 +91,8 @@ struct HomeScreen: View {
     $0.locale = Locale(
       identifier: Const.ru
     )
+    $0.maximumFractionDigits = .zero
+    $0.minimumFractionDigits = .zero
     return $0
   }(NumberFormatter())
   
