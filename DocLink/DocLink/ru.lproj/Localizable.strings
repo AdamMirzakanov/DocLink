@@ -22,3 +22,7 @@
 "no_free_schedule_key" = "Нет свободного расписания";
 "currency_key" = "ru_RU";
 "cost_of_services_key" = "Стоимость услуг";
+"half_an_hour_key" = "30 мин.";
+"video_consultation_key" = "Видеоконсультация";
+"chat_with_doctor_key" = "Чат с врачом";
+"admission_to_the_clinic_key" = "Прием в клинике";

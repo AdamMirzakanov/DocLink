@@ -22,3 +22,7 @@
 "no_free_schedule_key" = "No free schedule";
 "currency_key" = "en_US";
 "cost_of_services_key" = "The cost of services";
+"half_an_hour_key" = "30 min.";
+"video_consultation_key" = "Video consultation";
+"chat_with_doctor_key" = "Chat with a doctor";
+"admission_to_the_clinic_key" = "Admission to the clinic";

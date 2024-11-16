@@ -25,7 +25,7 @@ struct UserDetailScreen: View {
       ) {
         createHeaderView()
         createUserDetails()
-        createDoctorPriceView()
+        createDoctorPriceButtonView()
         createProceduresDescription()
       }
       .frame(maxWidth: .infinity)
@@ -48,8 +48,8 @@ struct UserDetailScreen: View {
     UserDetailView(user: user)
   }
   
-  private func createDoctorPriceView() -> some View {
-    DoctorMinimumPriceContainerView(price: user.textChatPrice)
+  private func createDoctorPriceButtonView() -> some View {
+    DoctorMinimumPriceButtonView(user: user)
   }
   
   private func createProceduresDescription() -> some View {
