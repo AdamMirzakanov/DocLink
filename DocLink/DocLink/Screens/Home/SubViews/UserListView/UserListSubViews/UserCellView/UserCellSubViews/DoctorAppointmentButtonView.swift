@@ -32,7 +32,9 @@ struct DoctorAppointmentButtonView: View {
         isAvailable ? HomeScreenConst.doctorAppointmentKey : HomeScreenConst.noFreeScheduleKeyKey
       )
         .font(.headline)
-        .foregroundColor(isAvailable ? .white : .black) // чёрный текст для неактивной кнопки
+        .foregroundColor(
+          isAvailable ? .white : .black // чёрный текст для неактивной кнопки
+        )
         .frame(
           maxWidth: .infinity,
           minHeight: HomeScreenConst.doctorAppointmentButtonHeight
