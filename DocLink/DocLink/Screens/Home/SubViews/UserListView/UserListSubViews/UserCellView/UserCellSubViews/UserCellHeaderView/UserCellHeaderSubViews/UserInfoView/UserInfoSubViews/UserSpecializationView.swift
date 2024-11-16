@@ -16,9 +16,9 @@ struct UserSpecializationView: View {
       if let specializationName = specializationName {
         let specializationText =
         specializationName +
-        HomeScreenConst.experienceLabel +
+        HomeScreenConst.experienceLabelKey +
         String(seniority) +
-        HomeScreenConst.yearsLabel
+        HomeScreenConst.yearsLabelKey
         Text(specializationText)
           .foregroundColor(.secondary)
       }

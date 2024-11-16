@@ -21,7 +21,9 @@ struct UserCellView: View {
       
       VStack {
         UserCellHeaderView(user: user)
-        DoctorAppointmentButtonView()
+        DoctorAppointmentButtonView(
+          isAvailable: !user.freeReceptionTime.isEmpty
+        )
       }
     }
   }

@@ -15,7 +15,7 @@ struct ContentView: View {
       chatTab
       profileTab
     }
-    .accentColor(ColorConst.tabItemPink)
+    .accentColor(ColorConst.mainPink)
   }
   
   // MARK: Private Properties
@@ -58,7 +58,7 @@ struct ContentView: View {
 
 // MARK: - Localizable Keys
 private enum LocalKey {
-  static let homeTabItemTitle = HomeScreenConst.screenTitle
+  static let homeTabItemTitle = HomeScreenConst.screenTitleKey
   static let receptionTabItemTitle = ReceptionScreenConst.screenTitle
   static let chatTabItemTitle = ChatScreenConst.screenTitle
   static let profileTabItemTitle = ProfileScreenConst.screenTitle

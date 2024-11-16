@@ -55,8 +55,18 @@
           "home_price": 800,
           "hospital_price": 1000,
           "avatar": null,
-          "nearest_reception_time": null,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": null,
           "higher_education": [
             {
@@ -207,8 +217,18 @@
           "home_price": 850,
           "hospital_price": 950,
           "avatar": "https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=1024x1024&w=is&k=20&c=YEbzhy_uH_NtBJodMt42qM8aoypw2ufHEW9Zbn_Py4c=",
-          "nearest_reception_time": 1700490600,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": null,
           "higher_education": [
             {
@@ -311,8 +331,18 @@
           "home_price": 900,
           "hospital_price": 1000,
           "avatar": "https://media.istockphoto.com/id/1327024466/photo/portrait-of-male-doctor-in-white-coat-and-stethoscope-standing-in-clinic-hall.jpg?s=1024x1024&w=is&k=20&c=9dGjXLWwRAimcACr0jOZDmmLcH0P29fi2ibKunQ6xpo=",
-          "nearest_reception_time": null,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": null,
           "higher_education": [],
           "work_expirience": [],
@@ -437,8 +467,18 @@
           "home_price": 850,
           "hospital_price": 1000,
           "avatar": "https://media.istockphoto.com/id/1346711310/photo/portrait-of-smiling-female-doctor-wearing-uniform-standing.jpg?s=1024x1024&w=is&k=20&c=Kir6D3kfw4XzIbarncN3AAJNwYOS8LYS2mlNGHv3tbA=",
-          "nearest_reception_time": null,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": null,
           "higher_education": [],
           "work_expirience": [],
@@ -626,8 +666,18 @@
           "home_price": 850,
           "hospital_price": 950,
           "avatar": null,
-          "nearest_reception_time": null,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": {
             "id": 69,
             "name": "Ставропольский государственный медицинский университет"
@@ -764,8 +814,18 @@
           "home_price": 850,
           "hospital_price": 950,
           "avatar": null,
-          "nearest_reception_time": null,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": null,
           "higher_education": [],
           "work_expirience": [
@@ -801,7 +861,7 @@
           "id": "d95b0b18-e337-46db-8c78-da9c4ef5e153",
           "slug": "_5e153",
           "first_name": "Влад",
-          "patronymic": "Дата",
+          "patronymic": "Алексеевич",
           "last_name": "Один",
           "gender": "1",
           "gender_label": "Женщина",
@@ -1487,8 +1547,18 @@
           "home_price": 850,
           "hospital_price": 950,
           "avatar": null,
-          "nearest_reception_time": null,
-          "free_reception_time": [],
+          "nearest_reception_time": 1700598600,
+          "free_reception_time": [
+            {
+              "time": 1700598600
+            },
+            {
+              "time": 1700803800
+            },
+            {
+              "time": 1700856000
+            }
+          ],
           "education_type_label": null,
           "higher_education": [],
           "work_expirience": [],

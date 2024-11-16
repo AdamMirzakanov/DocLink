@@ -23,5 +23,6 @@
 "FromKey" = "from ";
 
 "DoctorAppointmentKey" = "Doctor appointment";
+"NoFreeScheduleKey" = "No free schedule";
 
-"NumberFormatterLocalKey" = "en_US";
+"currencyKey" = "en_US";

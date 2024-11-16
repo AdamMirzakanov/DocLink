@@ -16,6 +16,7 @@ enum HomeScreenConst {
   static let selectedSegmentTextColor: UIColor = .white
   static let unselectedSegmentTextColor: UIColor = .secondaryLabel
   static let avatarPlaceholderColor: Color = Color(white: 0.7)
+  static let disabledButtonColor: Color = Color(white: 0.8)
   
   static let marginsOnSides: CGFloat = 20.0
   static let verticalStackSpacing: CGFloat = 6.0
@@ -26,30 +27,33 @@ enum HomeScreenConst {
   
   static let usersDataFile: String = "UsersData"
   
-  static let screenTitle = HomeScreenLocalizableKey.screenTitle.localizeString()
-  static let searchBarPlaceholder = HomeScreenLocalizableKey.searchBarPlaceholder.localizeString()
-  static let pickerPriceSegmentTitle = HomeScreenLocalizableKey.pickerPriceSegment.localizeString()
-  static let pickerExperienceSegmentTitle = HomeScreenLocalizableKey.pickerExperienceSegment.localizeString()
-  static let pickerRatingSegmentTitle = HomeScreenLocalizableKey.pickerRatingSegment.localizeString()
-  static let experienceLabel = HomeScreenLocalizableKey.experienceLabel.localizeString()
-  static let yearsLabel = HomeScreenLocalizableKey.yearsLabel.localizeString()
-  static let ru = HomeScreenLocalizableKey.ru.localizeString()
-  static let from = HomeScreenLocalizableKey.from.localizeString()
-  static let doctorAppointment = HomeScreenLocalizableKey.doctorAppointment.localizeString()
+  // Localizable Keys
+  static let screenTitleKey = HomeScreenLocalizableKey.screenTitleKey.localizeString()
+  static let searchBarPlaceholderKey = HomeScreenLocalizableKey.searchBarPlaceholderKey.localizeString()
+  static let pickerPriceSegmentTitleKey = HomeScreenLocalizableKey.pickerPriceSegmentKey.localizeString()
+  static let pickerExperienceSegmentTitleKey = HomeScreenLocalizableKey.pickerExperienceSegmentKey.localizeString()
+  static let pickerRatingSegmentTitleKey = HomeScreenLocalizableKey.pickerRatingSegmentKey.localizeString()
+  static let experienceLabelKey = HomeScreenLocalizableKey.experienceLabelKey.localizeString()
+  static let yearsLabelKey = HomeScreenLocalizableKey.yearsLabelKey.localizeString()
+  static let currencyKey = HomeScreenLocalizableKey.currencyKey.localizeString()
+  static let fromKey = HomeScreenLocalizableKey.fromKey.localizeString()
+  static let doctorAppointmentKey = HomeScreenLocalizableKey.doctorAppointmentKey.localizeString()
+  static let noFreeScheduleKeyKey = HomeScreenLocalizableKey.noFreeScheduleKey.localizeString()
 }
 
 // MARK: - Localizable Keys
 enum HomeScreenLocalizableKey: String, CaseIterable {
-  case screenTitle = "HomeScreenTitleLocalKey"
-  case searchBarPlaceholder = "SearchLocalKey"
-  case pickerPriceSegment = "ByPriceLocalKey"
-  case pickerExperienceSegment = "ByExperienceLocalKey"
-  case pickerRatingSegment = "ByRatingLocalKey"
-  case experienceLabel = "ExperienceLocalKey"
-  case yearsLabel = "YearsLocalKey"
-  case ru = "NumberFormatterLocalKey"
-  case from = "FromKey"
-  case doctorAppointment = "DoctorAppointmentKey"
+  case screenTitleKey = "HomeScreenTitleLocalKey"
+  case searchBarPlaceholderKey = "SearchLocalKey"
+  case pickerPriceSegmentKey = "ByPriceLocalKey"
+  case pickerExperienceSegmentKey = "ByExperienceLocalKey"
+  case pickerRatingSegmentKey = "ByRatingLocalKey"
+  case experienceLabelKey = "ExperienceLocalKey"
+  case yearsLabelKey = "YearsLocalKey"
+  case currencyKey = "currencyKey"
+  case fromKey = "FromKey"
+  case doctorAppointmentKey = "DoctorAppointmentKey"
+  case noFreeScheduleKey = "NoFreeScheduleKey"
   
   func localizeString() -> String {
     NSLocalizedString(self.rawValue, comment: .empty )

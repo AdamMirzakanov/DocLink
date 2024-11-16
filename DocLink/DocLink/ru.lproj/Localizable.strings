@@ -23,5 +23,6 @@
 "FromKey" = "от ";
 
 "DoctorAppointmentKey" = "Записаться";
+"NoFreeScheduleKey" = "Нет свободного расписания";
 
-"NumberFormatterLocalKey" = "ru_RU";
+"currencyKey" = "ru_RU";

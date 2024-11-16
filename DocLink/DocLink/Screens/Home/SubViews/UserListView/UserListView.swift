@@ -14,7 +14,7 @@ struct UserListView: View {
     }
     .searchable(
       text: $searchText,
-      prompt: HomeScreenConst.searchBarPlaceholder
+      prompt: HomeScreenConst.searchBarPlaceholderKey
     )
   }
   
