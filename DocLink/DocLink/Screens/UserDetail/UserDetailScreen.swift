@@ -9,44 +9,68 @@ import SwiftUI
 
 struct UserDetailScreen: View {
   let user: User
+  
   var body: some View {
     VStack {
-      ScrollView {
-        VStack(
-          alignment: .leading,
-          spacing: UserDetailScreenConst.verticalStackSpacing
-        ) {
-          createUserHeaderView(user: user)
-          UserDetailView(user: user)
-          DoctorMinimumPriceContainerView(price: user.textChatPrice)
-          Text(user.proceduresDescription)
-            .lineLimit(nil)
-            .font(.body)
-            .padding(
-              [.top, .bottom],
-              UserDetailScreenConst.topBottomPadding
-            )
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.horizontal, UserDetailScreenConst.horizontalPadding)
-        .safeAreaInset(edge: .top) {
-          Color.clear.frame(height: UserDetailScreenConst.safeAreaTopPadding)
-        }
-      }
-      .navigationBarTitle(
-        user.specialization?.first?.name ?? .empty,
-        displayMode: .inline
-      )
-      DoctorAppointmentButtonView(isAvailable: !user.freeReceptionTime.isEmpty)
-        .padding(
-          [.bottom, .horizontal],
-          UserDetailScreenConst.horizontalPadding
-        )
+      createContentScrollView()
+      createAppointmentButton()
     }
   }
   
   // MARK: Private Methods
-  // Верхняя часть с аватаркой и именем
+  private func createContentScrollView() -> some View {
+    ScrollView {
+      VStack(
+        alignment: .leading,
+        spacing: UserDetailScreenConst.verticalStackSpacing
+      ) {
+        createHeaderView()
+        createUserDetails()
+        createDoctorPriceView()
+        createProceduresDescription()
+      }
+      .frame(maxWidth: .infinity)
+      .padding(.horizontal, UserDetailScreenConst.horizontalPadding)
+      .safeAreaInset(edge: .top) {
+        Color.clear.frame(height: UserDetailScreenConst.safeAreaTopPadding)
+      }
+    }
+    .navigationBarTitle(
+      user.specialization?.first?.name ?? .empty,
+      displayMode: .inline
+    )
+  }
+  
+  private func createHeaderView() -> some View {
+    createUserHeaderView(user: user)
+  }
+  
+  private func createUserDetails() -> some View {
+    UserDetailView(user: user)
+  }
+  
+  private func createDoctorPriceView() -> some View {
+    DoctorMinimumPriceContainerView(price: user.textChatPrice)
+  }
+  
+  private func createProceduresDescription() -> some View {
+    Text(user.proceduresDescription)
+      .lineLimit(nil)
+      .font(.body)
+      .padding(
+        [.top, .bottom],
+        UserDetailScreenConst.topBottomPadding
+      )
+  }
+  
+  private func createAppointmentButton() -> some View {
+    DoctorAppointmentButtonView(isAvailable: !user.freeReceptionTime.isEmpty)
+      .padding(
+        [.bottom, .horizontal],
+        UserDetailScreenConst.horizontalPadding
+      )
+  }
+  
   private func createUserHeaderView(user: User) -> some View {
     HStack(
       alignment: .top,
