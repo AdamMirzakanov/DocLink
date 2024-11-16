@@ -6,8 +6,5 @@
 //
 
 struct Education: Decodable {
-  let id: Int
-  let university: String
-  let specialization: String
-  let qualification: String
+  let name: String
 }

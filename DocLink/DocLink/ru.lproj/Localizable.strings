@@ -18,6 +18,7 @@
 "ByRatingLocalKey" = "По рейтингу";
 
 "ExperienceLocalKey" = "∙стаж ";
+"WorkExperienceLocalKey" = "Опыт работы: ";
 "YearsLocalKey" = " лет";
 
 "FromKey" = "от ";
@@ -26,3 +27,5 @@
 "NoFreeScheduleKey" = "Нет свободного расписания";
 
 "currencyKey" = "ru_RU";
+
+"The_Cost_Of_Services" = "Стоимость услуг";

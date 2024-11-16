@@ -18,6 +18,7 @@
 "ByRatingLocalKey" = "Rating";
 
 "ExperienceLocalKey" = "∙experience ";
+"WorkExperienceLocalKey" = "Work experience: ";
 "YearsLocalKey" = " years";
 
 "FromKey" = "from ";
@@ -26,3 +27,5 @@
 "NoFreeScheduleKey" = "No free schedule";
 
 "currencyKey" = "en_US";
+
+"The_Cost_Of_Services" = "The cost of services";

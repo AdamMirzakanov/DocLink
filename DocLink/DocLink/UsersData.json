@@ -7,6 +7,7 @@
     "data": {
       "users": [
         {
+          "procedures_description": "Проведение диагностики и лечения заболеваний зубов и полости рта, включая лечение кариеса, профессиональную чистку зубов, протезирование и удаление зубов.",
           "id": "baf5c608-1d3f-47c3-954f-cc2ee8206db3",
           "slug": "_06db3",
           "first_name": "Андрей",
@@ -67,7 +68,10 @@
               "time": 1700856000
             }
           ],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 666779,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [
             {
               "id": 854,
@@ -80,7 +84,17 @@
               "is_moderated": true
             }
           ],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -91,6 +105,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Проведение диагностики и лечения заболеваний зубов и полости рта, включая лечение кариеса, профессиональную чистку зубов, протезирование и удаление зубов.",
           "id": "0ff8be76-c9ce-4283-8fa0-fd724646ec8a",
           "slug": "_6ec8a",
           "first_name": "Эльвира",
@@ -141,9 +156,22 @@
           "avatar": "https://media.istockphoto.com/id/1372002650/photo/cropped-portrait-of-an-attractive-young-female-doctor-standing-with-her-arms-folded-in-the.jpg?s=1024x1024&w=is&k=20&c=HwRi4NnrK9aKEC27BkXnJJfuggGABNmqnnmXL7D9aBs=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6998768,
+            "name": "НГМУ"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 0,
           "rank_label": "нет",
@@ -154,6 +182,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний сердечно-сосудистой системы, включая гипертонию, ишемическую болезнь сердца, аритмии, сердечную недостаточность и врожденные пороки сердца. Проведение электрокардиографии (ЭКГ), холтеровского мониторирования, ультразвукового исследования сердца (Эхо-КГ), а также консультации по профилактике сердечно-сосудистых заболеваний, коррекции образа жизни и назначениям терапии.",
           "id": "2b90c7ac-b588-4f12-9e89-99cbf4c33564",
           "slug": "_33564",
           "first_name": "Борис",
@@ -229,7 +258,10 @@
               "time": 1700856000
             }
           ],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6998978987,
+            "name": "РостГМУ"
+          },
           "higher_education": [
             {
               "id": 852,
@@ -265,7 +297,7 @@
           "work_expirience": [
             {
               "id": 487,
-              "organization": "Ооо",
+              "organization": "Мед Центр Здоровье",
               "position": "Роо",
               "start_date": 4070908800,
               "end_date": 1230768000,
@@ -283,6 +315,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний мочевыделительной системы у мужчин, включая инфекции мочевыводящих путей, мочекаменную болезнь, цистит, простатит, аденому предстательной железы, эректильную дисфункцию и бесплодие. Проведение ультразвуковых исследований, цистоскопии, анализов мочи и крови, а также консультации по профилактике урологических заболеваний.",
           "id": "4b86d20f-aa71-4f10-acee-0f55f0b2c8ca",
           "slug": "tsedrik_Andrej_2c8ca",
           "first_name": "Андрей",
@@ -343,9 +376,22 @@
               "time": 1700856000
             }
           ],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6567899,
+            "name": "КрасГМУ"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Семейный Доктор",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 0,
           "rank_label": "нет",
@@ -356,6 +402,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний у детей, включая острые респираторные инфекции, заболевания желудочно-кишечного тракта, аллергии, бронхиальную астму, кожные заболевания и нарушения роста. Проведение вакцинации, мониторинг развития ребенка, профилактические осмотры, консультации по вопросам питания и ухода за детьми, а также лечение хронических заболеваний.",
           "id": "f6b588c4-b60e-4b65-84e0-8d54f383c754",
           "slug": "_3c754",
           "first_name": "Лана",
@@ -406,9 +453,22 @@
           "avatar": null,
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 64567899,
+            "name": "УГМУ"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Лаборотория Здоровья",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -419,6 +479,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний дыхательной системы, включая бронхиальную астму, хроническую обструктивную болезнь легких (ХОБЛ), пневмонию, туберкулез, аллергический ринит и кашель. Проведение спирометрии, рентгенографии грудной клетки, бронхоскопии, анализов мокроты, а также консультации по профилактике и коррекции нарушений дыхания.",
           "id": "b3e4c437-e9fd-4835-b206-7a604e6bb4ce",
           "slug": "_bb4ce",
           "first_name": "Анна",
@@ -479,9 +540,22 @@
               "time": 1700856000
             }
           ],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6123459,
+            "name": "КрасГМУ"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Клиника Будущего",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 0,
           "rank_label": "нет",
@@ -492,6 +566,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний эндокринной системы, включая сахарный диабет, заболевания щитовидной железы, гормональные нарушения, остеопороз, болезни надпочечников и гипофиза. Проведение гормональных анализов, УЗИ щитовидной железы, назначение заместительной гормональной терапии и консультации по вопросам питания и образа жизни при эндокринных заболеваниях.",
           "id": "2584980a-5f5f-42a9-992b-cc30abb2a08a",
           "slug": "_2a08a",
           "first_name": "Денис",
@@ -542,9 +617,22 @@
           "avatar": null,
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 690000000,
+            "name": "ЮУГМУ"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Прогресс Мед",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -555,6 +643,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний сердечно-сосудистой системы, включая гипертонию, ишемическую болезнь сердца, аритмии, сердечную недостаточность и врожденные пороки сердца. Проведение электрокардиографии (ЭКГ), холтеровского мониторирования, ультразвукового исследования сердца (Эхо-КГ), а также консультации по профилактике сердечно-сосудистых заболеваний, коррекции образа жизни и назначениям терапии.",
           "id": "4f572ceb-e3d3-412d-8a7d-4e9ed8381af3",
           "slug": "_81af3",
           "first_name": "Наталья",
@@ -605,9 +694,22 @@
           "avatar": "https://media.istockphoto.com/id/1292777576/photo/doctor-clicking-on-a-laptop-before-her.jpg?s=1024x1024&w=is&k=20&c=gaIXOmSFv4YDK6UCyK_5m1OQvxhhkvpOzn46ovO2ALk=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 64567897659,
+            "name": "ВолгГМУ"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -618,6 +720,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Консультирование и ведение беременности, включая диагностику, мониторинг состояния матери и плода, подготовку к родам, а также помощь в послеродовом восстановлении. Проведение ультразвуковых исследований, кардиотокографии (КТГ), анализов крови, консультации по планированию беременности и выбору метода родоразрешения (естественные роды, кесарево сечение).",
           "id": "19cd5b0d-670a-4af5-b257-b69573f861f9",
           "slug": "_861f9",
           "first_name": "Пилюлькин",
@@ -680,10 +783,20 @@
           ],
           "education_type_label": {
             "id": 69,
-            "name": "Ставропольский государственный медицинский университет"
+            "name": "СмолГМУ"
           },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [
             {
               "id": 343,
@@ -703,6 +816,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Консультирование и ведение беременности, включая диагностику, мониторинг состояния матери и плода, подготовку к родам, а также помощь в послеродовом восстановлении. Проведение ультразвуковых исследований, кардиотокографии (КТГ), анализов крови, консультации по планированию беременности и выбору метода родоразрешения (естественные роды, кесарево сечение).",
           "id": "7bc7fd9e-7b91-45bf-9bd6-e26d1141e95f",
           "slug": "_1e95f",
           "first_name": "Иван",
@@ -753,9 +867,22 @@
           "avatar": null,
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 619,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -766,6 +893,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Проведение диагностики и лечения заболеваний зубов и полости рта, включая лечение кариеса, профессиональную чистку зубов, протезирование и удаление зубов.",
           "id": "763b9b8c-7145-4e1a-b4c9-90cd310ad553",
           "slug": "_ad553",
           "first_name": "Сергей",
@@ -826,24 +954,18 @@
               "time": 1700856000
             }
           ],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 619,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
           "work_expirience": [
             {
-              "id": 326,
-              "organization": "Больница 1",
-              "position": "Терапевт",
-              "start_date": 1661126400,
-              "end_date": null,
-              "until_now": true,
-              "is_moderated": true
-            },
-            {
-              "id": 327,
-              "organization": "Больница 2",
-              "position": "Хирург",
-              "start_date": 1659916800,
-              "end_date": null,
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
               "until_now": true,
               "is_moderated": true
             }
@@ -858,6 +980,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Консультации по вопросам питания, разработка индивидуальных планов диет для коррекции веса, лечения заболеваний, связанных с питанием (сахарный диабет, сердечно-сосудистые заболевания, пищевые аллергии и расстройства пищеварения). Проведение анализа питания, рекомендации по здоровому образу жизни, планированию рациона и поддержанию оптимального веса.",
           "id": "d95b0b18-e337-46db-8c78-da9c4ef5e153",
           "slug": "_5e153",
           "first_name": "Влад",
@@ -908,9 +1031,22 @@
           "avatar": "https://media.istockphoto.com/id/1292777576/photo/doctor-clicking-on-a-laptop-before-her.jpg?s=1024x1024&w=is&k=20&c=gaIXOmSFv4YDK6UCyK_5m1OQvxhhkvpOzn46ovO2ALk=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6911,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -921,6 +1057,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний почек, включая хроническую почечную недостаточность, мочекаменную болезнь, инфекции мочевых путей, гломерулонефрит и пиелонефрит. Проведение анализа мочи, ультразвуковое исследование почек, биопсию почки, а также консультации по профилактике заболеваний почек и коррекции образа жизни.",
           "id": "b35ea8c3-12dd-4c15-bac6-41d1d6cb61a4",
           "slug": "Ivanov_Ivan_Ivanovich_b61a4",
           "first_name": "Василий",
@@ -971,9 +1108,22 @@
           "avatar": "https://media.istockphoto.com/id/668598078/photo/cheerful-doctor-posing.jpg?s=1024x1024&w=is&k=20&c=ecnjlrr16IzM5Fa06KJo0N4Gak9Eod_92_MLhlHm7Vg=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 3369,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -984,6 +1134,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний глаз, включая близорукость, дальнозоркость, астигматизм, катаракту, глаукому, макулодистрофию и конъюнктивит. Проведение офтальмоскопии, измерение внутриглазного давления, консультации по подбору очков и контактных линз, а также хирургические вмешательства при заболеваниях глаз.",
           "id": "417abd5c-a4e5-4037-bdb0-d3374d6d67c5",
           "slug": "Bondar'_Anna_Vladimirovna_d67c5",
           "first_name": "Анна",
@@ -1034,9 +1185,22 @@
           "avatar": "https://media.istockphoto.com/id/1323303738/photo/medical-doctor-indoors-portraits.jpg?s=1024x1024&w=is&k=20&c=Geuc9vlwj-eHaOiyv6a5xaptQ9jM58ADjYwapPziFUI=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 62229,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -1047,7 +1211,8 @@
           "is_favorite": false
         },
         {
-          "id": "9428b2ca-8ea4-45a7-b1ff-c780a5a8aedf",
+          "procedures_description": "Диагностика и лечение заболеваний глаз, включая близорукость, дальнозоркость, астигматизм, катаракту, глаукому, макулодистрофию и конъюнктивит. Проведение офтальмоскопии, измерение внутриглазного давления, консультации по подбору очков и контактных линз, а также хирургические вмешательства при заболеваниях глаз.",
+          "id": "9428b2ca-8ea4-45a7-b1ff-c780a5a8ae",
           "slug": "Val'chik_Tat'jana_Pavlovna_8aedf",
           "first_name": "Татьяна",
           "patronymic": "Павловна",
@@ -1097,9 +1262,22 @@
           "avatar": "https://media.istockphoto.com/id/1305333546/photo/smiling-professional-female-doctor-taking-notes-looking-at-laptop-screen.jpg?s=1024x1024&w=is&k=20&c=q7XTKaHlpXVC7N6RWIM8GH1SfN4EgojOcsf1bPX0TNc=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 691111,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -1110,6 +1288,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний женской репродуктивной системы, включая гинекологические инфекции, миому матки, эндометриоз, дисфункцию яичников и бесплодие. Проведение гинекологических осмотров, ультразвукового исследования органов малого таза, кольпоскопии, ПАП-теста, а также консультации по контрацепции и планированию беременности.",
           "id": "55ddef68-3433-40c5-ad7c-25c5cc083c67",
           "slug": "Kuchuk_Irina_Dmitrievna_83c67",
           "first_name": "Ирина",
@@ -1160,9 +1339,22 @@
           "avatar": null,
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 678789,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 0,
           "rank_label": "нет",
@@ -1173,6 +1365,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Консультирование и ведение беременности, включая диагностику, мониторинг состояния матери и плода, подготовку к родам, а также помощь в послеродовом восстановлении. Проведение ультразвуковых исследований, кардиотокографии (КТГ), анализов крови, консультации по планированию беременности и выбору метода родоразрешения (естественные роды, кесарево сечение).",
           "id": "b50b9e62-b6d4-4a90-a19f-45cb1f7e8cac",
           "slug": "Ivanov_Ivan_Vasil'evich_e8cac",
           "first_name": "Иван",
@@ -1223,9 +1416,22 @@
           "avatar": null,
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6889,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",
@@ -1236,6 +1442,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний мочевыделительной системы у мужчин, включая инфекции мочевыводящих путей, мочекаменную болезнь, цистит, простатит, аденому предстательной железы, эректильную дисфункцию и бесплодие. Проведение ультразвуковых исследований, цистоскопии, анализов мочи и крови, а также консультации по профилактике урологических заболеваний.",
           "id": "13ebcb36-f793-4f0e-931a-1efd709844d9",
           "slug": "Logopedovich_Denis_Sthutdbb_844d9",
           "first_name": "Денис",
@@ -1286,9 +1493,22 @@
           "avatar": "https://media.istockphoto.com/id/1342708859/photo/portrait-of-a-male-doctor.jpg?s=1024x1024&w=is&k=20&c=bkXwg78z_kxDfKGoFqYHavpvWNE0qYfB6kaqwLt4lsI=",
           "nearest_reception_time": null,
           "free_reception_time": [],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 60009,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 1,
           "rank_label": "доцент",
@@ -1299,6 +1519,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение аллергических заболеваний, включая сезонную и круглогодичную аллергию, астму, крапивницу, экзему, пищевую и лекарственную аллергию. Проведение кожных аллергопроб, молекулярной диагностики, иммунной терапии (АСИТ), консультации по профилактике аллергических реакций и разработке индивидуального плана лечения.",
           "id": "47d20399-4492-4232-9b3b-d474d33d94c3",
           "slug": "Doktorov_Pavel_Olegovich_d94c3",
           "first_name": "Иван",
@@ -1360,8 +1581,8 @@
             }
           ],
           "education_type_label": {
-            "id": 1,
-            "name": "Алтайский государственный медицинский университет"
+            "id": 6111119,
+            "name": "СГМУ им. В. И. Разумовского"
           },
           "higher_education": [
             {
@@ -1377,29 +1598,11 @@
           ],
           "work_expirience": [
             {
-              "id": 336,
-              "organization": "rккккddddddddddddd",
-              "position": "rаааа",
-              "start_date": -24298876800,
-              "end_date": 7983878400,
-              "until_now": false,
-              "is_moderated": true
-            },
-            {
-              "id": 475,
-              "organization": "string",
-              "position": "string",
-              "start_date": 0,
-              "end_date": 0,
-              "until_now": true,
-              "is_moderated": true
-            },
-            {
-              "id": 345,
-              "organization": "емЧипсы",
-              "position": "наДиване",
-              "start_date": 1104537600,
-              "end_date": 1104537600,
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
               "until_now": true,
               "is_moderated": true
             }
@@ -1423,6 +1626,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Диагностика и лечение заболеваний центральной и периферической нервной системы, включая головные боли, мигрени, невралгии, эпилепсию, рассеянный склероз, инсульты, болезни позвоночника и неврозы. Проведение электроэнцефалографии (ЭЭГ), электромиографии (ЭМГ), консультации по вопросам реабилитации и профилактики заболеваний нервной системы.",
           "id": "34bbddef-7bf0-423b-b7dc-559183aa47a2",
           "slug": "Denisenko_Anton_Anatol'evich_a47a2",
           "first_name": "Антон",
@@ -1484,11 +1688,21 @@
           "nearest_reception_time": null,
           "free_reception_time": [],
           "education_type_label": {
-            "id": 5,
-            "name": "Башкирский государственный медицинский университет"
+            "id": 60009,
+            "name": "СГМУ им. В. И. Разумовского"
           },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 1,
           "rank_label": "доцент",
@@ -1499,6 +1713,7 @@
           "is_favorite": false
         },
         {
+          "procedures_description": "Проведение диагностики и лечения заболеваний зубов и полости рта, включая лечение кариеса, профессиональную чистку зубов, протезирование и удаление зубов.",
           "id": "11cb274b-bc68-4441-9d9f-0b66a0295314",
           "slug": "Dorofeev_Ignat_Aslanovich_95314",
           "first_name": "Игнат",
@@ -1559,9 +1774,22 @@
               "time": 1700856000
             }
           ],
-          "education_type_label": null,
+          "education_type_label": {
+            "id": 6000889,
+            "name": "СГМУ им. В. И. Разумовского"
+          },
           "higher_education": [],
-          "work_expirience": [],
+          "work_expirience": [
+            {
+              "id": 487,
+              "organization": "Мед Центр Здоровье",
+              "position": "Роо",
+              "start_date": 4070908800,
+              "end_date": 1230768000,
+              "until_now": true,
+              "is_moderated": true
+            }
+          ],
           "advanced_training": [],
           "rank": 4,
           "rank_label": "4",

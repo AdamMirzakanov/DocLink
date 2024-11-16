@@ -18,4 +18,11 @@ struct User: Decodable, Identifiable {
   let hospitalPrice: Int
   let avatar: String?
   let freeReceptionTime: [FreeReceptionTime]
+  let educationTypeLabel: Education
+  let workExpirience: [Work]
+  let proceduresDescription: String
+}
+
+struct Work: Decodable {
+  let organization: String
 }

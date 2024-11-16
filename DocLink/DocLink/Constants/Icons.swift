@@ -14,4 +14,8 @@ enum Icon {
   static let profileIcon = Image(systemName: "person.fill")
   static let likeIcon = Image(systemName: "heart")
   static let avatarPlaceholderIcon = Image(systemName: "person.crop.circle.fill")
+  static let clockIcon = Image(systemName: "clock")
+  static let caseIcon = Image(systemName: "cross.case")
+  static let capIcon = Image(systemName: "graduationcap")
+  static let pinIcon = Image(systemName: "mappin.and.ellipse")
 }
