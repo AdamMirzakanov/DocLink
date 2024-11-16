@@ -13,11 +13,12 @@ struct DoctorMinimumPriceContainerView: View {
     HStack {
       Text(UserDetailScreenConst.theCostOfServices)
         .padding(.leading, UserDetailScreenConst.priceContainerViewInset)
+        .font(UserDetailScreenConst.bodyFont)
       Spacer()
       UserPriceView(price: price)
         .padding(.trailing, UserDetailScreenConst.priceContainerViewInset)
     }
-    .font(UserDetailScreenConst.mainFont)
+    
     .foregroundColor(.black)
     .frame(
       maxWidth: .infinity,

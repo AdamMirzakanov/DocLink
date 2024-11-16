@@ -20,6 +20,7 @@ enum UserDetailScreenConst {
   
   static let iconFont: Font = .system(size: 20.0)
   static let mainFont: Font = .system(size: 17.0, weight: .medium)
+  static let bodyFont: Font = .system(size: 15.0, weight: .regular)
   
   static let iconColor: Color = Color(white: 0.7)
   static let priceContainerViewColor: Color = Color(white: 0.95)
