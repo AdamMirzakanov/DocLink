@@ -9,7 +9,6 @@ import SwiftUI
 
 struct UserDetailScreen: View {
   let user: User
-  
   var body: some View {
     VStack {
       createContentScrollView()

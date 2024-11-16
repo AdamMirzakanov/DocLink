@@ -16,6 +16,7 @@ struct UserDetailView: View {
     }
   }
   
+  // MARK: Private Properties
   // Иконки отдельно
   private func createIconColumn() -> some View {
     VStack(
