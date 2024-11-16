@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct UserListView: View {
+  var filteredUsers: [User]
+  @Binding var searchText: String
+  
   var body: some View {
     List(filteredUsers) { user in
       UserCellView(user: user)
+        .padding()
+        .background(Color.white)
+        .cornerRadius(HomeScreenConst.cellCornerRadius)
+        .shadow(radius: HomeScreenConst.cellShadowRadius)
+        .listRowSeparator(.hidden)
     }
     .searchable(
       text: $searchText,
       prompt: HomeScreenConst.searchBarPlaceholderKey
     )
+    .listStyle(PlainListStyle())
   }
-  
-  var filteredUsers: [User]
-  @Binding var searchText: String
 }

@@ -17,7 +17,10 @@ enum HomeScreenConst {
   static let unselectedSegmentTextColor: UIColor = .secondaryLabel
   static let avatarPlaceholderColor: Color = Color(white: 0.7)
   static let disabledButtonColor: Color = Color(white: 0.8)
+  static let cellBackgroundColor: Color = Color(white: 0.9)
   
+  static let cellShadowRadius: CGFloat = 4.0
+  static let cellCornerRadius: CGFloat = 14.0
   static let marginsOnSides: CGFloat = 20.0
   static let verticalStackSpacing: CGFloat = 6.0
   static let horizontalStackSpacing: CGFloat = 12.0
