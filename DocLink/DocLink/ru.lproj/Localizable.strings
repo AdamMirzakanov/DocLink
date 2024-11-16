@@ -6,26 +6,19 @@
   
 */
 
-"HomeScreenTitleLocalKey" = "Главная";
-"ReceptionScreenTitleLocalKey" = "Приёмы";
-"ChatScreenTitleLocalKey" = "Чат";
-"ProfileScreenTitleLocalKey" = "Профиль";
-
-"SearchLocalKey" = "Поиск";
-
-"ByPriceLocalKey" = "По цене";
-"ByExperienceLocalKey" = "По стажу";
-"ByRatingLocalKey" = "По рейтингу";
-
-"ExperienceLocalKey" = "∙стаж ";
-"WorkExperienceLocalKey" = "Опыт работы: ";
-"YearsLocalKey" = " лет";
-
-"FromKey" = "от ";
-
-"DoctorAppointmentKey" = "Записаться";
-"NoFreeScheduleKey" = "Нет свободного расписания";
-
-"currencyKey" = "ru_RU";
-
-"The_Cost_Of_Services" = "Стоимость услуг";
+"home_screen_title_key" = "Главная";
+"reception_screen_title_key" = "Приёмы";
+"chat_screen_title_key" = "Чат";
+"profile_screen_title_key" = "Профиль";
+"search_key" = "Поиск";
+"by_price_key" = "По цене";
+"by_experience_key" = "По стажу";
+"by_rating_key" = "По рейтингу";
+"experience_key" = "∙стаж ";
+"work_experience_key" = "Опыт работы: ";
+"years_key" = " лет";
+"from_key" = "от ";
+"doctor_appointment_key" = "Записаться";
+"no_free_schedule_key" = "Нет свободного расписания";
+"currency_key" = "ru_RU";
+"cost_of_services_key" = "Стоимость услуг";

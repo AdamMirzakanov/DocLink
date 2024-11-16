@@ -43,17 +43,17 @@ enum HomeScreenConst {
 
 // MARK: - Localizable Keys
 enum HomeScreenLocalizableKey: String, CaseIterable {
-  case screenTitleKey = "HomeScreenTitleLocalKey"
-  case searchBarPlaceholderKey = "SearchLocalKey"
-  case pickerPriceSegmentKey = "ByPriceLocalKey"
-  case pickerExperienceSegmentKey = "ByExperienceLocalKey"
-  case pickerRatingSegmentKey = "ByRatingLocalKey"
-  case experienceLabelKey = "ExperienceLocalKey"
-  case yearsLabelKey = "YearsLocalKey"
-  case currencyKey = "currencyKey"
-  case fromKey = "FromKey"
-  case doctorAppointmentKey = "DoctorAppointmentKey"
-  case noFreeScheduleKey = "NoFreeScheduleKey"
+  case screenTitleKey = "home_screen_title_key"
+  case searchBarPlaceholderKey = "search_key"
+  case pickerPriceSegmentKey = "by_price_key"
+  case pickerExperienceSegmentKey = "by_experience_key"
+  case pickerRatingSegmentKey = "by_rating_key"
+  case experienceLabelKey = "experience_key"
+  case yearsLabelKey = "years_key"
+  case currencyKey = "currency_key"
+  case fromKey = "from_key"
+  case doctorAppointmentKey = "doctor_appointment_key"
+  case noFreeScheduleKey = "no_free_schedule_key"
   
   func localizeString() -> String {
     NSLocalizedString(self.rawValue, comment: .empty )

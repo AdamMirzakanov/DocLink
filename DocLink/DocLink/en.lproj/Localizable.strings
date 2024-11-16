@@ -6,26 +6,19 @@
   
 */
 
-"HomeScreenTitleLocalKey" = "Home";
-"ReceptionScreenTitleLocalKey" = "Reception";
-"ChatScreenTitleLocalKey" = "Chat";
-"ProfileScreenTitleLocalKey" = "Profile";
-
-"SearchLocalKey" = "Search";
-
-"ByPriceLocalKey" = "Price";
-"ByExperienceLocalKey" = "Experience";
-"ByRatingLocalKey" = "Rating";
-
-"ExperienceLocalKey" = "∙experience ";
-"WorkExperienceLocalKey" = "Work experience: ";
-"YearsLocalKey" = " years";
-
-"FromKey" = "from ";
-
-"DoctorAppointmentKey" = "Doctor appointment";
-"NoFreeScheduleKey" = "No free schedule";
-
-"currencyKey" = "en_US";
-
-"The_Cost_Of_Services" = "The cost of services";
+"home_screen_title_key" = "Home";
+"reception_screen_title_key" = "Reception";
+"chat_screen_title_key" = "Chat";
+"profile_screen_title_key" = "Profile";
+"search_key" = "Search";
+"by_price_key" = "Price";
+"by_experience_key" = "Experience";
+"by_rating_key" = "Rating";
+"experience_key" = "∙experience ";
+"work_experience_key" = "Work experience: ";
+"years_key" = " years";
+"from_key" = "from ";
+"doctor_appointment_key" = "Doctor appointment";
+"no_free_schedule_key" = "No free schedule";
+"currency_key" = "en_US";
+"cost_of_services_key" = "The cost of services";

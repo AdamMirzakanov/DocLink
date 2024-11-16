@@ -30,16 +30,16 @@ enum UserDetailScreenConst {
   static let yearsLabelKey = UserDetailScreenLocalizableKey.yearsLabelKey.localizeString()
   static let fromKey = UserDetailScreenLocalizableKey.fromKey.localizeString()
   static let currencyKey = UserDetailScreenLocalizableKey.currencyKey.localizeString()
-  static let theCostOfServices = UserDetailScreenLocalizableKey.theCostOfServices.localizeString()
+  static let costOfServicesKey = UserDetailScreenLocalizableKey.costOfServicesKey.localizeString()
 }
 
 // MARK: - Localizable Keys
 enum UserDetailScreenLocalizableKey: String, CaseIterable {
-  case workExperienceLocalKey = "WorkExperienceLocalKey"
-  case yearsLabelKey = "YearsLocalKey"
-  case fromKey = "FromKey"
-  case currencyKey = "currencyKey"
-  case theCostOfServices = "The_Cost_Of_Services"
+  case workExperienceLocalKey = "work_experience_key"
+  case yearsLabelKey = "years_key"
+  case fromKey = "from_key"
+  case currencyKey = "currency_key"
+  case costOfServicesKey = "cost_of_services_key"
   
   func localizeString() -> String {
     NSLocalizedString(self.rawValue, comment: .empty )

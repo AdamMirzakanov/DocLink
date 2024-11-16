@@ -11,7 +11,7 @@ struct DoctorMinimumPriceContainerView: View {
   var price: Int
   var body: some View {
     HStack {
-      Text(UserDetailScreenConst.theCostOfServices)
+      Text(UserDetailScreenConst.costOfServicesKey)
         .padding(.leading, UserDetailScreenConst.priceContainerViewInset)
         .font(UserDetailScreenConst.bodyFont)
       Spacer()

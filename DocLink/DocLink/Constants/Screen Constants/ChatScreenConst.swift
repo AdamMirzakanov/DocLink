@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Localizable Keys
 enum ChatScreenConst: String, CaseIterable {
-  case screenTitleKey = "ChatScreenTitleLocalKey"
+  case screenTitleKey = "chat_screen_title_key"
   
   static var screenTitle: String {
     screenTitleKey.localizeString()

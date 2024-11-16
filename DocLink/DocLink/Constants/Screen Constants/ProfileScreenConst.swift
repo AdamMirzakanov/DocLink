@@ -8,7 +8,7 @@
 import Foundation
 
 enum ProfileScreenConst: String, CaseIterable {
-  case screenTitleKey = "ProfileScreenTitleLocalKey"
+  case screenTitleKey = "profile_screen_title_key"
   
   static var screenTitle: String {
     screenTitleKey.localizeString()
