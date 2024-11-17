@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension ContentView {
+  // MARK: Internal Properties
   var homeScreen: some View {
     HomeScreenView()
       .tabItem {
@@ -38,6 +39,17 @@ extension ContentView {
         Icon.profileIcon
         Text(Key.profileTabItemTitle)
       }
+  }
+  
+  // MARK: Internal Methods
+  func createTabView() -> some View {
+    TabView {
+      homeScreen
+      receptionScreen
+      chatScreen
+      profileScreen
+    }
+    .accentColor(ColorConst.mainPink)
   }
 }
 

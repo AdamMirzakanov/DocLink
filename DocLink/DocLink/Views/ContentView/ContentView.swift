@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    TabView {
-      homeScreen
-      receptionScreen
-      chatScreen
-      profileScreen
-    }
-    .accentColor(ColorConst.mainPink)
+    createTabView()
   }
 }
 
