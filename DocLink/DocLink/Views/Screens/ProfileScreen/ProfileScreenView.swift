@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ProfileScreenView: View {
   var body: some View {
-    let screenTitle = ProfileScreenConst.screenTitle
-    Text(screenTitle)
-      .font(.largeTitle)
-      .padding()
+    Icon.profileIcon
+      .font(Icon.placeholderIconFont)
+      .foregroundColor(ColorConst.mainPink)
   }
 }

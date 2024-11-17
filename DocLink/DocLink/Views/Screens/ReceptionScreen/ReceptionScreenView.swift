@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ReceptionScreenView: View {
   var body: some View {
-    let screenTitle = ReceptionScreenConst.screenTitle
-    Text(screenTitle)
-      .font(.largeTitle)
-      .padding()
+    Icon.receptionIcon
+      .font(Icon.placeholderIconFont)
+      .foregroundColor(ColorConst.mainPink)
   }
 }

@@ -21,4 +21,8 @@ enum Icon {
   static let pinIcon = Image(systemName: "mappin.and.ellipse")
   static let chevronIcon = Image(systemName: "chevron.forward")
   static let starIcon = Image(systemName: "star.fill")
+  
+  /// Этот шрифт отвечает за размер иконок которые
+  /// в виде заполнителя отображаются на пустых экранах.
+  static let placeholderIconFont: Font = .system(size: 150.0)
 }

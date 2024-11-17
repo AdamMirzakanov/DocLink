@@ -10,9 +10,8 @@ import SwiftUI
 struct ChatScreenView: View {
   // MARK: Internal Properties
   var body: some View {
-    let screenTitle = ChatScreenConst.screenTitle
-    Text(screenTitle)
-      .font(.largeTitle)
-      .padding()
+    Icon.chatIcon
+      .font(Icon.placeholderIconFont)
+      .foregroundColor(ColorConst.mainPink)
   }
 }

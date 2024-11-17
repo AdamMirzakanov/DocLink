@@ -9,7 +9,8 @@ import SwiftUI
 
 /// Кнопка для записи к врачу.
 ///
-/// Кнопка автоматически меняет внешний вид в зависимости от состояния доступности записи.
+/// Кнопка автоматически меняет внешний вид в зависимости от
+/// состояния доступности записи.
 ///
 /// - Если запись доступна (`isAvailable == true`), кнопка
 /// будет активной с розовым фоном и белым текстом.
@@ -20,32 +21,36 @@ struct DoctorAppointmentButtonView: View {
   // MARK: Internal Properties
   var body: some View {
     Button(action: {
-      // Выполняется только если запись доступна
-      if isAvailable {
-        print("Doctor appointment button tapped")
+      if isAvailable { // Выполняется только если запись доступна
+        showModal.toggle()
       }
     }) {
       Text(
-        isAvailable ? HomeScreenConst.doctorAppointmentKey : HomeScreenConst.noFreeScheduleKeyKey
+        isAvailable ?
+        HomeScreenConst.doctorAppointmentKey : HomeScreenConst.noFreeScheduleKeyKey
       )
-        .font(.headline)
-        .foregroundColor(
-          isAvailable ? .white : HomeScreenConst.experienceTextColor // чёрный текст для неактивной кнопки
-        )
-        .frame(
-          maxWidth: .infinity,
-          minHeight: HomeScreenConst.doctorAppointmentButtonHeight
-        )
-        .background(
-          isAvailable ? ColorConst.mainPink : HomeScreenConst.disabledButtonColor
-        )
-        .cornerRadius(HomeScreenConst.doctorAppointmentCornerRadius)
+      .font(.headline)
+      .foregroundColor( // чёрный текст для неактивной кнопки
+        isAvailable ? .white : HomeScreenConst.experienceTextColor
+      )
+      .frame(
+        maxWidth: .infinity,
+        minHeight: HomeScreenConst.doctorAppointmentButtonHeight
+      )
+      .background(
+        isAvailable ? ColorConst.mainPink : HomeScreenConst.disabledButtonColor
+      )
+      .cornerRadius(HomeScreenConst.doctorAppointmentCornerRadius)
     }
     .disabled(!isAvailable) // отключитьо кнопку, если запись недоступна
     .buttonStyle(PlainButtonStyle())
+    .sheet(isPresented: $showModal) {
+      ReceptionScreenView()
+    }
   }
   
   // MARK: Private Properties
-  /// Указывает, доступна ли запись.
+  /// Указывает, доступна ли запись к врачу.
   private(set) var isAvailable: Bool
+  @State private var showModal: Bool = false
 }
