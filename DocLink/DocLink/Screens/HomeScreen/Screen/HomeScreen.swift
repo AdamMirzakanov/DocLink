@@ -23,20 +23,38 @@ struct HomeScreen: View {
     }
   }
   
-  // MARK: Private Properties
-  @State private var searchText: String = .empty
-  @State private var selectedItem: DoctorSortCriterion = .price
-  @State private var users: [User] = []
-  
   private var filteredUsers: [User] {
+    let sortedUsers: [User]
+    
+    switch selectedItem {
+    case .price:
+      // Прайс по возрастанию
+      sortedUsers = users.sorted { $0.textChatPrice < $1.textChatPrice }
+    case .experience:
+      // Стаж по убыванию
+      sortedUsers = users.sorted { $0.seniority > $1.seniority }
+    case .rating:
+      // Рейтинг по убыванию
+      sortedUsers = users.sorted { $0.ratingsRating > $1.ratingsRating }
+    }
+    
+    // фильтрация по тексту поиска
     if searchText.isEmpty {
-      return users
+      return sortedUsers
     } else {
-      return users.filter {
+      // фильтровать список, оставляя пользователей,
+      // чьи имя или фамилия содержат введенный текст
+      return sortedUsers.filter {
         $0.firstName.contains(searchText) || $0.lastName.contains(searchText)
       }
     }
   }
+  
+  
+  // MARK: Private Properties
+  @State private var searchText: String = .empty
+  @State private var selectedItem: DoctorSortCriterion = .price
+  @State private var users: [User] = []
   
   // MARK: Private Methods
   private func loadUsers() {
