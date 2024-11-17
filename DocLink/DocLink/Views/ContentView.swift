@@ -23,7 +23,7 @@ struct ContentView: View {
     HomeScreen()
       .tabItem {
         Icon.homeIcon
-        Text(LocalKey.homeTabItemTitle)
+        Text(Key.homeTabItemTitle)
       }
   }
   
@@ -31,7 +31,7 @@ struct ContentView: View {
     ReceptionScreen()
       .tabItem {
         Icon.receptionIcon
-        Text(LocalKey.receptionTabItemTitle)
+        Text(Key.receptionTabItemTitle)
       }
   }
   
@@ -39,7 +39,7 @@ struct ContentView: View {
     ChatScreen()
       .tabItem {
         Icon.chatIcon
-        Text(LocalKey.chatTabItemTitle)
+        Text(Key.chatTabItemTitle)
       }
   }
   
@@ -47,7 +47,7 @@ struct ContentView: View {
     ProfileScreen()
       .tabItem {
         Icon.profileIcon
-        Text(LocalKey.profileTabItemTitle)
+        Text(Key.profileTabItemTitle)
       }
   }
 }
@@ -57,7 +57,7 @@ struct ContentView: View {
 }
 
 // MARK: - Localizable Keys
-private enum LocalKey {
+private enum Key {
   static let homeTabItemTitle = HomeScreenConst.screenTitleKey
   static let receptionTabItemTitle = ReceptionScreenConst.screenTitle
   static let chatTabItemTitle = ChatScreenConst.screenTitle
