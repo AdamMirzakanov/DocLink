@@ -37,21 +37,21 @@ enum HomeScreenConst {
   static let usersDataFile: String = "UsersData"
   
   // Localizable Keys
-  static let screenTitleKey = HomeScreenLocalizableKey.screenTitleKey.localizeString()
-  static let searchBarPlaceholderKey = HomeScreenLocalizableKey.searchBarPlaceholderKey.localizeString()
-  static let pickerPriceSegmentTitleKey = HomeScreenLocalizableKey.pickerPriceSegmentKey.localizeString()
-  static let pickerExperienceSegmentTitleKey = HomeScreenLocalizableKey.pickerExperienceSegmentKey.localizeString()
-  static let pickerRatingSegmentTitleKey = HomeScreenLocalizableKey.pickerRatingSegmentKey.localizeString()
-  static let experienceLabelKey = HomeScreenLocalizableKey.experienceLabelKey.localizeString()
-  static let yearsLabelKey = HomeScreenLocalizableKey.yearsLabelKey.localizeString()
-  static let currencyKey = HomeScreenLocalizableKey.currencyKey.localizeString()
-  static let fromKey = HomeScreenLocalizableKey.fromKey.localizeString()
-  static let doctorAppointmentKey = HomeScreenLocalizableKey.doctorAppointmentKey.localizeString()
-  static let noFreeScheduleKeyKey = HomeScreenLocalizableKey.noFreeScheduleKey.localizeString()
+  static let screenTitleKey = Key.screenTitleKey.localizeString()
+  static let searchBarPlaceholderKey = Key.searchBarPlaceholderKey.localizeString()
+  static let pickerPriceSegmentTitleKey = Key.pickerPriceSegmentKey.localizeString()
+  static let pickerExperienceSegmentTitleKey = Key.pickerExperienceSegmentKey.localizeString()
+  static let pickerRatingSegmentTitleKey = Key.pickerRatingSegmentKey.localizeString()
+  static let experienceLabelKey = Key.experienceLabelKey.localizeString()
+  static let yearsLabelKey = Key.yearsLabelKey.localizeString()
+  static let currencyKey = Key.currencyKey.localizeString()
+  static let fromKey = Key.fromKey.localizeString()
+  static let doctorAppointmentKey = Key.doctorAppointmentKey.localizeString()
+  static let noFreeScheduleKeyKey = Key.noFreeScheduleKey.localizeString()
 }
 
 // MARK: - Localizable Keys
-enum HomeScreenLocalizableKey: String, CaseIterable {
+private enum Key: String, CaseIterable {
   case screenTitleKey = "home_screen_title_key"
   case searchBarPlaceholderKey = "search_key"
   case pickerPriceSegmentKey = "by_price_key"

@@ -16,15 +16,15 @@ enum PriceScreenConst {
   static let verticalStackSpacing: CGFloat = 20.0
   
   // Localizable Keys
-  static let halfAnHourKey = PriceScreenLocalizableKey.halfAnHourKey.localizeString()
-  static let videoConsultationKey = PriceScreenLocalizableKey.videoConsultationKey.localizeString()
-  static let chatWithDoctorKey = PriceScreenLocalizableKey.chatWithDoctorKey.localizeString()
-  static let admissionToTheClinicKey = PriceScreenLocalizableKey.admissionToTheClinicKey.localizeString()
-  static let costOfServicesKey = PriceScreenLocalizableKey.costOfServicesKey.localizeString()
+  static let halfAnHourKey = Key.halfAnHourKey.localizeString()
+  static let videoConsultationKey = Key.videoConsultationKey.localizeString()
+  static let chatWithDoctorKey = Key.chatWithDoctorKey.localizeString()
+  static let admissionToTheClinicKey = Key.admissionToTheClinicKey.localizeString()
+  static let costOfServicesKey = Key.costOfServicesKey.localizeString()
 }
 
 // MARK: - Localizable Keys
-enum PriceScreenLocalizableKey: String, CaseIterable {
+private enum Key: String, CaseIterable {
   case halfAnHourKey = "half_an_hour_key"
   case videoConsultationKey = "video_consultation_key"
   case chatWithDoctorKey = "chat_with_doctor_key"

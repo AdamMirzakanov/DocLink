@@ -27,15 +27,15 @@ enum UserDetailScreenConst {
   static let priceTextColor: Color = Color(.label)
   
   // Localizable Keys
-  static let workExperienceLocalKey = UserDetailScreenLocalizableKey.workExperienceLocalKey.localizeString()
-  static let yearsLabelKey = UserDetailScreenLocalizableKey.yearsLabelKey.localizeString()
-  static let fromKey = UserDetailScreenLocalizableKey.fromKey.localizeString()
-  static let currencyKey = UserDetailScreenLocalizableKey.currencyKey.localizeString()
-  static let costOfServicesKey = UserDetailScreenLocalizableKey.costOfServicesKey.localizeString()
+  static let workExperienceLocalKey = Key.workExperienceLocalKey.localizeString()
+  static let yearsLabelKey = Key.yearsLabelKey.localizeString()
+  static let fromKey = Key.fromKey.localizeString()
+  static let currencyKey = Key.currencyKey.localizeString()
+  static let costOfServicesKey = Key.costOfServicesKey.localizeString()
 }
 
 // MARK: - Localizable Keys
-enum UserDetailScreenLocalizableKey: String, CaseIterable {
+private enum Key: String, CaseIterable {
   case workExperienceLocalKey = "work_experience_key"
   case yearsLabelKey = "years_key"
   case fromKey = "from_key"
