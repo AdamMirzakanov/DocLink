@@ -11,7 +11,7 @@ import Foundation
 enum ChatScreenConst: String, CaseIterable {
   case screenTitleKey = "chat_screen_title_key"
   
-  static var screenTitle: String {
+  static var getScreenTitleLabelText: String {
     screenTitleKey.localizeString()
   }
   

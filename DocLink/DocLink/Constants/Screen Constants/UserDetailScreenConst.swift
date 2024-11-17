@@ -27,11 +27,25 @@ enum UserDetailScreenConst {
   static let priceTextColor: Color = Color(.label)
   
   // Localizable Keys
-  static let workExperienceLocalKey = Key.workExperienceLocalKey.localizeString()
-  static let yearsLabelKey = Key.yearsLabelKey.localizeString()
-  static let fromKey = Key.fromKey.localizeString()
-  static let currencyKey = Key.currencyKey.localizeString()
-  static let costOfServicesKey = Key.costOfServicesKey.localizeString()
+  static var getWorkExperienceLabelText: String {
+    Key.workExperienceLocalKey.localizeString()
+  }
+  
+  static var getYearsLabelText: String {
+    Key.yearsLabelKey.localizeString()
+  }
+  
+  static var getFromLabelText: String {
+    Key.fromKey.localizeString()
+  }
+  
+  static var getCurrencyLabelText: String {
+    Key.currencyKey.localizeString()
+  }
+  
+  static var getCostOfServicesLabelText: String {
+    Key.costOfServicesKey.localizeString()
+  }
 }
 
 // MARK: - Localizable Keys

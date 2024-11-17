@@ -59,9 +59,9 @@ private extension UserExperienceView {
   // Tекст об опыте работы
   func createWorkExperienceText(for user: User) -> some View {
     Text(
-      UserDetailScreenConst.workExperienceLocalKey +
+      UserDetailScreenConst.getWorkExperienceLabelText +
       String(user.seniority) +
-      UserDetailScreenConst.yearsLabelKey
+      UserDetailScreenConst.getYearsLabelText
     )
   }
   

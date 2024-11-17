@@ -17,11 +17,11 @@ enum DoctorSortCriterion: String, CaseIterable, Identifiable {
   var title: String {
     switch self {
     case .price:
-      return HomeScreenConst.pickerPriceTitleKey
+      return HomeScreenConst.getPickerPriceTitleLabelText
     case .experience:
-      return HomeScreenConst.pickerExperienceTitleKey
+      return HomeScreenConst.getPickerExperienceTitleLabelText
     case .rating:
-      return HomeScreenConst.pickerRatingTitleKey
+      return HomeScreenConst.getPickerRatingTitleLabelText
     }
   }
 }

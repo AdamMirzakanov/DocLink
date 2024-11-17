@@ -23,21 +23,21 @@ private extension PriceScreenScrollView {
     ScrollView {
       VStack(alignment: .leading) {
         priceSection(
-          title: PriceScreenConst.videoConsultationKey,
+          title: PriceScreenConst.getVideoConsultationLabelText,
           price: user.videoChatPrice
         )
         priceSection(
-          title: PriceScreenConst.chatWithDoctorKey,
+          title: PriceScreenConst.getChatWithDoctorLabelText,
           price: user.textChatPrice
         )
         priceSection(
-          title: PriceScreenConst.admissionToTheClinicKey,
+          title: PriceScreenConst.getAdmissionToTheClinicLabelText,
           price: user.hospitalPrice
         )
       }
       .padding(.horizontal, PriceScreenConst.horizontalPadding)
     }
-    .navigationTitle(PriceScreenConst.costOfServicesKey)
+    .navigationTitle(PriceScreenConst.getCostOfServicesLabelText)
   }
   
   func priceSection(title: String, price: Int) -> some View {
@@ -54,7 +54,7 @@ private extension PriceScreenScrollView {
   
   func priceRow(price: Int) -> some View {
     HStack {
-      Text(PriceScreenConst.halfAnHourKey)
+      Text(PriceScreenConst.getHalfAnHourLabelText)
       Spacer()
       UserPriceView(price: price)
     }

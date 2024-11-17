@@ -15,7 +15,7 @@ struct HomeScreenView: View {
         SortPickerView(selectedItem: $selectedItem)
         UserListView(filteredUsers: filteredUsers, searchText: $searchText)
       }
-      .navigationTitle(HomeScreenConst.screenTitleKey)
+      .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
       .onAppear {
         configurePickerAppearance()
         loadUsers()

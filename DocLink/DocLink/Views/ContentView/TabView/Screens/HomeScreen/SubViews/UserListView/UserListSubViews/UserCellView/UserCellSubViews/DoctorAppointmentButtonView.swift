@@ -27,7 +27,7 @@ struct DoctorAppointmentButtonView: View {
     }) {
       Text(
         isAvailable ?
-        HomeScreenConst.doctorAppointmentKey : HomeScreenConst.noFreeScheduleKeyKey
+        HomeScreenConst.getSoctorAppointmentLabelText : HomeScreenConst.getNoFreeScheduleLabelText
       )
       .font(.headline)
       .foregroundColor( // чёрный текст для неактивной кнопки

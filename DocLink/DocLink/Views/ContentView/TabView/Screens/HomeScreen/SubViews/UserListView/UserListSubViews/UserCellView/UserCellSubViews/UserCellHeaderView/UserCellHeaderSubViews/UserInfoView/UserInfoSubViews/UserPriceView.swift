@@ -14,7 +14,7 @@ struct UserPriceView: View {
       from: NSNumber(value: price)
     )
     let displayPrice = formattedPrice ?? .empty
-    let priceText = HomeScreenConst.fromKey + displayPrice
+    let priceText = HomeScreenConst.getFromLabelText + displayPrice
     
     return VStack(
       alignment: .leading,
@@ -30,7 +30,7 @@ struct UserPriceView: View {
   private let numberFormatter: NumberFormatter = {
     $0.numberStyle = .currency
     $0.locale = Locale(
-      identifier: HomeScreenConst.currencyKey
+      identifier: HomeScreenConst.getCurrencyLabelText
     )
     $0.maximumFractionDigits = .zero
     $0.minimumFractionDigits = .zero

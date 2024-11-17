@@ -20,7 +20,7 @@ struct UserListView: View {
     }
     .searchable(
       text: $searchText,
-      prompt: HomeScreenConst.searchBarPlaceholderKey
+      prompt: HomeScreenConst.getSearchBarPlaceholderText
     )
     .listStyle(PlainListStyle())
   }

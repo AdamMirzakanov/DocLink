@@ -38,7 +38,7 @@ private extension DoctorMinimumPriceButtonView {
   }
   
   var serviceCostText: some View {
-    Text(UserDetailScreenConst.costOfServicesKey)
+    Text(UserDetailScreenConst.getCostOfServicesLabelText)
       .padding(.leading, UserDetailScreenConst.priceButtonViewInset)
   }
   

@@ -43,17 +43,49 @@ enum HomeScreenConst {
   static let usersDataFile: String = "UsersData"
   
   // Localizable Keys
-  static let screenTitleKey = Key.screenTitleKey.localizeString()
-  static let searchBarPlaceholderKey = Key.searchBarPlaceholderKey.localizeString()
-  static let pickerPriceTitleKey = Key.pickerPriceKey.localizeString()
-  static let pickerExperienceTitleKey = Key.pickerExperienceKey.localizeString()
-  static let pickerRatingTitleKey = Key.pickerRatingKey.localizeString()
-  static let experienceLabelKey = Key.experienceLabelKey.localizeString()
-  static let yearsLabelKey = Key.yearsLabelKey.localizeString()
-  static let currencyKey = Key.currencyKey.localizeString()
-  static let fromKey = Key.fromKey.localizeString()
-  static let doctorAppointmentKey = Key.doctorAppointmentKey.localizeString()
-  static let noFreeScheduleKeyKey = Key.noFreeScheduleKey.localizeString()
+  static var getScreenTitleLabelText: String {
+    Key.screenTitleKey.localizeString()
+  }
+  
+  static var getSearchBarPlaceholderText: String {
+    Key.searchBarPlaceholderKey.localizeString()
+  }
+  
+  static var getPickerPriceTitleLabelText: String {
+    Key.pickerPriceKey.localizeString()
+  }
+  
+  static var getPickerExperienceTitleLabelText: String {
+    Key.pickerExperienceKey.localizeString()
+  }
+  
+  static var getPickerRatingTitleLabelText: String {
+    Key.pickerRatingKey.localizeString()
+  }
+  
+  static var getExperienceLabelText: String {
+    Key.experienceLabelKey.localizeString()
+  }
+  
+  static var getYearsLabelText: String {
+    Key.yearsLabelKey.localizeString()
+  }
+  
+  static var getCurrencyLabelText: String {
+    Key.currencyKey.localizeString()
+  }
+  
+  static var getFromLabelText: String {
+    Key.fromKey.localizeString()
+  }
+  
+  static var getSoctorAppointmentLabelText: String {
+    Key.doctorAppointmentKey.localizeString()
+  }
+  
+  static var getNoFreeScheduleLabelText: String {
+    Key.noFreeScheduleKey.localizeString()
+  }
 }
 
 // MARK: - Localizable Keys

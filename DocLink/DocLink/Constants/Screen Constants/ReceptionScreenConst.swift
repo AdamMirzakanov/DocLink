@@ -10,7 +10,7 @@ import Foundation
 enum ReceptionScreenConst: String, CaseIterable {
   case screenTitleKey = "reception_screen_title_key"
   
-  static var screenTitle: String {
+  static var getScreenTitleLabelText: String {
     screenTitleKey.localizeString()
   }
   

@@ -16,11 +16,25 @@ enum PriceScreenConst {
   static let verticalStackSpacing: CGFloat = 20.0
   
   // Localizable Keys
-  static let halfAnHourKey = Key.halfAnHourKey.localizeString()
-  static let videoConsultationKey = Key.videoConsultationKey.localizeString()
-  static let chatWithDoctorKey = Key.chatWithDoctorKey.localizeString()
-  static let admissionToTheClinicKey = Key.admissionToTheClinicKey.localizeString()
-  static let costOfServicesKey = Key.costOfServicesKey.localizeString()
+  static var getHalfAnHourLabelText: String {
+    Key.halfAnHourKey.localizeString()
+  }
+  
+  static var getVideoConsultationLabelText: String {
+    Key.videoConsultationKey.localizeString()
+  }
+  
+  static var getChatWithDoctorLabelText: String {
+    Key.chatWithDoctorKey.localizeString()
+  }
+  
+  static var getAdmissionToTheClinicLabelText: String {
+    Key.admissionToTheClinicKey.localizeString()
+  }
+  
+  static var getCostOfServicesLabelText: String {
+    Key.costOfServicesKey.localizeString()
+  }
 }
 
 // MARK: - Localizable Keys

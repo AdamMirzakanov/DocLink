@@ -13,7 +13,7 @@ extension MainTabView {
     HomeScreenView()
       .tabItem {
         Icon.homeIcon
-        Text(Key.homeTabItemTitle)
+        Text(Const.homeTabItemTitle)
       }
   }
   
@@ -21,7 +21,7 @@ extension MainTabView {
     ReceptionScreenView()
       .tabItem {
         Icon.receptionIcon
-        Text(Key.receptionTabItemTitle)
+        Text(Const.receptionTabItemTitle)
       }
   }
   
@@ -29,7 +29,7 @@ extension MainTabView {
     ChatScreenView()
       .tabItem {
         Icon.chatIcon
-        Text(Key.chatTabItemTitle)
+        Text(Const.chatTabItemTitle)
       }
   }
   
@@ -37,7 +37,7 @@ extension MainTabView {
     ProfileScreenView()
       .tabItem {
         Icon.profileIcon
-        Text(Key.profileTabItemTitle)
+        Text(Const.profileTabItemTitle)
       }
   }
   
@@ -53,10 +53,10 @@ extension MainTabView {
   }
 }
 
-// MARK: - Localizable Keys
-private enum Key {
-  static let homeTabItemTitle = HomeScreenConst.screenTitleKey
-  static let receptionTabItemTitle = ReceptionScreenConst.screenTitle
-  static let chatTabItemTitle = ChatScreenConst.screenTitle
-  static let profileTabItemTitle = ProfileScreenConst.screenTitle
+// MARK: - Constants
+private enum Const {
+  static let homeTabItemTitle = HomeScreenConst.getScreenTitleLabelText
+  static let receptionTabItemTitle = ReceptionScreenConst.getScreenTitleLabelText
+  static let chatTabItemTitle = ChatScreenConst.getScreenTitleLabelText
+  static let profileTabItemTitle = ProfileScreenConst.getScreenTitleLabelText
 }
