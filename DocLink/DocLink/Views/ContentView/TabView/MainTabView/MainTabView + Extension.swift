@@ -1,14 +1,14 @@
 //
-//  ContentView + Extension.swift
+//  MainTabView + Extension.swift
 //  DocLink
 //
-//  Created by Адам Мирзаканов on 17.11.2024.
+//  Created by Адам Мирзаканов on 18.11.2024.
 //
 
 import SwiftUI
 
-extension ContentView {
-  // MARK: Internal Properties
+extension MainTabView {
+  // MARK: Properties
   var homeScreen: some View {
     HomeScreenView()
       .tabItem {
@@ -41,7 +41,7 @@ extension ContentView {
       }
   }
   
-  // MARK: Internal Methods
+  // MARK: Methods
   func createTabView() -> some View {
     TabView {
       homeScreen

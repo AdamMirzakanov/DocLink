@@ -1,15 +1,25 @@
 //
-//  SwiftUIView.swift
+//  PriceScreenScrollView.swift
 //  DocLink
 //
-//  Created by Адам Мирзаканов on 17.11.2024.
+//  Created by Адам Мирзаканов on 18.11.2024.
 //
 
 import SwiftUI
 
-struct PriceScreenView: View {
+struct PriceScreenScrollView: View {
   // MARK: Internal Properties
   var body: some View {
+    createScrollView()
+  }
+  
+  // MARK: Private Properties
+  private(set) var user: User
+}
+
+// MARK: - Private Extension
+private extension PriceScreenScrollView {
+  func createScrollView() -> some View {
     ScrollView {
       VStack(alignment: .leading) {
         priceSection(
@@ -30,11 +40,7 @@ struct PriceScreenView: View {
     .navigationTitle(PriceScreenConst.costOfServicesKey)
   }
   
-  // MARK: Private Properties
-  private(set) var user: User
-  
-  // MARK: Private Methods
-  private func priceSection(title: String, price: Int) -> some View {
+  func priceSection(title: String, price: Int) -> some View {
     VStack(
       alignment: .leading,
       spacing: PriceScreenConst.verticalStackSpacing
@@ -46,7 +52,7 @@ struct PriceScreenView: View {
     .padding([.bottom, .top])
   }
   
-  private func priceRow(price: Int) -> some View {
+  func priceRow(price: Int) -> some View {
     HStack {
       Text(PriceScreenConst.halfAnHourKey)
       Spacer()

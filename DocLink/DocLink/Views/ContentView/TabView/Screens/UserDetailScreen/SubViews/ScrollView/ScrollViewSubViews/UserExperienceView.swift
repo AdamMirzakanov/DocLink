@@ -16,10 +16,12 @@ struct UserExperienceView: View {
       createDetailsColumn(for: user)
     }
   }
-  
-  // MARK: Private Properties
+}
+
+// MARK: - Private Extension
+private extension UserExperienceView {
   // Иконки, отдельно
-  private func createIconColumn() -> some View {
+  func createIconColumn() -> some View {
     VStack(
       alignment: .center,
       spacing: UserDetailScreenConst.verticalStackSpacing
@@ -37,7 +39,7 @@ struct UserExperienceView: View {
   }
   
   // Информация напротив иконок
-  private func createDetailsColumn(for user: User) -> some View {
+  func createDetailsColumn(for user: User) -> some View {
     VStack(
       alignment: .leading,
       spacing: UserDetailScreenConst.verticalStackSpacing
@@ -55,7 +57,7 @@ struct UserExperienceView: View {
   }
   
   // Tекст об опыте работы
-  private func createWorkExperienceText(for user: User) -> some View {
+  func createWorkExperienceText(for user: User) -> some View {
     Text(
       UserDetailScreenConst.workExperienceLocalKey +
       String(user.seniority) +
@@ -64,7 +66,7 @@ struct UserExperienceView: View {
   }
   
   // Tекст о специализации
-  private func createSpecializationText(for user: User) -> some View {
+  func createSpecializationText(for user: User) -> some View {
     if let specializationName = user.specialization?.first?.name {
       return Text(specializationName)
     } else {
@@ -73,12 +75,12 @@ struct UserExperienceView: View {
   }
   
   // Tекст об образовании
-  private func createEducationText(for user: User) -> some View {
+  func createEducationText(for user: User) -> some View {
     Text(user.educationTypeLabel.name)
   }
   
   // Tекст об организации
-  private func createOrganizationText(for user: User) -> some View {
+  func createOrganizationText(for user: User) -> some View {
     if let organization = user.workExpirience.first?.organization {
       return Text(organization)
     } else {

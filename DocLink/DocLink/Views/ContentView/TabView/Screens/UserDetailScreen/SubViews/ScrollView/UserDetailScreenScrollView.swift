@@ -1,24 +1,25 @@
 //
-//  UserDetailScreenView.swift
+//  UserDetailScreenScrollView.swift
 //  DocLink
 //
-//  Created by Адам Мирзаканов on 15.11.2024.
+//  Created by Адам Мирзаканов on 18.11.2024.
 //
 
 import SwiftUI
 
-struct UserDetailScreenView: View {
+struct UserDetailScreenScrollView: View {
   // MARK: Internal Properties
-  let user: User
   var body: some View {
-    VStack {
-      createContentScrollView()
-      createAppointmentButton()
-    }
+    createScrollView()
   }
   
-  // MARK: Private Methods
-  private func createContentScrollView() -> some View {
+  // MARK: Private Properties
+  private(set) var user: User
+}
+
+// MARK: - Private Extension
+private extension UserDetailScreenScrollView {
+  func createScrollView() -> some View {
     ScrollView {
       VStack(
         alignment: .leading,
@@ -41,19 +42,19 @@ struct UserDetailScreenView: View {
     )
   }
   
-  private func createHeaderView() -> some View {
+  func createHeaderView() -> some View {
     createUserHeaderView(user: user)
   }
   
-  private func createUserDetails() -> some View {
+  func createUserDetails() -> some View {
     UserExperienceView(user: user)
   }
   
-  private func createDoctorPriceButtonView() -> some View {
+  func createDoctorPriceButtonView() -> some View {
     DoctorMinimumPriceButtonView(user: user)
   }
   
-  private func createProceduresDescription() -> some View {
+  func createProceduresDescription() -> some View {
     Text(user.proceduresDescription)
       .lineLimit(nil)
       .font(.body)
@@ -63,15 +64,7 @@ struct UserDetailScreenView: View {
       )
   }
   
-  private func createAppointmentButton() -> some View {
-    DoctorAppointmentButtonView(isAvailable: !user.freeReceptionTime.isEmpty)
-      .padding(
-        [.bottom, .horizontal],
-        UserDetailScreenConst.horizontalPadding
-      )
-  }
-  
-  private func createUserHeaderView(user: User) -> some View {
+  func createUserHeaderView(user: User) -> some View {
     HStack(
       alignment: .top,
       spacing: UserDetailScreenConst.horizontalStackSpacing

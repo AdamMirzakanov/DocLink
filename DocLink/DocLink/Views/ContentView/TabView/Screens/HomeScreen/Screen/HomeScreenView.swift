@@ -27,8 +27,12 @@ struct HomeScreenView: View {
   @State private var searchText: String = .empty
   @State private var selectedItem: DoctorSortCriterion = .price
   @State private var users: [User] = []
-  
-  private var filteredUsers: [User] {
+}
+
+// MARK: - Private Extension
+private extension HomeScreenView {
+  // MARK: Properties
+  var filteredUsers: [User] {
     let sortedUsers: [User]
     
     switch selectedItem {
@@ -54,8 +58,8 @@ struct HomeScreenView: View {
     }
   }
   
-  // MARK: Private Methods
-  private func loadUsers() {
+  // MARK: Methods
+  func loadUsers() {
     if let response = decode(
       from: HomeScreenConst.usersDataFile,
       as: APIResponse.self
@@ -64,7 +68,7 @@ struct HomeScreenView: View {
     }
   }
   
-  private func configurePickerAppearance() {
+  func configurePickerAppearance() {
     let pickerAppearance: UISegmentedControl = .appearance()
     pickerAppearance.selectedSegmentTintColor = ColorConst.pickerPink
     pickerAppearance.setTitleTextAttributes(

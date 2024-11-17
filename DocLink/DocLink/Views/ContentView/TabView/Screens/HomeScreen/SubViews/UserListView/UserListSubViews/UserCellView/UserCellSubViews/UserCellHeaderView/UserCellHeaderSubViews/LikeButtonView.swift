@@ -8,24 +8,6 @@
 import SwiftUI
 
 struct LikeButtonView: View {
-  // MARK: Private Properties
-  @State private var isLiked: Bool = false
-  @State private var animationScale = HomeScreenConst.initialAnimationScale
-  
-  private var likeButtonContent: some View {
-    Group {
-      if isLiked {
-        Icon.likedIcon
-      } else {
-        Icon.likeIcon
-      }
-    }
-  }
-  
-  private var likeButtonColor: Color {
-    isLiked ? ColorConst.mainPink : HomeScreenConst.unLikeButtonColor
-  }
-  
   // MARK: Internal Properties
   var body: some View {
     Button(action: handleLikeButtonTap) {
@@ -37,17 +19,39 @@ struct LikeButtonView: View {
     .buttonStyle(PlainButtonStyle())
   }
   
-  // MARK: Private Methods
-  private func handleLikeButtonTap() {
+  // MARK: Private Properties
+  @State private var isLiked: Bool = false
+  @State private var animationScale = HomeScreenConst.initialAnimationScale
+}
+
+// MARK: - Private Extension
+private extension LikeButtonView {
+  // MARK: Properties
+  var likeButtonContent: some View {
+    Group {
+      if isLiked {
+        Icon.likedIcon
+      } else {
+        Icon.likeIcon
+      }
+    }
+  }
+  
+  var likeButtonColor: Color {
+    isLiked ? ColorConst.mainPink : HomeScreenConst.unLikeButtonColor
+  }
+  
+  // MARK: Methods
+  func handleLikeButtonTap() {
     toggleLikeState()
     performLikeButtonAnimation()
   }
   
-  private func toggleLikeState() {
+  func toggleLikeState() {
     isLiked.toggle()
   }
   
-  private func performLikeButtonAnimation() {
+  func performLikeButtonAnimation() {
     withAnimation(
       .easeInOut(
         duration: HomeScreenConst.likeButtonAnimationDuration

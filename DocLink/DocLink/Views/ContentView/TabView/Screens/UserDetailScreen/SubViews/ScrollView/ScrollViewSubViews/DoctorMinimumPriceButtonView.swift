@@ -22,8 +22,11 @@ struct DoctorMinimumPriceButtonView: View {
   
   // MARK: Private Properties
   private(set) var user: User
-  
-  private var buttonContent: some View {
+}
+
+// MARK: - Private Extension
+private extension DoctorMinimumPriceButtonView {
+  var buttonContent: some View {
     HStack {
       serviceCostText
       Spacer()
@@ -34,22 +37,22 @@ struct DoctorMinimumPriceButtonView: View {
     .foregroundColor(UserDetailScreenConst.priceTextColor)
   }
   
-  private var serviceCostText: some View {
+  var serviceCostText: some View {
     Text(UserDetailScreenConst.costOfServicesKey)
       .padding(.leading, UserDetailScreenConst.priceButtonViewInset)
   }
   
-  private var priceView: some View {
+  var priceView: some View {
     UserPriceView(price: user.textChatPrice)
   }
   
-  private var chevronIcon: some View {
+  var chevronIcon: some View {
     Icon.chevronIcon
       .padding(.trailing, UserDetailScreenConst.priceButtonViewInset)
       .foregroundColor(ColorConst.mainPink)
   }
   
-  private var buttonBackground: some View {
+  var buttonBackground: some View {
     RoundedRectangle(
       cornerRadius: UserDetailScreenConst.priceButtonViewCornerRadius
     )

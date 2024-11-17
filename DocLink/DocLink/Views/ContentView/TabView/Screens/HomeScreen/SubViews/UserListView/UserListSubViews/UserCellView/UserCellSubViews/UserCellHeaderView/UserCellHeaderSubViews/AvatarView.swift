@@ -26,9 +26,11 @@ struct AvatarView: View {
   
   // MARK: Private Properties
   private(set) var avatarUrl: String?
-  
-  // MARK: Private Methods
-  private func avatarImageLoader(url: URL) -> some View {
+}
+
+// MARK: - Private Extension
+private extension AvatarView {
+  func avatarImageLoader(url: URL) -> some View {
     AsyncImage(url: url) { phase in
       switch phase {
       case .empty:
@@ -43,7 +45,7 @@ struct AvatarView: View {
     }
   }
   
-  private func avatarLoadingView() -> some View {
+  func avatarLoadingView() -> some View {
     ProgressView()
       .frame(
         width: HomeScreenConst.avatarFrameSize,
@@ -51,14 +53,14 @@ struct AvatarView: View {
       )
   }
   
-  private func avatarImageDisplay(image: Image) -> some View {
+  func avatarImageDisplay(image: Image) -> some View {
     image
       .resizable()
       .scaledToFill()
       .clipShape(Circle())
   }
   
-  private func avatarPlaceholder() -> some View {
+  func avatarPlaceholder() -> some View {
     Icon.avatarPlaceholderIcon
       .font(HomeScreenConst.avatarIconFont)
       .foregroundColor(HomeScreenConst.avatarPlaceholderColor)
