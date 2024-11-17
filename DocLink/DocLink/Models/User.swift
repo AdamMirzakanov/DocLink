@@ -21,6 +21,7 @@ struct User: Decodable, Identifiable {
   let educationTypeLabel: Education
   let workExpirience: [Work]
   let proceduresDescription: String
+  let ratingsRating: Double
 }
 
 struct Work: Decodable {

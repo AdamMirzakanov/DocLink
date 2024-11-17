@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UserInfoView: View {
+  var user: User
   var body: some View {
     VStack(
       alignment: .leading,
@@ -18,6 +19,7 @@ struct UserInfoView: View {
         firstName: user.firstName,
         patronymic: user.patronymic
       )
+      StarsRatingView(rating: .constant(user.ratingsRating))
       UserSpecializationView(
         specializationName: user.specialization?.first?.name,
         seniority: user.seniority
@@ -25,6 +27,4 @@ struct UserInfoView: View {
       UserPriceView(price: user.textChatPrice)
     }
   }
-  
-  var user: User
 }

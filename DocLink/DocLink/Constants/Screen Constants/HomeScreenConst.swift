@@ -12,12 +12,14 @@ enum HomeScreenConst {
   static let bodyFont: Font = .system(size: 15.0, weight: .regular)
   static let likeButtonIconFont: Font = .system(size: 24.0)
   static let avatarIconFont: Font = .system(size: 48.0)
+  static let starFont: Font = .system(size: 10.0)
   
   static let selectedSegmentTextColor: UIColor = .white
   static let unselectedSegmentTextColor: UIColor = .secondaryLabel
   static let avatarPlaceholderColor: Color = Color(white: 0.7)
   static let disabledButtonColor: Color = Color(white: 0.8)
   static let cellBackgroundColor: Color = Color(white: 0.9)
+  static let starColor: Color = Color(white: 0.5)
   
   static let cellShadowRadius: CGFloat = 4.0
   static let cellCornerRadius: CGFloat = 14.0
@@ -27,6 +29,9 @@ enum HomeScreenConst {
   static let doctorAppointmentButtonHeight: CGFloat = 44.0
   static let doctorAppointmentCornerRadius: CGFloat = 8.0
   static let avatarFrameSize: CGFloat = 48.0
+  static let distanceBetweenStars: CGFloat = 4.0
+  
+  static let maxRating: Int = 5
   
   static let usersDataFile: String = "UsersData"
   

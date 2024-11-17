@@ -19,4 +19,5 @@ enum Icon {
   static let capIcon = Image(systemName: "graduationcap")
   static let pinIcon = Image(systemName: "mappin.and.ellipse")
   static let chevronIcon = Image(systemName: "chevron.forward")
+  static let starIcon = Image(systemName: "star.fill")
 }

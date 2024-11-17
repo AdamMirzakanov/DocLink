@@ -49,7 +49,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 1.5,
           "seniority": 5,
           "text_chat_price": 400,
           "video_chat_price": 600,
@@ -147,7 +147,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 4.3,
           "seniority": 7,
           "text_chat_price": 500,
           "video_chat_price": 700,
@@ -357,7 +357,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 3.2,
           "seniority": 10,
           "text_chat_price": 550,
           "video_chat_price": 750,
@@ -444,7 +444,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 4.7,
           "seniority": 12,
           "text_chat_price": 600,
           "video_chat_price": 800,
@@ -521,7 +521,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 3.2,
           "seniority": 9,
           "text_chat_price": 450,
           "video_chat_price": 700,
@@ -608,7 +608,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 5.0,
           "seniority": 14,
           "text_chat_price": 500,
           "video_chat_price": 750,
@@ -685,7 +685,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 2.4,
           "seniority": 16,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -762,7 +762,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 5.0,
           "seniority": 13,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -858,7 +858,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 4.2,
           "seniority": 7,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -935,7 +935,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 3.3,
           "seniority": 10,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1022,7 +1022,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 1.4,
           "seniority": 20,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1099,7 +1099,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 2.2,
           "seniority": 10,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1176,7 +1176,7 @@
               "value": 5
             }
           ],
-          "ratings_rating": 4,
+          "ratings_rating": 4.0,
           "seniority": 8,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1253,7 +1253,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 5.0,
           "seniority": 11,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1330,7 +1330,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 5.0,
           "seniority": 12,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1407,7 +1407,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 0,
+          "ratings_rating": 3.2,
           "seniority": 19,
           "text_chat_price": 400,
           "video_chat_price": 650,
@@ -1484,7 +1484,7 @@
               "value": 0
             }
           ],
-          "ratings_rating": 5.1,
+          "ratings_rating": 4.1,
           "seniority": 6,
           "text_chat_price": 400,
           "video_chat_price": 650,
