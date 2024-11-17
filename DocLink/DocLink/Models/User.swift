@@ -23,7 +23,3 @@ struct User: Decodable, Identifiable {
   let proceduresDescription: String
   let ratingsRating: Double
 }
-
-struct Work: Decodable {
-  let organization: String
-}

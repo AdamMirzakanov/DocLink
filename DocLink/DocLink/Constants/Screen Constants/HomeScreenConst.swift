@@ -39,9 +39,9 @@ enum HomeScreenConst {
   // Localizable Keys
   static let screenTitleKey = Key.screenTitleKey.localizeString()
   static let searchBarPlaceholderKey = Key.searchBarPlaceholderKey.localizeString()
-  static let pickerPriceSegmentTitleKey = Key.pickerPriceSegmentKey.localizeString()
-  static let pickerExperienceSegmentTitleKey = Key.pickerExperienceSegmentKey.localizeString()
-  static let pickerRatingSegmentTitleKey = Key.pickerRatingSegmentKey.localizeString()
+  static let pickerPriceTitleKey = Key.pickerPriceKey.localizeString()
+  static let pickerExperienceTitleKey = Key.pickerExperienceKey.localizeString()
+  static let pickerRatingTitleKey = Key.pickerRatingKey.localizeString()
   static let experienceLabelKey = Key.experienceLabelKey.localizeString()
   static let yearsLabelKey = Key.yearsLabelKey.localizeString()
   static let currencyKey = Key.currencyKey.localizeString()
@@ -54,9 +54,9 @@ enum HomeScreenConst {
 private enum Key: String, CaseIterable {
   case screenTitleKey = "home_screen_title_key"
   case searchBarPlaceholderKey = "search_key"
-  case pickerPriceSegmentKey = "by_price_key"
-  case pickerExperienceSegmentKey = "by_experience_key"
-  case pickerRatingSegmentKey = "by_rating_key"
+  case pickerPriceKey = "by_price_key"
+  case pickerExperienceKey = "by_experience_key"
+  case pickerRatingKey = "by_rating_key"
   case experienceLabelKey = "experience_key"
   case yearsLabelKey = "years_key"
   case currencyKey = "currency_key"

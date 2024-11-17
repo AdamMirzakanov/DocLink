@@ -1,0 +1,32 @@
+//
+//  UserSpecializationView.swift
+//  DocLink
+//
+//  Created by Адам Мирзаканов on 15.11.2024.
+//
+
+import SwiftUI
+
+struct UserSpecializationView: View {
+  // MARK: Internal Properties
+  var body: some View {
+    VStack(
+      alignment: .leading,
+      spacing: HomeScreenConst.verticalStackSpacing
+    ) {
+      if let specializationName = specializationName {
+        let specializationText =
+        specializationName +
+        HomeScreenConst.experienceLabelKey +
+        String(seniority) +
+        HomeScreenConst.yearsLabelKey
+        Text(specializationText)
+          .foregroundColor(HomeScreenConst.experienceTextColor)
+      }
+    }
+  }
+  
+  // MARK: Private Properties
+  private(set) var specializationName: String?
+  private(set) var seniority: Int
+}
