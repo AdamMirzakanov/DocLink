@@ -13,6 +13,7 @@ enum Icon {
   static let chatIcon = Image(systemName: "message")
   static let profileIcon = Image(systemName: "person.fill")
   static let likeIcon = Image(systemName: "heart")
+  static let likedIcon = Image(systemName: "heart.fill")
   static let avatarPlaceholderIcon = Image(systemName: "person.crop.circle.fill")
   static let clockIcon = Image(systemName: "clock")
   static let caseIcon = Image(systemName: "cross.case")

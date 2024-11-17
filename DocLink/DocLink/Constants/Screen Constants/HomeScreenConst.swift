@@ -17,6 +17,7 @@ enum HomeScreenConst {
   static let selectedSegmentTextColor: UIColor = .white
   static let unselectedSegmentTextColor: UIColor = .secondaryLabel
   static let avatarPlaceholderColor: Color = Color(white: 0.7)
+  static let unLikeButtonColor: Color = Color(white: 0.7)
   static let disabledButtonColor: Color = Color(.quaternaryLabel)
   static let cellBackgroundColor: Color = Color(.secondarySystemGroupedBackground)
   static let starColor: Color = Color(white: 0.5)
@@ -31,6 +32,11 @@ enum HomeScreenConst {
   static let doctorAppointmentCornerRadius: CGFloat = 8.0
   static let avatarFrameSize: CGFloat = 48.0
   static let distanceBetweenStars: CGFloat = 4.0
+  static let initialAnimationScale: CGFloat = 1.0
+  
+  static let likeButtonAnimationDuration: TimeInterval = 0.2
+  static let likeButtonAnimationScale: TimeInterval = 1.3
+  static let likeButtonAnimationDelay: TimeInterval = 0.15
   
   static let maxRating: Int = 5
   
