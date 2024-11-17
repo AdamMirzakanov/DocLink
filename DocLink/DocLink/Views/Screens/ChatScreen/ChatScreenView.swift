@@ -1,5 +1,5 @@
 //
-//  ProfileScreen.swift
+//  ChatScreenView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 14.11.2024.
@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct ProfileScreen: View {
+struct ChatScreenView: View {
+  // MARK: Internal Properties
   var body: some View {
-    let screenTitle = ProfileScreenConst.screenTitle
+    let screenTitle = ChatScreenConst.screenTitle
     Text(screenTitle)
       .font(.largeTitle)
       .padding()

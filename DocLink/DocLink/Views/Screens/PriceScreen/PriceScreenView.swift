@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PriceScreen: View {
+struct PriceScreenView: View {
   // MARK: Internal Properties
   var body: some View {
     ScrollView {

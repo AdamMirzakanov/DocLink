@@ -10,7 +10,7 @@ import SwiftUI
 struct DoctorMinimumPriceButtonView: View {
   // MARK: Internal Properties
   var body: some View {
-    NavigationLink(destination: PriceScreen(user: user)) {
+    NavigationLink(destination: PriceScreenView(user: user)) {
       buttonContent
     }
     .frame(

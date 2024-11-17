@@ -9,7 +9,7 @@ import SwiftUI
 
 extension ContentView {
   var homeScreen: some View {
-    HomeScreen()
+    HomeScreenView()
       .tabItem {
         Icon.homeIcon
         Text(Key.homeTabItemTitle)
@@ -17,7 +17,7 @@ extension ContentView {
   }
   
   var receptionScreen: some View {
-    ReceptionScreen()
+    ReceptionScreenView()
       .tabItem {
         Icon.receptionIcon
         Text(Key.receptionTabItemTitle)
@@ -25,7 +25,7 @@ extension ContentView {
   }
   
   var chatScreen: some View {
-    ChatScreen()
+    ChatScreenView()
       .tabItem {
         Icon.chatIcon
         Text(Key.chatTabItemTitle)
@@ -33,7 +33,7 @@ extension ContentView {
   }
   
   var profileScreen: some View {
-    ProfileScreen()
+    ProfileScreenView()
       .tabItem {
         Icon.profileIcon
         Text(Key.profileTabItemTitle)

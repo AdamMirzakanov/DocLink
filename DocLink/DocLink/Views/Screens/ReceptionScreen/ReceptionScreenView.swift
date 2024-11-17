@@ -1,5 +1,5 @@
 //
-//  ReceptionScreen.swift
+//  ReceptionScreenView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 14.11.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ReceptionScreen: View {
+struct ReceptionScreenView: View {
   var body: some View {
     let screenTitle = ReceptionScreenConst.screenTitle
     Text(screenTitle)

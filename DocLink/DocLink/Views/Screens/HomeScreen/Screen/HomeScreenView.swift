@@ -1,5 +1,5 @@
 //
-//  HomeScreen.swift
+//  HomeScreenView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 14.11.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeScreen: View {
+struct HomeScreenView: View {
   // MARK: Internal Properties
   var body: some View {
     NavigationStack {

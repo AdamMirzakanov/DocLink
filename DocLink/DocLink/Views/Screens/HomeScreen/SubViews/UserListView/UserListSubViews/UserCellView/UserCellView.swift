@@ -10,7 +10,7 @@ import SwiftUI
 struct UserCellView: View {
   // MARK: Internal Properties
   var body: some View {
-    let userDetailScreen = UserDetailScreen(user: user)
+    let userDetailScreen = UserDetailScreenView(user: user)
     ZStack {
       NavigationLink(destination: userDetailScreen) {
         EmptyView()

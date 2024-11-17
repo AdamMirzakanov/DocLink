@@ -1,5 +1,5 @@
 //
-//  UserDetailScreen.swift
+//  UserDetailScreenView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 15.11.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserDetailScreen: View {
+struct UserDetailScreenView: View {
   // MARK: Internal Properties
   let user: User
   var body: some View {
@@ -46,7 +46,7 @@ struct UserDetailScreen: View {
   }
   
   private func createUserDetails() -> some View {
-    UserDetailView(user: user)
+    UserExperienceView(user: user)
   }
   
   private func createDoctorPriceButtonView() -> some View {

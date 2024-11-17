@@ -1,5 +1,5 @@
 //
-//  UserDetailView.swift
+//  UserExperienceView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 16.11.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserDetailView: View {
+struct UserExperienceView: View {
   // MARK: Internal Properties
   let user: User
   var body: some View {
