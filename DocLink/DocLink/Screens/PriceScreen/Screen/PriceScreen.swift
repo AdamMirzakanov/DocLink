@@ -50,7 +50,7 @@ struct PriceScreen: View {
       Spacer()
       UserPriceView(price: price)
     }
-    .foregroundColor(.black)
+    .foregroundColor(PriceScreenConst.priceTextColor)
     .frame(
       maxWidth: .infinity,
       minHeight: PriceScreenConst.priceViewHeight

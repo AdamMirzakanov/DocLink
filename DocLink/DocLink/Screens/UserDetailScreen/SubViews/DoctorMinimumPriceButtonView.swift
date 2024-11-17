@@ -30,7 +30,7 @@ struct DoctorMinimumPriceButtonView: View {
       chevronIcon
     }
     .font(UserDetailScreenConst.bodyFont)
-    .foregroundColor(.black)
+    .foregroundColor(UserDetailScreenConst.priceTextColor)
   }
   
   private var serviceCostText: some View {

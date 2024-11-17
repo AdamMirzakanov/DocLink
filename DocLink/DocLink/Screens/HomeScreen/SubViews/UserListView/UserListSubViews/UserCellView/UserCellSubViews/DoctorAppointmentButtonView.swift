@@ -33,7 +33,7 @@ struct DoctorAppointmentButtonView: View {
       )
         .font(.headline)
         .foregroundColor(
-          isAvailable ? .white : .black // чёрный текст для неактивной кнопки
+          isAvailable ? .white : HomeScreenConst.experienceTextColor // чёрный текст для неактивной кнопки
         )
         .frame(
           maxWidth: .infinity,

@@ -20,7 +20,7 @@ struct UserSpecializationView: View {
         String(seniority) +
         HomeScreenConst.yearsLabelKey
         Text(specializationText)
-          .foregroundColor(.secondary)
+          .foregroundColor(HomeScreenConst.experienceTextColor)
       }
     }
   }

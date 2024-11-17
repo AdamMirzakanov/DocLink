@@ -15,7 +15,7 @@ struct UserListView: View {
     List(filteredUsers) { user in
       UserCellView(user: user)
         .padding()
-        .background(Color.white)
+        .background(HomeScreenConst.cellBackgroundColor)
         .cornerRadius(HomeScreenConst.cellCornerRadius)
         .shadow(radius: HomeScreenConst.cellShadowRadius)
         .listRowSeparator(.hidden)
