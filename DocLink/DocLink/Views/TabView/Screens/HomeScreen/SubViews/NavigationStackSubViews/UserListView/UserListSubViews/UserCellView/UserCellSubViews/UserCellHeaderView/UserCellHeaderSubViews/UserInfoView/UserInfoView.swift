@@ -10,6 +10,14 @@ import SwiftUI
 struct UserInfoView: View {
   // MARK: Internal Properties
   var body: some View {
+    createUserInfoView()
+  }
+  
+  // MARK: Private Properties
+  private(set) var user: User
+  
+  // MARK: Private Methods
+  private func createUserInfoView() -> some View {
     VStack(
       alignment: .leading,
       spacing: HomeScreenConst.verticalStackSpacing
@@ -27,7 +35,4 @@ struct UserInfoView: View {
       UserPriceView(price: user.textChatPrice)
     }
   }
-  
-  // MARK: Private Properties
-  private(set) var user: User
 }

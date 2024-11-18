@@ -10,6 +10,16 @@ import SwiftUI
 struct UserNameView: View {
   // MARK: Internal Properties
   var body: some View {
+    createUserNameView()
+  }
+  
+  // MARK: Private Properties
+  private(set) var lastName: String
+  private(set) var firstName: String
+  private(set) var patronymic: String
+  
+  // MARK: Private Methods
+  private func createUserNameView() -> some View {
     VStack(
       alignment: .leading,
       spacing: HomeScreenConst.verticalStackSpacing
@@ -19,9 +29,4 @@ struct UserNameView: View {
     }
     .font(HomeScreenConst.headerFont)
   }
-  
-  // MARK: Private Properties
-  private(set) var lastName: String
-  private(set) var firstName: String
-  private(set) var patronymic: String
 }

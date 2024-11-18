@@ -11,15 +11,19 @@ struct UserExperienceView: View {
   // MARK: Internal Properties
   let user: User
   var body: some View {
-    HStack {
-      createIconColumn()
-      createDetailsColumn(for: user)
-    }
+    createUserExperienceView()
   }
 }
 
 // MARK: - Private Extension
 private extension UserExperienceView {
+  func createUserExperienceView() -> some View {
+    HStack {
+      createIconColumn()
+      createDetailsColumn(for: user)
+    }
+  }
+  
   // Иконки, отдельно
   func createIconColumn() -> some View {
     VStack(

@@ -10,6 +10,16 @@ import SwiftUI
 struct SortPickerView: View {
   // MARK: Internal Properties
   var body: some View {
+    createPickerView()
+  }
+  
+  // MARK: Private Properties
+  @Binding private(set) var selectedItem: DoctorSortCriterion
+}
+
+// MARK: - Private Extension
+private extension SortPickerView {
+  func createPickerView() -> some View {
     Picker(String.empty, selection: $selectedItem) {
       ForEach(DoctorSortCriterion.allCases) { category in
         Text(category.title).tag(category)
@@ -20,8 +30,22 @@ struct SortPickerView: View {
       [.leading, .trailing],
       HomeScreenConst.marginsOnSides
     )
+    .onAppear {
+      configurePickerAppearance()
+    }
   }
   
-  // MARK: Private Properties
-  @Binding private(set) var selectedItem: DoctorSortCriterion
+  /// Настраивает цвет текста сегмента для `UISegmentedControl`
+  func configurePickerAppearance() {
+    let pickerAppearance: UISegmentedControl = .appearance()
+    pickerAppearance.selectedSegmentTintColor = ColorConst.pickerPink
+    pickerAppearance.setTitleTextAttributes(
+      [.foregroundColor: HomeScreenConst.selectedSegmentTextColor],
+      for: .selected
+    )
+    pickerAppearance.setTitleTextAttributes(
+      [.foregroundColor: HomeScreenConst.unselectedSegmentTextColor],
+      for: .normal
+    )
+  }
 }

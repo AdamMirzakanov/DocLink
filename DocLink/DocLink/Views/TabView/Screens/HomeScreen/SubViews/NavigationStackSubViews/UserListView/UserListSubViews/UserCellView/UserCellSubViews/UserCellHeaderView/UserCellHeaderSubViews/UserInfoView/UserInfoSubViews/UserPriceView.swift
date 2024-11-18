@@ -10,19 +10,7 @@ import SwiftUI
 struct UserPriceView: View {
   // MARK: Internal Properties
   var body: some View {
-    let formattedPrice = numberFormatter.string(
-      from: NSNumber(value: price)
-    )
-    let displayPrice = formattedPrice ?? .empty
-    let priceText = HomeScreenConst.getFromLabelText + displayPrice
-    
-    return VStack(
-      alignment: .leading,
-      spacing: HomeScreenConst.verticalStackSpacing
-    ) {
-      Text(priceText)
-    }
-    .font(HomeScreenConst.bodyFont)
+    createPriceView()
   }
   
   // MARK: Private Properties
@@ -36,4 +24,20 @@ struct UserPriceView: View {
     $0.minimumFractionDigits = .zero
     return $0
   }(NumberFormatter())
+  
+  // MARK: Private Methods
+  private func createPriceView() -> some View {
+    let price = NSNumber(value: price)
+    let formattedPrice = numberFormatter.string(from: price)
+    let displayPrice = formattedPrice ?? .empty
+    let priceText = HomeScreenConst.getFromLabelText + displayPrice
+    
+    return VStack(
+      alignment: .leading,
+      spacing: HomeScreenConst.verticalStackSpacing
+    ) {
+      Text(priceText)
+    }
+    .font(HomeScreenConst.bodyFont)
+  }
 }

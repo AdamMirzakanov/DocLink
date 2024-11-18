@@ -7,9 +7,19 @@
 
 import SwiftUI
 
+/// Верхняя часть ячейки.
+/// Здесь все кроме розовой кнопки.
 struct UserCellHeaderView: View {
   // MARK: Internal Properties
   var body: some View {
+    createCellHeader()
+  }
+  
+  // MARK: Private Properties
+  private(set) var user: User
+  
+  // MARK: Private Methods
+  private func createCellHeader() -> some View {
     HStack(
       alignment: .top,
       spacing: HomeScreenConst.horizontalStackSpacing
@@ -20,7 +30,4 @@ struct UserCellHeaderView: View {
       LikeButtonView()
     }
   }
-  
-  // MARK: Private Properties
-  private(set) var user: User
 }

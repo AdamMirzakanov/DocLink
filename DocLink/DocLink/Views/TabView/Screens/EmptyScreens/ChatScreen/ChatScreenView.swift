@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ChatScreenView: View {
-  // MARK: Internal Properties
   var body: some View {
     Icon.chatIcon
       .font(Icon.placeholderIconFont)

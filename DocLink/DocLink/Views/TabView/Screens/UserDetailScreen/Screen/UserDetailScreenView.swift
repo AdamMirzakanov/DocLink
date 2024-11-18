@@ -11,10 +11,7 @@ struct UserDetailScreenView: View {
   // MARK: Internal Properties
   let user: User
   var body: some View {
-    VStack {
-      UserDetailScreenScrollView(user: user)
-      appointmentButton
-    }
+    createUserDetailScreenView()
   }
   
   // MARK: Private Properties
@@ -24,5 +21,13 @@ struct UserDetailScreenView: View {
         [.bottom, .horizontal],
         UserDetailScreenConst.horizontalPadding
       )
+  }
+  
+  // MARK: Private Methods
+  private func createUserDetailScreenView() -> some View {
+    VStack {
+      UserDetailScreenScrollView(user: user)
+      appointmentButton
+    }
   }
 }

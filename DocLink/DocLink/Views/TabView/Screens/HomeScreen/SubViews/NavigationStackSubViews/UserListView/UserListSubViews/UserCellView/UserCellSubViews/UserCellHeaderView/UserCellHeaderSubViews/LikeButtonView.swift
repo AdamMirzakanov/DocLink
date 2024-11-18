@@ -10,16 +10,11 @@ import SwiftUI
 struct LikeButtonView: View {
   // MARK: Internal Properties
   var body: some View {
-    Button(action: handleLikeButtonTap) {
-      likeButtonContent
-        .foregroundColor(likeButtonColor)
-        .font(HomeScreenConst.likeButtonIconFont)
-        .scaleEffect(animationScale)
-    }
-    .buttonStyle(PlainButtonStyle())
+    createLikeButton()
   }
   
   // MARK: Private Properties
+  /// Состояние кнопки (стоит лайк или нет)
   @State private var isLiked: Bool = false
   @State private var animationScale = HomeScreenConst.initialAnimationScale
 }
@@ -27,6 +22,7 @@ struct LikeButtonView: View {
 // MARK: - Private Extension
 private extension LikeButtonView {
   // MARK: Properties
+  /// Содержимое кнопки (иконка "нравится" или "не нравится")
   var likeButtonContent: some View {
     Group {
       if isLiked {
@@ -37,11 +33,23 @@ private extension LikeButtonView {
     }
   }
   
+  /// Цвет кнопки в зависимости от того стоит лайк или нет
   var likeButtonColor: Color {
     isLiked ? ColorConst.mainPink : HomeScreenConst.unLikeButtonColor
   }
   
   // MARK: Methods
+  func createLikeButton() -> some View {
+    Button(action: handleLikeButtonTap) {
+      likeButtonContent
+        .foregroundColor(likeButtonColor)
+        .font(HomeScreenConst.likeButtonIconFont)
+        .scaleEffect(animationScale)
+    }
+    .buttonStyle(PlainButtonStyle())
+  }
+  
+  /// Обработка нажатия на кнопку
   func handleLikeButtonTap() {
     toggleLikeState()
     performLikeButtonAnimation()
@@ -51,7 +59,9 @@ private extension LikeButtonView {
     isLiked.toggle()
   }
   
+  /// Выполнить анимацию кнопки
   func performLikeButtonAnimation() {
+    // увеличить размер
     withAnimation(
       .easeInOut(
         duration: HomeScreenConst.likeButtonAnimationDuration
@@ -60,6 +70,7 @@ private extension LikeButtonView {
       animationScale = HomeScreenConst.likeButtonAnimationScale
     }
     
+    // к исходному арзамеру
     withAnimation(
       .easeInOut(
         duration: HomeScreenConst.likeButtonAnimationDuration)

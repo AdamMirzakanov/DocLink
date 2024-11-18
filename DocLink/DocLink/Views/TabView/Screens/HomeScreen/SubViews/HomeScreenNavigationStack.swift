@@ -10,17 +10,7 @@ import SwiftUI
 struct HomeScreenNavigationStack: View {
   // MARK: Internal Properties
   var body: some View {
-    NavigationStack {
-      VStack {
-        SortPickerView(selectedItem: $selectedItem)
-        UserListView(filteredUsers: filteredUsers, searchText: $searchText)
-      }
-      .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
-      .onAppear {
-        configurePickerAppearance()
-        loadUsers()
-      }
-    }
+    createNavigationStack()
   }
   
   // MARK: Private Properties
@@ -59,25 +49,26 @@ private extension HomeScreenNavigationStack {
   }
   
   // MARK: Methods
+  func createNavigationStack() -> some View {
+    NavigationStack {
+      VStack {
+        SortPickerView(selectedItem: $selectedItem)
+        UserListView(filteredUsers: filteredUsers, searchText: $searchText)
+      }
+      .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
+      .onAppear {
+        loadUsers()
+      }
+    }
+  }
+  
+  /// Загружает данные пользователей из JSON-файла.
   func loadUsers() {
     if let response = decode(
-      from: HomeScreenConst.usersDataFile,
+      from: HomeScreenConst.usersDataJSONFile,
       as: APIResponse.self
     ) {
       users = response.record.data.users
     }
-  }
-  
-  func configurePickerAppearance() {
-    let pickerAppearance: UISegmentedControl = .appearance()
-    pickerAppearance.selectedSegmentTintColor = ColorConst.pickerPink
-    pickerAppearance.setTitleTextAttributes(
-      [.foregroundColor: HomeScreenConst.selectedSegmentTextColor],
-      for: .selected
-    )
-    pickerAppearance.setTitleTextAttributes(
-      [.foregroundColor: HomeScreenConst.unselectedSegmentTextColor],
-      for: .normal
-    )
   }
 }

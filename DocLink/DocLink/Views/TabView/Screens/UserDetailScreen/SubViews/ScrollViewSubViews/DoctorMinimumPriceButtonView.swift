@@ -10,14 +10,7 @@ import SwiftUI
 struct DoctorMinimumPriceButtonView: View {
   // MARK: Internal Properties
   var body: some View {
-    NavigationLink(destination: PriceScreenView(user: user)) {
-      buttonContent
-    }
-    .frame(
-      maxWidth: .infinity,
-      minHeight: UserDetailScreenConst.priceButtonViewHeight
-    )
-    .background(buttonBackground)
+    createPriceButtonNavigationLink()
   }
   
   // MARK: Private Properties
@@ -26,6 +19,7 @@ struct DoctorMinimumPriceButtonView: View {
 
 // MARK: - Private Extension
 private extension DoctorMinimumPriceButtonView {
+  // MARK: Properties
   var buttonContent: some View {
     HStack {
       serviceCostText
@@ -57,5 +51,19 @@ private extension DoctorMinimumPriceButtonView {
       cornerRadius: UserDetailScreenConst.priceButtonViewCornerRadius
     )
     .fill(UserDetailScreenConst.priceButtonViewColor)
+  }
+  
+  // MARK: Methods
+  func createPriceButtonNavigationLink() -> some View {
+    NavigationLink(
+      destination: PriceScreenView(user: user)
+    ) {
+      buttonContent
+    }
+    .frame(
+      maxWidth: .infinity,
+      minHeight: UserDetailScreenConst.priceButtonViewHeight
+    )
+    .background(buttonBackground)
   }
 }

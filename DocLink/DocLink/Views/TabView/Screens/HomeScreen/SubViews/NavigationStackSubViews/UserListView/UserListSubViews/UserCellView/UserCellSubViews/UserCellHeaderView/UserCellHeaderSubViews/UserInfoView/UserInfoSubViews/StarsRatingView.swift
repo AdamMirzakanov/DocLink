@@ -10,28 +10,7 @@ import SwiftUI
 struct StarsRatingView: View {
   // MARK: Internal Properties
   var body: some View {
-    HStack(spacing: HomeScreenConst.distanceBetweenStars) {
-      ForEach(.zero..<maxRating, id: \.self) { index in
-        Icon.starIcon
-          .font(HomeScreenConst.starFont)
-          .overlay(
-            GeometryReader { proxy in
-              Rectangle()
-                .foregroundStyle(ColorConst.mainPink)
-                .frame(
-                  width: proxy.size.width * fillStar(at: index),
-                  height: proxy.size.height
-                )
-            }
-              .mask(
-                Icon.starIcon
-                  .font(HomeScreenConst.starFont)
-              )
-          )
-          .onTapGesture { if isEditable { rating = Double(index) + 1 }}
-      }
-      .foregroundStyle(HomeScreenConst.starColor)
-    }
+    createStarsRatingView()
   }
   
   // MARK: Private Properties
@@ -47,9 +26,38 @@ struct StarsRatingView: View {
     _rating = rating
     self.isEditable = isEditable
   }
+}
+
+// MARK: - Private Extension
+private extension StarsRatingView {
+  func createStarsRatingView() -> some View {
+    HStack(spacing: HomeScreenConst.distanceBetweenStars) {
+      ForEach(.zero..<maxRating, id: \.self) { index in
+        starIcon(at: index)
+      }
+    }
+    .foregroundStyle(HomeScreenConst.starColor)
+  }
   
-  // MARK: Private Methods
-  private func fillStar(at index: Int) -> CGFloat {
+  func starIcon(at index: Int) -> some View {
+    Icon.starIcon
+      .font(HomeScreenConst.starFont) // размер звездочек
+      .overlay(starOverlay(at: index))
+  }
+  
+  func starOverlay(at index: Int) -> some View {
+    GeometryReader { proxy in
+      Rectangle()
+        .foregroundStyle(ColorConst.mainPink)
+        .frame(
+          width: proxy.size.width * fillStar(at: index),
+          height: proxy.size.height
+        )
+    }
+    .mask(Icon.starIcon.font(HomeScreenConst.starFont))
+  }
+  
+  func fillStar(at index: Int) -> CGFloat {
     return rating >= Double(index) + 1
     ? 1
     : (rating > Double(index) ? CGFloat(rating - Double(index)) : .zero)

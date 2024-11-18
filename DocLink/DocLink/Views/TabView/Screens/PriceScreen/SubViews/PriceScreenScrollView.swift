@@ -21,23 +21,27 @@ struct PriceScreenScrollView: View {
 private extension PriceScreenScrollView {
   func createScrollView() -> some View {
     ScrollView {
-      VStack(alignment: .leading) {
-        priceSection(
-          title: PriceScreenConst.getVideoConsultationLabelText,
-          price: user.videoChatPrice
-        )
-        priceSection(
-          title: PriceScreenConst.getChatWithDoctorLabelText,
-          price: user.textChatPrice
-        )
-        priceSection(
-          title: PriceScreenConst.getAdmissionToTheClinicLabelText,
-          price: user.hospitalPrice
-        )
-      }
-      .padding(.horizontal, PriceScreenConst.horizontalPadding)
+      createScrollViewContent()
     }
     .navigationTitle(PriceScreenConst.getCostOfServicesLabelText)
+  }
+  
+  func createScrollViewContent() -> some View {
+    VStack(alignment: .leading) {
+      priceSection(
+        title: PriceScreenConst.getVideoConsultationLabelText,
+        price: user.videoChatPrice
+      )
+      priceSection(
+        title: PriceScreenConst.getChatWithDoctorLabelText,
+        price: user.textChatPrice
+      )
+      priceSection(
+        title: PriceScreenConst.getAdmissionToTheClinicLabelText,
+        price: user.hospitalPrice
+      )
+    }
+    .padding(.horizontal, PriceScreenConst.horizontalPadding)
   }
   
   func priceSection(title: String, price: Int) -> some View {

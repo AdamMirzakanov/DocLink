@@ -21,7 +21,7 @@ enum HomeScreenConst {
   static let disabledButtonColor: Color = Color(.quaternaryLabel)
   static let cellBackgroundColor: Color = Color(.secondarySystemGroupedBackground)
   static let starColor: Color = Color(white: 0.5)
-  static let experienceTextColor: Color = Color(.label)
+  static let experienceTextColor: Color = Color(white: 0.5)
   
   static let cellShadowRadius: CGFloat = 4.0
   static let cellCornerRadius: CGFloat = 14.0
@@ -40,7 +40,7 @@ enum HomeScreenConst {
   
   static let maxRating: Int = 5
   
-  static let usersDataFile: String = "UsersData"
+  static let usersDataJSONFile: String = "UsersData"
   
   // Localizable Keys
   static var getScreenTitleLabelText: String {

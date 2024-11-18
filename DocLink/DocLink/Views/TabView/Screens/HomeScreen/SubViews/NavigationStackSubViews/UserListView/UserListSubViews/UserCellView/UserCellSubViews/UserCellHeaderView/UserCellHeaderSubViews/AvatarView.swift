@@ -10,6 +10,16 @@ import SwiftUI
 struct AvatarView: View {
   // MARK: Internal Properties
   var body: some View {
+    createAvatarView()
+  }
+  
+  // MARK: Private Properties
+  private(set) var avatarUrl: String?
+}
+
+// MARK: - Private Extension
+private extension AvatarView {
+  func createAvatarView() -> some View {
     Group {
       if let avatarUrl = avatarUrl,
          let url = URL(string: avatarUrl) {
@@ -24,12 +34,6 @@ struct AvatarView: View {
     )
   }
   
-  // MARK: Private Properties
-  private(set) var avatarUrl: String?
-}
-
-// MARK: - Private Extension
-private extension AvatarView {
   func avatarImageLoader(url: URL) -> some View {
     AsyncImage(url: url) { phase in
       switch phase {
