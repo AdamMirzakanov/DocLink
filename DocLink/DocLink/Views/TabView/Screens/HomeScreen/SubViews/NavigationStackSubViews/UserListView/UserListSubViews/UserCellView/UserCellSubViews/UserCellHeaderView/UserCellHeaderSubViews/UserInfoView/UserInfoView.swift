@@ -26,6 +26,7 @@ private extension UserInfoView {
     ) {
       getUserNameView()
       getStarsRatingView()
+      getUserSpecializationView()
       getUserPriceView()
     }
   }
