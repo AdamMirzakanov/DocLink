@@ -38,5 +38,6 @@ private extension UserListView {
       prompt: HomeScreenConst.getSearchBarPlaceholderText
     )
     .listStyle(PlainListStyle())
+    .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
   }
 }
