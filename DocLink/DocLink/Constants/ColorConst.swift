@@ -9,9 +9,9 @@ import SwiftUI
 
 enum ColorConst {
   static let maxValue: CGFloat = 255.0
-  static let greenValue: CGFloat = 83.0
-  static let blueValue: CGFloat = 124.0
-  static let opacityValue: CGFloat = 1.0
+  private static let greenValue: CGFloat = 83.0
+  private static let blueValue: CGFloat = 124.0
+  private static let opacityValue: CGFloat = 1.0
   
   static var customPinkColor: (
     r: CGFloat,
