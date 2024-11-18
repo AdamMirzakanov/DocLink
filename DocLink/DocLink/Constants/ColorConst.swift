@@ -20,6 +20,6 @@ enum ColorConst {
     124.0,
     1.0
   )
-  static let pickerPink = UIColor(from: pinkColor)
+  
   static let mainPink = Color(from: pinkColor)
 }

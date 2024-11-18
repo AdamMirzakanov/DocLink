@@ -38,7 +38,7 @@ private extension SortPickerView {
   /// Настраивает цвет текста сегмента для `UISegmentedControl`
   func configurePickerAppearance() {
     let pickerAppearance: UISegmentedControl = .appearance()
-    pickerAppearance.selectedSegmentTintColor = ColorConst.pickerPink
+    pickerAppearance.selectedSegmentTintColor = UIColor(ColorConst.mainPink)
     pickerAppearance.setTitleTextAttributes(
       [.foregroundColor: HomeScreenConst.selectedSegmentTextColor],
       for: .selected
