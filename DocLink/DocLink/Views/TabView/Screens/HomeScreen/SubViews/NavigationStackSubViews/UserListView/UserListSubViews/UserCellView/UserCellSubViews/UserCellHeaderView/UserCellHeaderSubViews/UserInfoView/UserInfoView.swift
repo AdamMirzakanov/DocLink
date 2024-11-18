@@ -15,24 +15,42 @@ struct UserInfoView: View {
   
   // MARK: Private Properties
   private(set) var user: User
-  
-  // MARK: Private Methods
-  private func createUserInfoView() -> some View {
+}
+
+// MARK: - Private Extension
+private extension UserInfoView {
+  func createUserInfoView() -> some View {
     VStack(
       alignment: .leading,
       spacing: HomeScreenConst.verticalStackSpacing
     ) {
-      UserNameView(
-        lastName: user.lastName,
-        firstName: user.firstName,
-        patronymic: user.patronymic
-      )
-      StarsRatingView(rating: .constant(user.ratingsRating))
-      UserSpecializationView(
-        specializationName: user.specialization?.first?.name,
-        seniority: user.seniority
-      )
-      UserPriceView(price: user.textChatPrice)
+      getUserNameView()
+      getStarsRatingView()
+      getUserPriceView()
     }
+  }
+  
+  func getUserNameView() -> some View {
+    UserNameView(
+      lastName: user.lastName,
+      firstName: user.firstName,
+      patronymic: user.patronymic
+    )
+  }
+  
+  func getStarsRatingView() -> some View {
+    StarsRatingView(rating: .constant(user.ratingsRating))
+  }
+  
+  func getUserSpecializationView() -> some View {
+    let specialization = user.specialization.first?.name
+    return UserSpecializationView(
+      specializationName: specialization,
+      seniority: user.seniority
+    )
+  }
+  
+  func getUserPriceView() -> some View {
+    UserPriceView(price: user.textChatPrice)
   }
 }

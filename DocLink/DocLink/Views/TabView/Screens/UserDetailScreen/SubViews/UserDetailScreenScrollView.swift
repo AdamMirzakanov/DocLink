@@ -37,7 +37,7 @@ private extension UserDetailScreenScrollView {
       }
     }
     .navigationBarTitle(
-      user.specialization?.first?.name ?? .empty,
+      user.specialization.first?.name ?? .empty,
       displayMode: .inline
     )
   }
@@ -51,9 +51,10 @@ private extension UserDetailScreenScrollView {
   }
   
   func createDoctorPriceButtonView() -> some View {
-    DoctorMinimumPriceButtonView(user: user)
+    PriceButtonView(user: user)
   }
   
+  /// Описание предоставляемых услуг
   func createProceduresDescription() -> some View {
     Text(user.proceduresDescription)
       .lineLimit(nil)
@@ -64,6 +65,7 @@ private extension UserDetailScreenScrollView {
       )
   }
   
+  /// Верхняя часть с аватаром и имененм
   func createUserHeaderView(user: User) -> some View {
     HStack(
       alignment: .top,

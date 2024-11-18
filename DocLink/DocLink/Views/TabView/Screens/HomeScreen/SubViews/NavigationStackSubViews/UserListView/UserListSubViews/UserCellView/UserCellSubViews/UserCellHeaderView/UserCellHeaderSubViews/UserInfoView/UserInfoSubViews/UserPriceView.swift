@@ -27,17 +27,20 @@ struct UserPriceView: View {
   
   // MARK: Private Methods
   private func createPriceView() -> some View {
+    VStack(
+      alignment: .leading,
+      spacing: HomeScreenConst.verticalStackSpacing
+    ) {
+      Text(getPriceText())
+    }
+    .font(HomeScreenConst.bodyFont)
+  }
+  
+  private func getPriceText() -> String {
     let price = NSNumber(value: price)
     let formattedPrice = numberFormatter.string(from: price)
     let displayPrice = formattedPrice ?? .empty
     let priceText = HomeScreenConst.getFromLabelText + displayPrice
-    
-    return VStack(
-      alignment: .leading,
-      spacing: HomeScreenConst.verticalStackSpacing
-    ) {
-      Text(priceText)
-    }
-    .font(HomeScreenConst.bodyFont)
+    return priceText
   }
 }

@@ -37,11 +37,11 @@ private extension HomeScreenNavigationStack {
       sortedUsers = users.sorted { $0.ratingsRating > $1.ratingsRating }
     }
     
-    // фильтрация по тексту поиска
+    // Фильтрация по тексту поиска
     if searchText.isEmpty {
       return sortedUsers
     } else {
-      // фильтровать список, оставляя тех чьи имя или фамилия содержат введенный текст
+      // Фильтровать список, оставляя тех чьи имя или фамилия содержат введенный текст
       return sortedUsers.filter {
         $0.firstName.contains(searchText) || $0.lastName.contains(searchText)
       }

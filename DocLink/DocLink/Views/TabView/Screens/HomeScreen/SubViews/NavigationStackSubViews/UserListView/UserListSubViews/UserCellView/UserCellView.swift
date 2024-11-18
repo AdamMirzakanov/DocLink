@@ -19,7 +19,7 @@ struct UserCellView: View {
 
 // MARK: - Private Extension
 private extension UserCellView {
-  // собрать ячейку
+  /// Собрать ячейку (вместе с переходом на другой экран)
   func createUserCellView(for user: User) -> some View {
     let userDetailScreen = UserDetailScreenView(user: user)
     return ZStack {
@@ -28,7 +28,7 @@ private extension UserCellView {
     }
   }
   
-  // переход на экран деталей о пользователе
+  /// Переход на экран деталей о пользователе
   func createNavigationLink(to userDetailScreen: some View) -> some View {
     NavigationLink(destination: userDetailScreen) {
       EmptyView()
@@ -36,7 +36,7 @@ private extension UserCellView {
     .opacity(.zero)
   }
   
-  // собрать содержимое ячейки
+  /// Собрать содержимое ячейки
   func createUserInfoView(for user: User) -> some View {
     VStack {
       UserCellHeaderView(user: user)

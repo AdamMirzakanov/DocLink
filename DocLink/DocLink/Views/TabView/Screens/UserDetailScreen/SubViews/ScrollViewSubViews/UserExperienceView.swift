@@ -24,7 +24,7 @@ private extension UserExperienceView {
     }
   }
   
-  // Иконки, отдельно
+  /// Иконки, отдельно вертикально
   func createIconColumn() -> some View {
     VStack(
       alignment: .center,
@@ -42,7 +42,7 @@ private extension UserExperienceView {
     .foregroundColor(UserDetailScreenConst.iconColor)
   }
   
-  // Информация напротив иконок
+  /// Информация, отдельно вертикально
   func createDetailsColumn(for user: User) -> some View {
     VStack(
       alignment: .leading,
@@ -60,7 +60,7 @@ private extension UserExperienceView {
     }
   }
   
-  // Tекст об опыте работы
+  /// Tекст об опыте работы
   func createWorkExperienceText(for user: User) -> some View {
     Text(
       UserDetailScreenConst.getWorkExperienceLabelText +
@@ -69,21 +69,21 @@ private extension UserExperienceView {
     )
   }
   
-  // Tекст о специализации
+  /// Tекст о специализации
   func createSpecializationText(for user: User) -> some View {
-    if let specializationName = user.specialization?.first?.name {
+    if let specializationName = user.specialization.first?.name {
       return Text(specializationName)
     } else {
       return Text(String.empty)
     }
   }
   
-  // Tекст об образовании
+  /// Tекст об образовании
   func createEducationText(for user: User) -> some View {
     Text(user.educationTypeLabel.name)
   }
   
-  // Tекст об организации
+  /// Tекст об организации
   func createOrganizationText(for user: User) -> some View {
     if let organization = user.workExpirience.first?.organization {
       return Text(organization)

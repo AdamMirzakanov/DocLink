@@ -23,15 +23,21 @@ struct UserSpecializationView: View {
       alignment: .leading,
       spacing: HomeScreenConst.verticalStackSpacing
     ) {
-      if let specializationName = specializationName {
-        let specializationText =
-        specializationName +
-        HomeScreenConst.getExperienceLabelText +
-        String(seniority) +
-        HomeScreenConst.getYearsLabelText
-        Text(specializationText)
+        Text(getSpecializationText())
           .foregroundColor(HomeScreenConst.experienceTextColor)
-      }
     }
+  }
+  
+  private func getSpecializationText() -> String {
+    guard let specializationName = specializationName else {
+      return .empty
+    }
+    let specializationText =
+    specializationName +
+    HomeScreenConst.getExperienceLabelText +
+    String(seniority) +
+    HomeScreenConst.getYearsLabelText
+    
+    return specializationText
   }
 }

@@ -10,7 +10,7 @@ import SwiftUICore
 extension Color {
   /// Создаёт `Color` из кортежа RGB.
   init(
-    from tuple: (
+    from color: (
       r: CGFloat,
       g: CGFloat,
       b: CGFloat,
@@ -18,10 +18,10 @@ extension Color {
     )
   ) {
     self.init(
-      red: tuple.r / ColorConst.maxValue,
-      green: tuple.g / ColorConst.maxValue,
-      blue: tuple.b / ColorConst.maxValue,
-      opacity: tuple.a
+      red: color.r / ColorConst.maxValue,
+      green: color.g / ColorConst.maxValue,
+      blue: color.b / ColorConst.maxValue,
+      opacity: color.a
     )
   }
 }

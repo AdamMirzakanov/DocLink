@@ -20,6 +20,7 @@ struct UserListView: View {
 
 // MARK: - Private Extension
 private extension UserListView {
+  /// Создать ячейку
   func createCellView(user: User) -> some View {
     UserCellView(user: user)
       .padding()
@@ -29,6 +30,7 @@ private extension UserListView {
       .listRowSeparator(.hidden)
   }
   
+  /// Создать лист с ячейкой
   func createListView() -> some View {
     List(filteredUsers) { user in
       createCellView(user: user)

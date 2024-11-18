@@ -1,5 +1,5 @@
 //
-//  DoctorMinimumPriceButtonView.swift
+//  PriceButtonView.swift
 //  DocLink
 //
 //  Created by Адам Мирзаканов on 16.11.2024.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct DoctorMinimumPriceButtonView: View {
+/// Серая кнопка стоимости услуг на экране с деталями 
+struct PriceButtonView: View {
   // MARK: Internal Properties
   var body: some View {
     createPriceButtonNavigationLink()
@@ -18,7 +19,7 @@ struct DoctorMinimumPriceButtonView: View {
 }
 
 // MARK: - Private Extension
-private extension DoctorMinimumPriceButtonView {
+private extension PriceButtonView {
   // MARK: Properties
   var buttonContent: some View {
     HStack {
