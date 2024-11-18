@@ -14,22 +14,30 @@ struct StarsRatingView: View {
   }
   
   // MARK: Private Properties
+  /// Текущий рейтинг (связанный с внешним источником данных).
+  /// Позволяет передавать и обновлять значение рейтинга.
   @Binding private(set) var rating: Double
-  private(set) var isEditable: Bool
+  
+  /// Максимальное количество звездочек для рейтинга.
   private let maxRating = HomeScreenConst.maxRating
   
   // MARK: Initializers
+  /// Создает компонент `StarsRatingView`.
+  ///
+  /// - Parameters:
+  ///   - rating: Привязка значения рейтинга (`Binding<Double>`).
   init(
-    rating: Binding<Double>,
-    isEditable: Bool = false
+    rating: Binding<Double>
   ) {
     _rating = rating
-    self.isEditable = isEditable
   }
 }
 
 // MARK: - Private Extension
 private extension StarsRatingView {
+  /// Создает вью звездного рейтинга.
+  ///
+  /// - Returns: Набор звездочек, расположенных горизонтально.
   func createStarsRatingView() -> some View {
     HStack(spacing: HomeScreenConst.distanceBetweenStars) {
       ForEach(.zero..<maxRating, id: \.self) { index in
@@ -39,12 +47,20 @@ private extension StarsRatingView {
     .foregroundStyle(HomeScreenConst.starColor)
   }
   
+  /// Создает иконку одной звезды с наложением заливки.
+  ///
+  /// - Parameter index: Индекс звезды.
+  /// - Returns: Вью иконки звезды с динамической заливкой.
   func starIcon(at index: Int) -> some View {
     Icon.starIcon
-      .font(HomeScreenConst.starFont) // размер звездочек
+      .font(HomeScreenConst.starFont) // Размер звездочек
       .overlay(starOverlay(at: index))
   }
   
+  /// Создает наложение заливки для звезды в зависимости от рейтинга.
+  ///
+  /// - Parameter index: Индекс звезды.
+  /// - Returns: Вью заливки, частично или полностью покрывающее звезду.
   func starOverlay(at index: Int) -> some View {
     GeometryReader { proxy in
       Rectangle()
@@ -57,6 +73,10 @@ private extension StarsRatingView {
     .mask(Icon.starIcon.font(HomeScreenConst.starFont))
   }
   
+  /// Вычисляет степень заполнения текущей звезды.
+  ///
+  /// - Parameter index: Индекс звезды.
+  /// - Returns: Значение от 0 до 1, определяющее, насколько звезда заполнена.
   func fillStar(at index: Int) -> CGFloat {
     return rating >= Double(index) + 1
     ? 1
