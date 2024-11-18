@@ -16,6 +16,7 @@ struct UserListView: View {
   // MARK: Private Properties
   private(set) var filteredUsers: [User]
   @Binding private(set) var searchText: String
+  @Binding private(set) var selectedItem: DoctorSortCriterion
 }
 
 // MARK: - Private Extension
@@ -39,6 +40,12 @@ private extension UserListView {
       text: $searchText,
       prompt: HomeScreenConst.getSearchBarPlaceholderText
     )
+    .searchScopes($selectedItem) {
+      ForEach(DoctorSortCriterion.allCases, id: \.self) { scope in
+        Text(scope.title)
+          .tag(scope)
+      }
+    }
     .listStyle(PlainListStyle())
     .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
   }
