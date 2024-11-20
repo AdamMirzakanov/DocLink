@@ -16,20 +16,20 @@ struct UserListView: View {
   // MARK: Private Properties
   @Binding private(set) var searchText: String
   @Binding private(set) var selectedItem: DoctorSortCriterion
-  @State private var users: [User] = []
+  @State private var users: Users = []
 }
 
 // MARK: - Private Extension
 private extension UserListView {
   // MARK: Properties
-  var filteredUsers: [User] {
+  var filteredUsers: Users {
     let sortedUsers = sortUsers(users: users, by: selectedItem)
     let filteredUsers = filterUsers(users: sortedUsers, by: searchText)
     return filteredUsers
   }
   
   // MARK: Methods
-  func sortUsers(users: [User], by criteria: DoctorSortCriterion) -> [User] {
+  func sortUsers(users: Users, by criteria: DoctorSortCriterion) -> Users {
     switch criteria {
     case .price:
       // Прайс по возрастанию
@@ -43,7 +43,7 @@ private extension UserListView {
     }
   }
   
-  func filterUsers(users: [User], by searchText: String) -> [User] {
+  func filterUsers(users: Users, by searchText: String) -> Users {
     guard !searchText.isEmpty else {
       return users
     }
