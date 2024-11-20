@@ -14,13 +14,44 @@ struct UserListView: View {
   }
   
   // MARK: Private Properties
-  private(set) var filteredUsers: [User]
   @Binding private(set) var searchText: String
   @Binding private(set) var selectedItem: DoctorSortCriterion
+  @State private var users: [User] = []
 }
 
 // MARK: - Private Extension
 private extension UserListView {
+  // MARK: Properties
+  var filteredUsers: [User] {
+    let sortedUsers = sortUsers(users: users, by: selectedItem)
+    let filteredUsers = filterUsers(users: sortedUsers, by: searchText)
+    return filteredUsers
+  }
+  
+  // MARK: Methods
+  func sortUsers(users: [User], by criteria: DoctorSortCriterion) -> [User] {
+    switch criteria {
+    case .price:
+      // Прайс по возрастанию
+      return users.sorted { $0.textChatPrice < $1.textChatPrice }
+    case .experience:
+      // Стаж по убыванию
+      return users.sorted { $0.seniority > $1.seniority }
+    case .rating:
+      // Рейтинг по убыванию
+      return users.sorted { $0.ratingsRating > $1.ratingsRating }
+    }
+  }
+  
+  func filterUsers(users: [User], by searchText: String) -> [User] {
+    guard !searchText.isEmpty else {
+      return users
+    }
+    return users.filter {
+      $0.firstName.contains(searchText) || $0.lastName.contains(searchText)
+    }
+  }
+  
   /// Создать ячейку
   func createCellView(user: User) -> some View {
     UserCellView(user: user)
@@ -48,5 +79,18 @@ private extension UserListView {
     }
     .listStyle(PlainListStyle())
     .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
+    .onAppear {
+      loadUsers()
+    }
+  }
+  
+  /// Загружает данные пользователей из JSON-файла.
+  func loadUsers() {
+    if let response = decode(
+      from: HomeScreenConst.usersDataJSONFile,
+      as: APIResponse.self
+    ) {
+      users = response.record.data.users
+    }
   }
 }
