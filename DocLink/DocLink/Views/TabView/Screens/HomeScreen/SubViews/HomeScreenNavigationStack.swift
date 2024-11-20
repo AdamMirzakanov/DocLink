@@ -52,7 +52,10 @@ private extension HomeScreenNavigationStack {
   func createNavigationStack() -> some View {
     NavigationStack {
       SortPickerView(selectedItem: $selectedItem)
-      UserListView(filteredUsers: filteredUsers, searchText: $searchText)
+      UserListView(
+        filteredUsers: filteredUsers,
+        searchText: $searchText
+      )
     }
     .onAppear {
       loadUsers()
