@@ -72,9 +72,9 @@ private extension UserListView {
       prompt: HomeScreenConst.getSearchBarPlaceholderText
     )
     .searchScopes($selectedItem) {
-      ForEach(DoctorSortCriterion.allCases, id: \.self) { scope in
-        Text(scope.title)
-          .tag(scope)
+      ForEach(DoctorSortCriterion.allCases, id: \.self) { criteria in
+        Text(criteria.title)
+          .tag(criteria)
       }
     }
     .listStyle(PlainListStyle())
