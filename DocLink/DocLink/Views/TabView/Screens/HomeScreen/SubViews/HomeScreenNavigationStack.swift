@@ -51,7 +51,11 @@ private extension HomeScreenNavigationStack {
   // MARK: Methods
   func createNavigationStack() -> some View {
     NavigationStack {
-      UserListView(filteredUsers: filteredUsers, searchText: $searchText, selectedItem: $selectedItem)
+      UserListView(
+        filteredUsers: filteredUsers,
+        searchText: $searchText,
+        selectedItem: $selectedItem
+      )
     }
     .onAppear {
       loadUsers()
