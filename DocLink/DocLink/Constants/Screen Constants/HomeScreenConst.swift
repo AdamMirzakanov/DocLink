@@ -19,7 +19,8 @@ enum HomeScreenConst {
   static let avatarPlaceholderColor: Color = Color(white: 0.7)
   static let unLikeButtonColor: Color = Color(white: 0.7)
   static let disabledButtonColor: Color = Color(.quaternaryLabel)
-  static let cellBackgroundColor: Color = Color(.secondarySystemGroupedBackground)
+  static let cellBackgroundColor: Color = Color(.tertiarySystemFill)
+  static let listBackgroundColor: Color = Color(.white)
   static let starColor: Color = Color(white: 0.5)
   static let experienceTextColor: Color = Color(white: 0.5)
   
