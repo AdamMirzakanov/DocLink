@@ -27,6 +27,7 @@ The application is localized for the following languages:
 ![App Cover](assets/screenshots/1.png)
 ![App Cover](assets/screenshots/2.png)
 ![App Cover](assets/screenshots/3.png)
+![App Cover](assets/screenshots/4.png)
 
 ## Contact
 
