@@ -23,8 +23,8 @@ enum UserDetailScreenConst {
   static let bodyFont: Font = .system(size: 15.0, weight: .regular)
   
   static let iconColor: Color = Color(white: 0.7)
-  static let priceButtonViewColor: Color = Color(.quaternaryLabel)
-  static let priceTextColor: Color = Color(.label)
+  static let priceButtonViewColor: Color = .secondary.opacity(0.3)
+    static let priceTextColor: Color = .primary
   
   // Localizable Keys
   static var getWorkExperienceLabelText: String {
