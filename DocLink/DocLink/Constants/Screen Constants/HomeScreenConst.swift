@@ -22,6 +22,7 @@ enum HomeScreenConst {
   static let cellBackgroundColor: Color = Color(.secondarySystemGroupedBackground)
   static let starColor: Color = Color(white: 0.5)
   static let experienceTextColor: Color = Color(white: 0.5)
+  static let buttonTextColor: Color = .black
   
   static let cellShadowRadius: CGFloat = 4.0
   static let cellCornerRadius: CGFloat = 14.0
