@@ -17,8 +17,8 @@ struct HomeScreenNavigationStack: View {
   @State private var searchText: String = .empty
   @State private var selectedItem: DoctorSortCriterion = .price
   
-  // MARK: Private Properties
-  func createNavigationStack() -> some View {
+  // MARK: Private Methods
+  private func createNavigationStack() -> some View {
     NavigationStack {
       SortPickerView(selectedItem: $selectedItem)
       UserListView(searchText: $searchText, selectedItem: $selectedItem)

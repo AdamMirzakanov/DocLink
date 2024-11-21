@@ -71,7 +71,7 @@ private extension DoctorAppointmentButtonView {
     .foregroundColor(buttonTextColor())
   }
   
-  /// цвета текста кнопки в зависимости от доступности записи
+  /// цвет текста кнопки в зависимости от доступности записи
   func buttonTextColor() -> Color {
     return isAvailable ? .white : HomeScreenConst.experienceTextColor
   }
