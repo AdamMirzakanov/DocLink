@@ -58,8 +58,8 @@ private extension UserListView {
       .padding()
       .background(HomeScreenConst.cellBackgroundColor)
       .cornerRadius(HomeScreenConst.cellCornerRadius)
-      .shadow(radius: HomeScreenConst.cellShadowRadius)
       .listRowSeparator(.hidden)
+      .listRowBackground(HomeScreenConst.listBackgroundColor)
   }
   
   /// Создать лист с ячейкой
