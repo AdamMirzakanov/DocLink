@@ -21,25 +21,29 @@ struct UserDetailScreenScrollView: View {
 private extension UserDetailScreenScrollView {
   func createScrollView() -> some View {
     ScrollView {
-      VStack(
-        alignment: .leading,
-        spacing: UserDetailScreenConst.verticalStackSpacing
-      ) {
-        createHeaderView()
-        createUserDetails()
-        createDoctorPriceButtonView()
-        createProceduresDescription()
-      }
-      .frame(maxWidth: .infinity)
-      .padding(.horizontal, UserDetailScreenConst.horizontalPadding)
-      .safeAreaInset(edge: .top) {
-        Color.clear.frame(height: UserDetailScreenConst.safeAreaTopPadding)
-      }
+      createScrollViewContent()
     }
     .navigationBarTitle(
       user.specialization.first?.name ?? .empty,
       displayMode: .inline
     )
+  }
+  
+  func createScrollViewContent() -> some View {
+    VStack(
+      alignment: .leading,
+      spacing: UserDetailScreenConst.verticalStackSpacing
+    ) {
+      createHeaderView()
+      createUserDetails()
+      createDoctorPriceButtonView()
+      createProceduresDescription()
+    }
+    .frame(maxWidth: .infinity)
+    .padding(.horizontal, UserDetailScreenConst.horizontalPadding)
+    .safeAreaInset(edge: .top) {
+      Color.clear.frame(height: UserDetailScreenConst.safeAreaTopPadding)
+    }
   }
   
   func createHeaderView() -> some View {
