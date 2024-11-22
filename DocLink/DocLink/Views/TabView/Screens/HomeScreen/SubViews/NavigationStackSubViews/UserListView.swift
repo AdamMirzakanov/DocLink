@@ -44,7 +44,7 @@ struct UserListView: View {
   }
   
   func createListView() -> some View {
-    List(viewModel.users) { user in
+    List(viewModel.getUsers) { user in
       createCellView(user: user)
     }
     .searchable(

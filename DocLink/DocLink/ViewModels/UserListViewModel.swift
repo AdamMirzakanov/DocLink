@@ -8,10 +8,13 @@
 import SwiftUI
 
 final class UserListViewModel: ObservableObject {
+  // MARK: Internal Properties
+  var getUsers: Users { users }
+  
   // MARK: Private Properties
   @Published private var searchText: String
   @Published private var selectedItem: DoctorSortCriterion
-  @Published private(set) var users: Users = []
+  @Published private var users: Users = []
   
   // MARK: Initializers
   init(
