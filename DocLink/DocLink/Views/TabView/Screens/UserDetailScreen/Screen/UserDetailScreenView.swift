@@ -9,12 +9,13 @@ import SwiftUI
 
 struct UserDetailScreenView: View {
   // MARK: Internal Properties
-  let user: User
   var body: some View {
     createUserDetailScreenView()
   }
   
   // MARK: Private Properties
+  private(set) var user: User
+  
   private var appointmentButton: some View {
     DoctorAppointmentButtonView(isAvailable: !user.freeReceptionTime.isEmpty)
       .padding(

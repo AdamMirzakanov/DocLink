@@ -9,10 +9,12 @@ import SwiftUI
 
 struct UserExperienceView: View {
   // MARK: Internal Properties
-  let user: User
   var body: some View {
     createUserExperienceView()
   }
+  
+  // MARK: Private Properties
+  private(set) var user: User
 }
 
 // MARK: - Private Extension
