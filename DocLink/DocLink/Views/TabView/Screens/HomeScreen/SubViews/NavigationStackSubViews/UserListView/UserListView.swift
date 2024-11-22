@@ -33,7 +33,7 @@ struct UserListView: View {
     )
   }
   
-  // MARK: Initializers Methods
+  // MARK: Private Methods
   private func createCellView(user: User) -> some View {
     UserCellView(user: user)
       .padding()
