@@ -11,8 +11,7 @@ final class UserListViewModel: ObservableObject {
   // MARK: Private Properties
   @Published private var searchText: String
   @Published private var selectedItem: DoctorSortCriterion
-  @Published private var users: Users = []
-  @Published private(set) var filteredUsers: Users = []
+  @Published private(set) var users: Users = []
   
   // MARK: Initializers
   init(
@@ -37,7 +36,7 @@ final class UserListViewModel: ObservableObject {
   
   private func applyFiltersAndSorting() {
     let sortedUsers = sortUsers(users: users, by: selectedItem)
-    filteredUsers = filterUsers(users: sortedUsers, by: searchText)
+    users = filterUsers(users: sortedUsers, by: searchText)
   }
   
   private func sortUsers(
