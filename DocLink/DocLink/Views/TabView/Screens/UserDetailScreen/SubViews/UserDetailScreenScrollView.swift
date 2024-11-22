@@ -21,6 +21,15 @@ struct UserDetailScreenScrollView: View {
 private extension UserDetailScreenScrollView {
   func createScrollView() -> some View {
     ScrollView {
+      createScrollViewContent()
+    }
+    .navigationBarTitle(
+      user.specialization.first?.name ?? .empty,
+      displayMode: .inline
+    )
+  }
+  
+  func createScrollViewContent() -> some View {
       VStack(
         alignment: .leading,
         spacing: UserDetailScreenConst.verticalStackSpacing
@@ -36,11 +45,6 @@ private extension UserDetailScreenScrollView {
         Color.clear.frame(height: UserDetailScreenConst.safeAreaTopPadding)
       }
     }
-    .navigationBarTitle(
-      user.specialization.first?.name ?? .empty,
-      displayMode: .inline
-    )
-  }
   
   func createHeaderView() -> some View {
     createUserHeaderView(user: user)
