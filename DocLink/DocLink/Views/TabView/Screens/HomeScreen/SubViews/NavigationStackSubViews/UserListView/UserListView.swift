@@ -14,46 +14,27 @@ struct UserListView: View {
   }
   
   // MARK: Private Properties
-  @Binding private(set) var searchText: String
-  @Binding private(set) var selectedItem: DoctorSortCriterion
-  @State private var users: Users = []
-}
-
-// MARK: - Private Extension
-private extension UserListView {
-  // MARK: Properties
-  var filteredUsers: Users {
-    let sortedUsers = sortUsers(users: users, by: selectedItem)
-    let filteredUsers = filterUsers(users: sortedUsers, by: searchText)
-    return filteredUsers
+  @ObservedObject private var viewModel: UserListViewModel
+  @Binding private var searchText: String
+  @Binding private var selectedItem: DoctorSortCriterion
+  
+  // MARK: Initializers
+  init(
+    searchText: Binding<String>,
+    selectedItem: Binding<DoctorSortCriterion>
+  ) {
+    _searchText = searchText
+    _selectedItem = selectedItem
+    _viewModel = ObservedObject(
+      wrappedValue: UserListViewModel(
+        searchText: searchText.wrappedValue,
+        selectedItem: selectedItem.wrappedValue
+      )
+    )
   }
   
-  // MARK: Methods
-  func sortUsers(users: Users, by criteria: DoctorSortCriterion) -> Users {
-    switch criteria {
-    case .price:
-      // Прайс по возрастанию
-      return users.sorted { $0.textChatPrice < $1.textChatPrice }
-    case .experience:
-      // Стаж по убыванию
-      return users.sorted { $0.seniority > $1.seniority }
-    case .rating:
-      // Рейтинг по убыванию
-      return users.sorted { $0.ratingsRating > $1.ratingsRating }
-    }
-  }
-  
-  func filterUsers(users: Users, by searchText: String) -> Users {
-    guard !searchText.isEmpty else {
-      return users
-    }
-    return users.filter {
-      $0.firstName.contains(searchText) || $0.lastName.contains(searchText)
-    }
-  }
-  
-  /// Создать ячейку
-  func createCellView(user: User) -> some View {
+  // MARK: Initializers Methods
+  private func createCellView(user: User) -> some View {
     UserCellView(user: user)
       .padding()
       .background(HomeScreenConst.cellBackgroundColor)
@@ -62,9 +43,8 @@ private extension UserListView {
       .listRowBackground(HomeScreenConst.listBackgroundColor)
   }
   
-  /// Создать лист с ячейкой
-  func createListView() -> some View {
-    List(filteredUsers) { user in
+  private func createListView() -> some View {
+    List(viewModel.filteredUsers) { user in
       createCellView(user: user)
     }
     .searchable(
@@ -73,18 +53,5 @@ private extension UserListView {
     )
     .listStyle(PlainListStyle())
     .navigationTitle(HomeScreenConst.getScreenTitleLabelText)
-    .onAppear {
-      loadUsers()
-    }
-  }
-  
-  /// Загружает данные пользователей из JSON-файла.
-  func loadUsers() {
-    if let response = decode(
-      from: HomeScreenConst.usersDataJSONFile,
-      as: APIResponse.self
-    ) {
-      users = response.record.data.users
-    }
   }
 }
