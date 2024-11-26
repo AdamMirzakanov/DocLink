@@ -14,7 +14,7 @@ struct UserListView: View {
   }
   
   // MARK: Private Properties
-  @ObservedObject private var viewModel: UserListViewModel
+  private var viewModel: UserListViewModel
   @Binding private var searchText: String
   @Binding private var selectedItem: DoctorSortCriterion
   
@@ -25,11 +25,9 @@ struct UserListView: View {
   ) {
     _searchText = searchText
     _selectedItem = selectedItem
-    _viewModel = ObservedObject(
-      wrappedValue: UserListViewModel(
-        searchText: searchText.wrappedValue,
-        selectedItem: selectedItem.wrappedValue
-      )
+    viewModel = UserListViewModel(
+      searchText: searchText.wrappedValue,
+      selectedItem: selectedItem.wrappedValue
     )
   }
   
