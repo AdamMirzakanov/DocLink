@@ -5,7 +5,7 @@
 //  Created by Адам Мирзаканов on 22.11.2024.
 //
 
-import SwiftUI
+import Foundation
 
 final class UserListViewModel: ObservableObject {
   // MARK: Internal Properties
