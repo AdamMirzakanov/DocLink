@@ -2,10 +2,8 @@
 
 <img src="https://img.shields.io/badge/Swift-5+-orange?logo=swift&logoColor=orange&color=orange&labelColor=white" height="35" />
 
----
-  
-- **Frameworks**:
-  - SwiftUI
+## Technology
+- SwiftUI
   
 ## Localization
 
@@ -14,7 +12,7 @@ The application is localized for the following languages:
 - English  
 - Russian 
 
-  ## Clone:
+## Clone:
 1. Clone the repository:
    ```bash
    git clone https://github.com/AdamMirzakanov/DocLink
