@@ -32,7 +32,7 @@ enum HomeScreenConst {
   static let horizontalStackSpacing: CGFloat = 12.0
   static let doctorAppointmentButtonHeight: CGFloat = 44.0
   static let doctorAppointmentCornerRadius: CGFloat = 8.0
-  static let avatarFrameSize: CGFloat = 48.0
+  static let avatarFrameSize: CGFloat = 52.0
   static let distanceBetweenStars: CGFloat = 4.0
   static let initialAnimationScale: CGFloat = 1.0
   

@@ -18,7 +18,7 @@ enum UserDetailScreenConst {
   static let safeAreaTopPadding: CGFloat = 10.0
   static let topBottomPadding: CGFloat = 8.0
   
-  static let iconFont: Font = .system(size: 20.0)
+  static let iconFont: Font = .system(size: 18.0)
   static let mainFont: Font = .system(size: 17.0, weight: .medium)
   static let bodyFont: Font = .system(size: 15.0, weight: .regular)
   

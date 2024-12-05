@@ -53,7 +53,7 @@ private extension PriceScreenScrollView {
         .font(.headline)
       priceRow(price: price)
     }
-    .padding([.bottom, .top])
+    .padding([.top])
   }
   
   func priceRow(price: Int) -> some View {
