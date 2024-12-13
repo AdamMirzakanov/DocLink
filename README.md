@@ -15,11 +15,7 @@ The application is localized for the following languages:
 ## Clone:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AdamMirzakanov/DocLink
+   git clone https://github.com/alvdalen/DocLink
    ```
 ## Screenshots (iPhone 16)
 ![App Cover](assets/screenshots/1.png)
-
-## Contact
-
-- **Email**: adamirzakan@gmail.com
