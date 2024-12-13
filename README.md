@@ -13,7 +13,6 @@ The application is localized for the following languages:
 - Russian 
 
 ## Clone:
-1. Clone the repository:
    ```bash
    git clone https://github.com/alvdalen/DocLink-SwiftUI
    ```
